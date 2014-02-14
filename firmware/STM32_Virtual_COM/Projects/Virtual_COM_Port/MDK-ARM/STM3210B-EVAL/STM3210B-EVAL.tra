@@ -1,0 +1,51 @@
+*** Creating Trace Output File '.\STM3210B-EVAL\STM3210B-EVAL.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\stm3210b-eval\misc.o"'
+### List of Objects: adding '".\stm3210b-eval\hw_config.o"'
+### List of Objects: adding '".\stm3210b-eval\main.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_desc.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_endp.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_istr.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_prop.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_pwr.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32_it.o"'
+### List of Objects: adding '".\stm3210b-eval\debug.o"'
+### List of Objects: adding '".\stm3210b-eval\timer.o"'
+### List of Objects: adding '".\stm3210b-eval\trans_buffers.o"'
+### List of Objects: adding '".\stm3210b-eval\miner.o"'
+### List of Objects: adding '".\stm3210b-eval\delay.o"'
+### List of Objects: adding '".\stm3210b-eval\system_stm32f10x.o"'
+### List of Objects: adding '".\stm3210b-eval\startup_stm32f10x_md.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_core.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_init.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_int.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_mem.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_regs.o"'
+### List of Objects: adding '".\stm3210b-eval\usb_sil.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_usart.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_gpio.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_rcc.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_flash.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_exti.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_spi.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_dma.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_i2c.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_sdio.o"'
+### List of Objects: adding '".\stm3210b-eval\stm32f10x_tim.o"'
+### List of Objects: adding '".\stm3210b-eval\stm3210b_eval.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\stm3210b-eval\misc.o" ".\stm3210b-eval\hw_config.o" ".\stm3210b-eval\main.o" ".\stm3210b-eval\usb_desc.o" ".\stm3210b-eval\usb_endp.o" ".\stm3210b-eval\usb_istr.o" ".\stm3210b-eval\usb_prop.o" ".\stm3210b-eval\usb_pwr.o" ".\stm3210b-eval\stm32_it.o" ".\stm3210b-eval\debug.o" ".\stm3210b-eval\timer.o" ".\stm3210b-eval\trans_buffers.o" ".\stm3210b-eval\miner.o" ".\stm3210b-eval\delay.o" ".\stm3210b-eval\system_stm32f10x.o" ".\stm3210b-eval\startup_stm32f10x_md.o" ".\stm3210b-eval\usb_core.o" ".\stm3210b-eval\usb_init.o" ".\stm3210b-eval\usb_int.o" ".\stm3210b-eval\usb_mem.o" ".\stm3210b-eval\usb_regs.o" ".\stm3210b-eval\usb_sil.o" ".\stm3210b-eval\stm32f10x_usart.o" ".\stm3210b-eval\stm32f10x_gpio.o" ".\stm3210b-eval\stm32f10x_rcc.o" ".\stm3210b-eval\stm32f10x_flash.o" ".\stm3210b-eval\stm32f10x_exti.o" ".\stm3210b-eval\stm32f10x_spi.o" ".\stm3210b-eval\stm32f10x_dma.o" ".\stm3210b-eval\stm32f10x_i2c.o" ".\stm3210b-eval\stm32f10x_sdio.o" ".\stm3210b-eval\stm32f10x_tim.o" ".\stm3210b-eval\stm3210b_eval.o" --library_type=microlib --strict --scatter ".\STM3210B-EVAL\STM3210B-EVAL.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\STM3210B-EVAL\STM3210B-EVAL.map" -o ".\STM3210B-EVAL\STM3210B-EVAL.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\STM3210B-EVAL\STM3210B-EVAL.axf'
+### ADS-LD Command File: '.\STM3210B-EVAL\STM3210B-EVAL.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\STM3210B-EVAL\STM3210B-EVAL.lnp', Handle=0x000002DC
+### Writing '.lnp' file
+### ADS-LD Command file '.\STM3210B-EVAL\STM3210B-EVAL.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
