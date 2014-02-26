@@ -1,0 +1,414 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALGO_SCRYPT	cpu-miner.c	/^	ALGO_SCRYPT,		\/* scrypt(1024,1,1) *\/$/;"	e	enum:sha256_algos	file:
+ALGO_SHA256D	cpu-miner.c	/^	ALGO_SHA256D,		\/* SHA-256d *\/$/;"	e	enum:sha256_algos	file:
+ARRAY_SIZE	miner.h	62;"	d
+B115200	gc3355.h	27;"	d
+Ch	sha2.c	51;"	d	file:
+DEF_RPC_URL	cpu-miner.c	42;"	d	file:
+EXTERN_SHA256	sha2.c	18;"	d	file:
+GC3355_MINER_VERSION	gc3355.h	31;"	d
+GC3355_VERSION	gc3355.h	32;"	d
+GRIDSEED_LTC_PROXY_PORT	gc3355.h	36;"	d
+HAVE_ALLOCA	cpuminer-config.h	13;"	d
+HAVE_ALLOCA_H	cpuminer-config.h	17;"	d
+HAVE_DECL_BE32DEC	cpuminer-config.h	21;"	d
+HAVE_DECL_BE32ENC	cpuminer-config.h	25;"	d
+HAVE_DECL_LE32DEC	cpuminer-config.h	29;"	d
+HAVE_DECL_LE32ENC	cpuminer-config.h	33;"	d
+HAVE_GETOPT_LONG	cpuminer-config.h	36;"	d
+HAVE_INTTYPES_H	cpuminer-config.h	39;"	d
+HAVE_LIBCURL	cpuminer-config.h	42;"	d
+HAVE_MEMORY_H	cpuminer-config.h	45;"	d
+HAVE_SCRYPT_3WAY	scrypt.c	384;"	d	file:
+HAVE_SCRYPT_3WAY	scrypt.c	407;"	d	file:
+HAVE_SCRYPT_6WAY	scrypt.c	391;"	d	file:
+HAVE_SHA256_4WAY	miner.h	138;"	d
+HAVE_SHA256_4WAY	scrypt.c	405;"	d	file:
+HAVE_SHA256_8WAY	miner.h	145;"	d
+HAVE_STDINT_H	cpuminer-config.h	48;"	d
+HAVE_STDLIB_H	cpuminer-config.h	51;"	d
+HAVE_STRINGS_H	cpuminer-config.h	54;"	d
+HAVE_STRING_H	cpuminer-config.h	57;"	d
+HAVE_SYSLOG_H	cpuminer-config.h	60;"	d
+HAVE_SYS_PARAM_H	cpuminer-config.h	66;"	d
+HAVE_SYS_STAT_H	cpuminer-config.h	69;"	d
+HAVE_SYS_SYSCTL_H	cpuminer-config.h	72;"	d
+HAVE_SYS_TYPES_H	cpuminer-config.h	75;"	d
+HAVE_UNISTD_H	cpuminer-config.h	78;"	d
+HMAC_SHA256_80_init	scrypt.c	/^static inline void HMAC_SHA256_80_init(const uint32_t *key,$/;"	f	file:
+HMAC_SHA256_80_init_4way	scrypt.c	/^static inline void HMAC_SHA256_80_init_4way(const uint32_t *key,$/;"	f	file:
+HMAC_SHA256_80_init_8way	scrypt.c	/^static inline void HMAC_SHA256_80_init_8way(const uint32_t *key,$/;"	f	file:
+INIT_LIST_HEAD	elist.h	23;"	d
+JSON_LOADS	miner.h	126;"	d
+JSON_LOADS	miner.h	128;"	d
+LIBCURL_FEATURE_IDN	cpuminer-config.h	84;"	d
+LIBCURL_FEATURE_IPV6	cpuminer-config.h	87;"	d
+LIBCURL_FEATURE_LIBZ	cpuminer-config.h	93;"	d
+LIBCURL_FEATURE_NTLM	cpuminer-config.h	96;"	d
+LIBCURL_FEATURE_SSL	cpuminer-config.h	99;"	d
+LIBCURL_PROTOCOL_DICT	cpuminer-config.h	105;"	d
+LIBCURL_PROTOCOL_FILE	cpuminer-config.h	108;"	d
+LIBCURL_PROTOCOL_FTP	cpuminer-config.h	111;"	d
+LIBCURL_PROTOCOL_FTPS	cpuminer-config.h	114;"	d
+LIBCURL_PROTOCOL_HTTP	cpuminer-config.h	117;"	d
+LIBCURL_PROTOCOL_HTTPS	cpuminer-config.h	120;"	d
+LIBCURL_PROTOCOL_IMAP	cpuminer-config.h	123;"	d
+LIBCURL_PROTOCOL_LDAP	cpuminer-config.h	126;"	d
+LIBCURL_PROTOCOL_POP3	cpuminer-config.h	129;"	d
+LIBCURL_PROTOCOL_RTSP	cpuminer-config.h	132;"	d
+LIBCURL_PROTOCOL_SMTP	cpuminer-config.h	135;"	d
+LIBCURL_PROTOCOL_TELNET	cpuminer-config.h	138;"	d
+LIBCURL_PROTOCOL_TFTP	cpuminer-config.h	141;"	d
+LIST_HEAD	elist.h	20;"	d
+LIST_HEAD_INIT	elist.h	18;"	d
+LOG_DEBUG	miner.h	/^	LOG_DEBUG,$/;"	e	enum:__anon3
+LOG_ERR	miner.h	/^	LOG_ERR,$/;"	e	enum:__anon3
+LOG_INFO	miner.h	/^	LOG_INFO,$/;"	e	enum:__anon3
+LOG_NOTICE	miner.h	/^	LOG_NOTICE,$/;"	e	enum:__anon3
+LOG_WARNING	miner.h	/^	LOG_WARNING,$/;"	e	enum:__anon3
+LP_SCANTIME	cpu-miner.c	43;"	d	file:
+Maj	sha2.c	52;"	d	file:
+PACKAGE	cpuminer-config.h	147;"	d
+PACKAGE_BUGREPORT	cpuminer-config.h	150;"	d
+PACKAGE_NAME	cpuminer-config.h	153;"	d
+PACKAGE_STRING	cpuminer-config.h	156;"	d
+PACKAGE_TARNAME	cpuminer-config.h	159;"	d
+PACKAGE_URL	cpuminer-config.h	162;"	d
+PACKAGE_VERSION	cpuminer-config.h	165;"	d
+PBKDF2_SHA256_128_32	scrypt.c	/^static inline void PBKDF2_SHA256_128_32(uint32_t *tstate, uint32_t *ostate,$/;"	f	file:
+PBKDF2_SHA256_128_32_4way	scrypt.c	/^static inline void PBKDF2_SHA256_128_32_4way(uint32_t *tstate,$/;"	f	file:
+PBKDF2_SHA256_128_32_8way	scrypt.c	/^static inline void PBKDF2_SHA256_128_32_8way(uint32_t *tstate,$/;"	f	file:
+PBKDF2_SHA256_80_128	scrypt.c	/^static inline void PBKDF2_SHA256_80_128(const uint32_t *tstate,$/;"	f	file:
+PBKDF2_SHA256_80_128_4way	scrypt.c	/^static inline void PBKDF2_SHA256_80_128_4way(const uint32_t *tstate,$/;"	f	file:
+PBKDF2_SHA256_80_128_8way	scrypt.c	/^static inline void PBKDF2_SHA256_80_128_8way(const uint32_t *tstate,$/;"	f	file:
+PRIO_PROCESS	compat.h	/^	PRIO_PROCESS		= 0,$/;"	e	enum:__anon2
+PROGRAM_NAME	cpu-miner.c	41;"	d	file:
+R	scrypt.c	436;"	d	file:
+R	scrypt.c	462;"	d	file:
+RBUFSIZE	util.c	641;"	d	file:
+RECVSIZE	util.c	642;"	d	file:
+RND	sha2.c	60;"	d	file:
+RNDr	sha2.c	69;"	d	file:
+ROTR	sha2.c	53;"	d	file:
+S0	sha2.c	54;"	d	file:
+S1	sha2.c	55;"	d	file:
+SCRYPT_BUFFER_SIZE	scrypt.c	507;"	d	file:
+SCRYPT_MAX_WAYS	scrypt.c	383;"	d	file:
+SCRYPT_MAX_WAYS	scrypt.c	389;"	d	file:
+SCRYPT_MAX_WAYS	scrypt.c	390;"	d	file:
+SCRYPT_MAX_WAYS	scrypt.c	397;"	d	file:
+SCRYPT_MAX_WAYS	scrypt.c	406;"	d	file:
+SCRYPT_MAX_WAYS	scrypt.c	503;"	d	file:
+STDC_HEADERS	cpuminer-config.h	176;"	d
+USER_AGENT	miner.h	131;"	d
+USE_AVX	cpuminer-config.h	179;"	d
+USE_AVX2	cpuminer-config.h	182;"	d
+USE_XOP	cpuminer-config.h	185;"	d
+VERSION	cpuminer-config.h	188;"	d
+WANT_BUILTIN_BSWAP	miner.h	66;"	d
+WC_GET_WORK	cpu-miner.c	/^	WC_GET_WORK,$/;"	e	enum:workio_commands	file:
+WC_SUBMIT_WORK	cpu-miner.c	/^	WC_SUBMIT_WORK,$/;"	e	enum:workio_commands	file:
+_GNU_SOURCE	cpu-miner.c	12;"	d	file:
+_GNU_SOURCE	util.c	11;"	d	file:
+_LINUX_LIST_H	elist.h	2;"	d
+__COMPAT_H__	compat.h	2;"	d
+__MINER_H__	miner.h	2;"	d
+__list_add	elist.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_del	elist.h	/^static inline void __list_del(struct list_head *prev, struct list_head *next)$/;"	f
+__list_splice	elist.h	/^static inline void __list_splice(struct list_head *list,$/;"	f
+accepted_count	cpu-miner.c	/^static unsigned long accepted_count = 0L;$/;"	v	file:
+affine_to_cpu	cpu-miner.c	/^static inline void affine_to_cpu(int id, int cpu)$/;"	f	file:
+algo_names	cpu-miner.c	/^static const char *algo_names[] = {$/;"	v	file:
+all_data_cb	util.c	/^static size_t all_data_cb(const void *ptr, size_t size, size_t nmemb,$/;"	f	file:
+alloca	miner.h	25;"	d
+alloca	miner.h	27;"	d
+alloca	miner.h	30;"	d
+applog	util.c	/^void applog(int prio, const char *fmt, ...)$/;"	f
+applog_lock	cpu-miner.c	/^pthread_mutex_t applog_lock;$/;"	v
+be32dec	miner.h	/^static inline uint32_t be32dec(const void *pp)$/;"	f
+be32enc	miner.h	/^static inline void be32enc(void *pp, uint32_t x)$/;"	f
+bin2hex	util.c	/^char *bin2hex(const unsigned char *p, size_t len)$/;"	f
+bswap_32	miner.h	68;"	d
+buf	util.c	/^	const void	*buf;$/;"	m	struct:upload_buffer	file:
+buf	util.c	/^	void		*buf;$/;"	m	struct:data_buffer	file:
+check_udp_port_in_use	gc3355.h	/^static int check_udp_port_in_use(short port)$/;"	f
+clean	miner.h	/^	bool clean;$/;"	m	struct:stratum_job
+cmd	cpu-miner.c	/^	enum workio_commands	cmd;$/;"	m	struct:workio_cmd	typeref:enum:workio_cmd::workio_commands	file:
+cmd_chipbaud	gc3355.h	/^static const char *cmd_chipbaud[] = {$/;"	v
+cmd_enablecors	gc3355.h	/^static const char *cmd_enablecors[] = {$/;"	v
+cmd_frequency	gc3355.h	/^static const char *cmd_frequency[] = {$/;"	v
+coinbase	miner.h	/^	unsigned char *coinbase;$/;"	m	struct:stratum_job
+coinbase_size	miner.h	/^	size_t coinbase_size;$/;"	m	struct:stratum_job
+cond	util.c	/^	pthread_cond_t		cond;$/;"	m	struct:thread_q	file:
+create_gc3355_miner_threads	gc3355.h	/^static int create_gc3355_miner_threads(struct thr_info *thr_info, int opt_n_threads)$/;"	f
+curl	miner.h	/^	CURL *curl;$/;"	m	struct:stratum_ctx
+curl_err_str	miner.h	/^	char curl_err_str[CURL_ERROR_SIZE];$/;"	m	struct:stratum_ctx
+curl_url	miner.h	/^	char *curl_url;$/;"	m	struct:stratum_ctx
+data	cpu-miner.c	/^	uint32_t data[32];$/;"	m	struct:work	file:
+data	util.c	/^	void			*data;$/;"	m	struct:tq_ent	file:
+data_buffer	util.c	/^struct data_buffer {$/;"	s	file:
+databuf_free	util.c	/^static void databuf_free(struct data_buffer *db)$/;"	f	file:
+dev_fd	gc3355.h	/^	int		dev_fd;$/;"	m	struct:gc3355_dev
+devname	miner.h	/^	unsigned char *devname;$/;"	m	struct:thr_info
+diff	miner.h	/^	double diff;$/;"	m	struct:stratum_job
+diff_to_target	util.c	/^void diff_to_target(uint32_t *target, double diff)$/;"	f
+drop_policy	cpu-miner.c	/^static inline void drop_policy(void)$/;"	f	file:
+finalblk	scrypt.c	/^static const uint32_t finalblk[16] = {$/;"	v	file:
+finalblk_4way	scrypt.c	/^static const uint32_t finalblk_4way[4 * 16] __attribute__((aligned(16))) = {$/;"	v	file:
+finalblk_8way	scrypt.c	/^static const uint32_t finalblk_8way[8 * 16] __attribute__((aligned(32))) = {$/;"	v	file:
+flag	cpu-miner.c	/^	int *flag;$/;"	m	struct:option	file:
+frozen	util.c	/^	bool frozen;$/;"	m	struct:thread_q	file:
+fulltest	util.c	/^bool fulltest(const uint32_t *hash, const uint32_t *target)$/;"	f
+g_work	cpu-miner.c	/^static struct work g_work;$/;"	v	typeref:struct:work	file:
+g_work_lock	cpu-miner.c	/^static pthread_mutex_t g_work_lock;$/;"	v	file:
+g_work_time	cpu-miner.c	/^static time_t g_work_time;$/;"	v	file:
+gc3355_close	gc3355.h	/^static void gc3355_close(int fd)$/;"	f
+gc3355_create_proxy	gc3355.h	/^static int gc3355_create_proxy(struct gc3355_dev *gc3355)$/;"	f
+gc3355_dev	cpu-miner.c	/^static char *gc3355_dev = NULL;$/;"	v	file:
+gc3355_dev	gc3355.h	/^struct gc3355_dev {$/;"	s
+gc3355_gets	gc3355.h	/^static int gc3355_gets(struct gc3355_dev *gc3355, unsigned char *buf, int read_count)$/;"	f
+gc3355_open	gc3355.h	/^static int gc3355_open(struct gc3355_dev *gc3355, const char *devname, speed_t baud)$/;"	f
+gc3355_recv_ltc_nonce	gc3355.h	/^static int gc3355_recv_ltc_nonce(struct gc3355_dev *gc3355, unsigned char *buf, int read_count)$/;"	f
+gc3355_scanhash	gc3355.h	/^static int gc3355_scanhash(struct gc3355_dev *gc3355, uint32_t *pdata, unsigned char *scratchbuf,$/;"	f
+gc3355_send_cmds	gc3355.h	/^static void gc3355_send_cmds(struct gc3355_dev *gc3355, const char *cmds[])$/;"	f
+gc3355_send_ltc_task	gc3355.h	/^static void gc3355_send_ltc_task(struct gc3355_dev *gc3355, unsigned char *buf, int buflen)$/;"	f
+gc3355_set_core_freq	gc3355.h	/^static void gc3355_set_core_freq(struct gc3355_dev *gc3355, const char *freq)$/;"	f
+gc3355_thread	gc3355.h	/^static void *gc3355_thread(void *userdata)$/;"	f
+gc3355_version	gc3355.h	/^static const char *gc3355_version = GC3355_MINER_VERSION;$/;"	v
+gc3355_write	gc3355.h	/^static int gc3355_write(struct gc3355_dev *gc3355, const void *buf, size_t buflen)$/;"	f
+get_stratum_session_id	util.c	/^static const char *get_stratum_session_id(json_t *val)$/;"	f	file:
+get_upstream_work	cpu-miner.c	/^static bool get_upstream_work(CURL *curl, struct work *work)$/;"	f	file:
+get_work	cpu-miner.c	/^static bool get_work(struct thr_info *thr, struct work *work)$/;"	f	file:
+has_arg	cpu-miner.c	/^	int has_arg;$/;"	m	struct:option	file:
+have_longpoll	cpu-miner.c	/^bool have_longpoll = false;$/;"	v
+have_stratum	cpu-miner.c	/^bool have_stratum = false;$/;"	v
+header_info	util.c	/^struct header_info {$/;"	s	file:
+hex2bin	util.c	/^bool hex2bin(unsigned char *p, const char *hexstr, size_t len)$/;"	f
+id	gc3355.h	/^	int		id;$/;"	m	struct:gc3355_dev
+id	miner.h	/^	int		id;$/;"	m	struct:thr_info
+innerpad	scrypt.c	/^static const uint32_t innerpad[11] = {$/;"	v	file:
+innerpad_4way	scrypt.c	/^static const uint32_t innerpad_4way[4 * 11] = {$/;"	v	file:
+job	miner.h	/^	struct stratum_job job;$/;"	m	struct:stratum_ctx	typeref:struct:stratum_ctx::stratum_job
+job_id	cpu-miner.c	/^	char job_id[128];$/;"	m	struct:work	file:
+job_id	miner.h	/^	char *job_id;$/;"	m	struct:stratum_job
+jobj_binary	cpu-miner.c	/^static bool jobj_binary(const json_t *obj, const char *key,$/;"	f	file:
+json_rpc_call	util.c	/^json_t *json_rpc_call(CURL *curl, const char *url,$/;"	f
+keypad	scrypt.c	/^static const uint32_t keypad[12] = {$/;"	v	file:
+keypad_4way	scrypt.c	/^static const uint32_t keypad_4way[4 * 12] = {$/;"	v	file:
+le32dec	miner.h	/^static inline uint32_t le32dec(const void *pp)$/;"	f
+le32enc	miner.h	/^static inline void le32enc(void *pp, uint32_t x)$/;"	f
+len	util.c	/^	size_t		len;$/;"	m	struct:data_buffer	file:
+len	util.c	/^	size_t		len;$/;"	m	struct:upload_buffer	file:
+likely	miner.h	52;"	d
+likely	miner.h	55;"	d
+likely	miner.h	58;"	d
+list_add	elist.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	elist.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_del	elist.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	elist.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	elist.h	/^static inline int list_empty(struct list_head *head)$/;"	f
+list_entry	elist.h	183;"	d
+list_for_each	elist.h	191;"	d
+list_for_each_entry	elist.h	219;"	d
+list_for_each_entry_continue	elist.h	244;"	d
+list_for_each_entry_safe	elist.h	231;"	d
+list_for_each_prev	elist.h	199;"	d
+list_for_each_safe	elist.h	209;"	d
+list_head	elist.h	/^struct list_head {$/;"	s
+list_move	elist.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	elist.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_splice	elist.h	/^static inline void list_splice(struct list_head *list, struct list_head *head)$/;"	f
+list_splice_init	elist.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+longpoll_thr_id	cpu-miner.c	/^int longpoll_thr_id = -1;$/;"	v
+longpoll_thread	cpu-miner.c	/^static void *longpoll_thread(void *userdata)$/;"	f	file:
+lp_path	util.c	/^	char		*lp_path;$/;"	m	struct:header_info	file:
+main	cpu-miner.c	/^int main(int argc, char *argv[])$/;"	f
+merkle	miner.h	/^	unsigned char **merkle;$/;"	m	struct:stratum_job
+merkle_count	miner.h	/^	int merkle_count;$/;"	m	struct:stratum_job
+miner_thread	cpu-miner.c	/^static void *miner_thread(void *userdata)$/;"	f	file:
+mutex	util.c	/^	pthread_mutex_t		mutex;$/;"	m	struct:thread_q	file:
+name	cpu-miner.c	/^	const char *name;$/;"	m	struct:option	file:
+nbits	miner.h	/^	unsigned char nbits[4];$/;"	m	struct:stratum_job
+next	elist.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+next_diff	miner.h	/^	double next_diff;$/;"	m	struct:stratum_ctx
+ntime	miner.h	/^	unsigned char ntime[4];$/;"	m	struct:stratum_job
+num_processors	cpu-miner.c	/^static int num_processors;$/;"	v	file:
+opensocket_grab_cb	util.c	/^static curl_socket_t opensocket_grab_cb(void *clientp, curlsocktype purpose,$/;"	f	file:
+opt_algo	cpu-miner.c	/^static enum sha256_algos opt_algo = ALGO_SCRYPT;$/;"	v	typeref:enum:sha256_algos	file:
+opt_background	cpu-miner.c	/^static bool opt_background = false;$/;"	v	file:
+opt_benchmark	cpu-miner.c	/^static bool opt_benchmark = false;$/;"	v	file:
+opt_cert	cpu-miner.c	/^char *opt_cert;$/;"	v
+opt_config	cpu-miner.c	/^static json_t *opt_config;$/;"	v	file:
+opt_debug	cpu-miner.c	/^bool opt_debug = false;$/;"	v
+opt_dual	cpu-miner.c	/^bool opt_dual = false;$/;"	v
+opt_fail_pause	cpu-miner.c	/^static int opt_fail_pause = 30;$/;"	v	file:
+opt_frequency	cpu-miner.c	/^static char *opt_frequency = NULL;$/;"	v	file:
+opt_n_threads	cpu-miner.c	/^static int opt_n_threads;$/;"	v	file:
+opt_protocol	cpu-miner.c	/^bool opt_protocol = false;$/;"	v
+opt_proxy	cpu-miner.c	/^char *opt_proxy;$/;"	v
+opt_proxy_type	cpu-miner.c	/^long opt_proxy_type;$/;"	v
+opt_quiet	cpu-miner.c	/^static bool opt_quiet = false;$/;"	v	file:
+opt_retries	cpu-miner.c	/^static int opt_retries = -1;$/;"	v	file:
+opt_scantime	cpu-miner.c	/^int opt_scantime = 5;$/;"	v
+opt_time	cpu-miner.c	/^static const bool opt_time = true;$/;"	v	file:
+opt_timeout	cpu-miner.c	/^int opt_timeout = 270;$/;"	v
+option	cpu-miner.c	/^struct option {$/;"	s	file:
+options	cpu-miner.c	/^static struct option const options[] = {$/;"	v	file:
+outerpad	scrypt.c	/^static const uint32_t outerpad[8] = {$/;"	v	file:
+outerpad_4way	scrypt.c	/^static const uint32_t outerpad_4way[4 * 8] = {$/;"	v	file:
+padding	miner.h	/^	char			padding[128 - sizeof(unsigned long)];$/;"	m	struct:work_restart
+parse_arg	cpu-miner.c	/^static void parse_arg (int key, char *arg)$/;"	f	file:
+parse_cmdline	cpu-miner.c	/^static void parse_cmdline(int argc, char *argv[])$/;"	f	file:
+parse_config	cpu-miner.c	/^static void parse_config(void)$/;"	f	file:
+pos	util.c	/^	size_t		pos;$/;"	m	struct:upload_buffer	file:
+prev	elist.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+prevhash	miner.h	/^	unsigned char prevhash[32];$/;"	m	struct:stratum_job
+print_hex	gc3355.h	/^static void print_hex(unsigned char *data, int len)$/;"	f
+pth	miner.h	/^	pthread_t	pth;$/;"	m	struct:thr_info
+q	miner.h	/^	struct thread_q	*q;$/;"	m	struct:thr_info	typeref:struct:thr_info::thread_q
+q	util.c	/^	struct list_head	q;$/;"	m	struct:thread_q	typeref:struct:thread_q::list_head	file:
+q_node	util.c	/^	struct list_head	q_node;$/;"	m	struct:tq_ent	typeref:struct:tq_ent::list_head	file:
+r_port	gc3355.h	/^	short	r_port; \/* local port to recv request *\/$/;"	m	struct:gc3355_dev
+reason	util.c	/^	char		*reason;$/;"	m	struct:header_info	file:
+rejected_count	cpu-miner.c	/^static unsigned long rejected_count = 0L;$/;"	v	file:
+resp_hdr_cb	util.c	/^static size_t resp_hdr_cb(void *ptr, size_t size, size_t nmemb, void *user_data)$/;"	f	file:
+restart	miner.h	/^	volatile unsigned long	restart;$/;"	m	struct:work_restart
+restart_threads	cpu-miner.c	/^static void restart_threads(void)$/;"	f	file:
+rpc_pass	cpu-miner.c	/^static char *rpc_user, *rpc_pass;$/;"	v	file:
+rpc_req	cpu-miner.c	/^static const char *rpc_req =$/;"	v	file:
+rpc_url	cpu-miner.c	/^static char *rpc_url;$/;"	v	file:
+rpc_user	cpu-miner.c	/^static char *rpc_user, *rpc_pass;$/;"	v	file:
+rpc_userpass	cpu-miner.c	/^static char *rpc_userpass;$/;"	v	file:
+s0	sha2.c	56;"	d	file:
+s1	sha2.c	57;"	d	file:
+s_port	gc3355.h	/^	short	s_port; \/* remote port to send response *\/$/;"	m	struct:gc3355_dev
+scanhash_scrypt	scrypt.c	/^int scanhash_scrypt(int thr_id, uint32_t *pdata,$/;"	f
+scanhash_sha256d	sha2.c	/^int scanhash_sha256d(int thr_id, uint32_t *pdata, const uint32_t *ptarget,$/;"	f
+scanhash_sha256d_4way	sha2.c	/^static inline int scanhash_sha256d_4way(int thr_id, uint32_t *pdata,$/;"	f	file:
+scanhash_sha256d_8way	sha2.c	/^static inline int scanhash_sha256d_8way(int thr_id, uint32_t *pdata,$/;"	f	file:
+scrypt_1024_1_1_256	scrypt.c	/^extern void scrypt_1024_1_1_256(const uint32_t *input, uint32_t *output,$/;"	f
+scrypt_1024_1_1_256_12way	scrypt.c	/^static void scrypt_1024_1_1_256_12way(const uint32_t *input,$/;"	f	file:
+scrypt_1024_1_1_256_24way	scrypt.c	/^static void scrypt_1024_1_1_256_24way(const uint32_t *input,$/;"	f	file:
+scrypt_1024_1_1_256_3way	scrypt.c	/^static void scrypt_1024_1_1_256_3way(const uint32_t *input,$/;"	f	file:
+scrypt_1024_1_1_256_4way	scrypt.c	/^static void scrypt_1024_1_1_256_4way(const uint32_t *input,$/;"	f	file:
+scrypt_best_throughput	scrypt.c	398;"	d	file:
+scrypt_best_throughput	scrypt.c	408;"	d	file:
+scrypt_best_throughput	scrypt.c	504;"	d	file:
+scrypt_buffer_alloc	scrypt.c	/^unsigned char *scrypt_buffer_alloc()$/;"	f
+scrypt_core	scrypt.c	/^static inline void scrypt_core(uint32_t *X, uint32_t *V)$/;"	f	file:
+seek_data_cb	util.c	/^static int seek_data_cb(void *user_data, curl_off_t offset, int origin)$/;"	f	file:
+send_line	util.c	/^static bool send_line(curl_socket_t sock, char *s)$/;"	f	file:
+session_id	miner.h	/^	char *session_id;$/;"	m	struct:stratum_ctx
+set_text_color	gc3355.h	/^static void set_text_color(WORD color)$/;"	f
+setpriority	compat.h	/^static inline int setpriority(int which, int who, int prio)$/;"	f
+sha256_algos	cpu-miner.c	/^enum sha256_algos {$/;"	g	file:
+sha256_h	sha2.c	/^static const uint32_t sha256_h[8] = {$/;"	v	file:
+sha256_init	sha2.c	/^void sha256_init(uint32_t *state)$/;"	f
+sha256_k	sha2.c	/^static const uint32_t sha256_k[64] = {$/;"	v	file:
+sha256_transform	sha2.c	/^void sha256_transform(uint32_t *state, const uint32_t *block, int swap)$/;"	f
+sha256d	sha2.c	/^void sha256d(unsigned char *hash, const unsigned char *data, int len)$/;"	f
+sha256d_80_swap	sha2.c	/^static void sha256d_80_swap(uint32_t *hash, const uint32_t *data)$/;"	f	file:
+sha256d_hash1	sha2.c	/^static const uint32_t sha256d_hash1[16] = {$/;"	v	file:
+sha256d_ms	sha2.c	/^static inline void sha256d_ms(uint32_t *hash, uint32_t *W,$/;"	f	file:
+sha256d_preextend	sha2.c	/^static inline void sha256d_preextend(uint32_t *W)$/;"	f	file:
+sha256d_prehash	sha2.c	/^static inline void sha256d_prehash(uint32_t *S, const uint32_t *W)$/;"	f	file:
+share_result	cpu-miner.c	/^static void share_result(int result, const char *reason)$/;"	f	file:
+short_options	cpu-miner.c	/^static char const short_options[] =$/;"	v	file:
+show_usage_and_exit	cpu-miner.c	/^static void show_usage_and_exit(int status)$/;"	f	file:
+show_version_and_exit	cpu-miner.c	/^static void show_version_and_exit(void)$/;"	f	file:
+signal_handler	cpu-miner.c	/^void signal_handler(int sig)$/;"	f
+single_cmd_init	gc3355.h	/^static const char *single_cmd_init[] = {$/;"	v
+single_cmd_reset	gc3355.h	/^static const char *single_cmd_reset[] = {$/;"	v
+sleep	compat.h	8;"	d
+sock	miner.h	/^	curl_socket_t sock;$/;"	m	struct:stratum_ctx
+sock_lock	miner.h	/^	pthread_mutex_t sock_lock;$/;"	m	struct:stratum_ctx
+sockbuf	miner.h	/^	char *sockbuf;$/;"	m	struct:stratum_ctx
+sockbuf_size	miner.h	/^	size_t sockbuf_size;$/;"	m	struct:stratum_ctx
+socket_blocks	util.c	574;"	d	file:
+socket_blocks	util.c	576;"	d	file:
+socket_full	util.c	/^static bool socket_full(curl_socket_t sock, int timeout)$/;"	f	file:
+sockltc	gc3355.h	/^	int		sockltc;$/;"	m	struct:gc3355_dev
+sockopt_keepalive_cb	util.c	/^static int sockopt_keepalive_cb(void *userdata, curl_socket_t fd,$/;"	f	file:
+speed_t	gc3355.h	/^typedef unsigned int speed_t;$/;"	t
+stats_lock	cpu-miner.c	/^pthread_mutex_t stats_lock;$/;"	v
+str_frequency	gc3355.h	/^static const char *str_frequency[] = {$/;"	v
+stratum	cpu-miner.c	/^static struct stratum_ctx stratum;$/;"	v	typeref:struct:stratum_ctx	file:
+stratum_authorize	util.c	/^bool stratum_authorize(struct stratum_ctx *sctx, const char *user, const char *pass)$/;"	f
+stratum_buffer_append	util.c	/^static void stratum_buffer_append(struct stratum_ctx *sctx, const char *s)$/;"	f	file:
+stratum_connect	util.c	/^bool stratum_connect(struct stratum_ctx *sctx, const char *url)$/;"	f
+stratum_ctx	miner.h	/^struct stratum_ctx {$/;"	s
+stratum_disconnect	util.c	/^void stratum_disconnect(struct stratum_ctx *sctx)$/;"	f
+stratum_gen_work	cpu-miner.c	/^static void stratum_gen_work(struct stratum_ctx *sctx, struct work *work)$/;"	f	file:
+stratum_get_version	util.c	/^static bool stratum_get_version(struct stratum_ctx *sctx, json_t *id)$/;"	f	file:
+stratum_handle_method	util.c	/^bool stratum_handle_method(struct stratum_ctx *sctx, const char *s)$/;"	f
+stratum_handle_response	cpu-miner.c	/^static bool stratum_handle_response(char *buf)$/;"	f	file:
+stratum_job	miner.h	/^struct stratum_job {$/;"	s
+stratum_notify	util.c	/^static bool stratum_notify(struct stratum_ctx *sctx, json_t *params)$/;"	f	file:
+stratum_reconnect	util.c	/^static bool stratum_reconnect(struct stratum_ctx *sctx, json_t *params)$/;"	f	file:
+stratum_recv_line	util.c	/^char *stratum_recv_line(struct stratum_ctx *sctx)$/;"	f
+stratum_send_line	util.c	/^bool stratum_send_line(struct stratum_ctx *sctx, char *s)$/;"	f
+stratum_set_difficulty	util.c	/^static bool stratum_set_difficulty(struct stratum_ctx *sctx, json_t *params)$/;"	f	file:
+stratum_show_message	util.c	/^static bool stratum_show_message(struct stratum_ctx *sctx, json_t *id, json_t *params)$/;"	f	file:
+stratum_socket_full	util.c	/^bool stratum_socket_full(struct stratum_ctx *sctx, int timeout)$/;"	f
+stratum_subscribe	util.c	/^bool stratum_subscribe(struct stratum_ctx *sctx)$/;"	f
+stratum_thr_id	cpu-miner.c	/^int stratum_thr_id = -1;$/;"	v
+stratum_thread	cpu-miner.c	/^static void *stratum_thread(void *userdata)$/;"	f	file:
+stratum_url	util.c	/^	char		*stratum_url;$/;"	m	struct:header_info	file:
+submit_old	cpu-miner.c	/^static bool submit_old = false;$/;"	v	file:
+submit_upstream_work	cpu-miner.c	/^static bool submit_upstream_work(CURL *curl, struct work *work)$/;"	f	file:
+submit_work	cpu-miner.c	/^static bool submit_work(struct thr_info *thr, const struct work *work_in)$/;"	f	file:
+swab32	miner.h	/^static inline uint32_t swab32(uint32_t v)$/;"	f
+target	cpu-miner.c	/^	uint32_t target[8];$/;"	m	struct:work	file:
+thr	cpu-miner.c	/^	struct thr_info		*thr;$/;"	m	struct:workio_cmd	typeref:struct:workio_cmd::thr_info	file:
+thr_hashrates	cpu-miner.c	/^double *thr_hashrates;$/;"	v
+thr_info	cpu-miner.c	/^struct thr_info *thr_info;$/;"	v	typeref:struct:thr_info
+thr_info	miner.h	/^struct thr_info {$/;"	s
+thread_q	util.c	/^struct thread_q {$/;"	s	file:
+timeval_subtract	util.c	/^int timeval_subtract(struct timeval *result, struct timeval *x,$/;"	f
+toaddr	gc3355.h	/^	struct sockaddr_in	toaddr; \/* remote address to send response *\/$/;"	m	struct:gc3355_dev	typeref:struct:gc3355_dev::sockaddr_in
+tq_ent	util.c	/^struct tq_ent {$/;"	s	file:
+tq_free	util.c	/^void tq_free(struct thread_q *tq)$/;"	f
+tq_freeze	util.c	/^void tq_freeze(struct thread_q *tq)$/;"	f
+tq_freezethaw	util.c	/^static void tq_freezethaw(struct thread_q *tq, bool frozen)$/;"	f	file:
+tq_new	util.c	/^struct thread_q *tq_new(void)$/;"	f
+tq_pop	util.c	/^void *tq_pop(struct thread_q *tq, const struct timespec *abstime)$/;"	f
+tq_push	util.c	/^bool tq_push(struct thread_q *tq, void *data)$/;"	f
+tq_thaw	util.c	/^void tq_thaw(struct thread_q *tq)$/;"	f
+u	cpu-miner.c	/^	} u;$/;"	m	struct:workio_cmd	typeref:union:workio_cmd::__anon1	file:
+unlikely	miner.h	51;"	d
+unlikely	miner.h	54;"	d
+unlikely	miner.h	57;"	d
+upload_buffer	util.c	/^struct upload_buffer {$/;"	s	file:
+upload_data_cb	util.c	/^static size_t upload_data_cb(void *ptr, size_t size, size_t nmemb,$/;"	f	file:
+url	miner.h	/^	char *url;$/;"	m	struct:stratum_ctx
+usage	cpu-miner.c	/^static char const usage[] = "\\$/;"	v	file:
+use_syslog	cpu-miner.c	/^bool use_syslog = false;$/;"	v
+val	cpu-miner.c	/^	int val;$/;"	m	struct:option	file:
+version	miner.h	/^	unsigned char version[4];$/;"	m	struct:stratum_job
+want_longpoll	cpu-miner.c	/^bool want_longpoll = true;$/;"	v
+want_stratum	cpu-miner.c	/^bool want_stratum = true;$/;"	v
+work	cpu-miner.c	/^		struct work	*work;$/;"	m	union:workio_cmd::__anon1	typeref:struct:workio_cmd::__anon1::work	file:
+work	cpu-miner.c	/^struct work {$/;"	s	file:
+work_decode	cpu-miner.c	/^static bool work_decode(const json_t *val, struct work *work)$/;"	f	file:
+work_lock	miner.h	/^	pthread_mutex_t work_lock;$/;"	m	struct:stratum_ctx
+work_restart	cpu-miner.c	/^struct work_restart *work_restart = NULL;$/;"	v	typeref:struct:work_restart
+work_restart	miner.h	/^struct work_restart {$/;"	s
+work_thr_id	cpu-miner.c	/^static int work_thr_id;$/;"	v	file:
+workio_cmd	cpu-miner.c	/^struct workio_cmd {$/;"	s	file:
+workio_cmd_free	cpu-miner.c	/^static void workio_cmd_free(struct workio_cmd *wc)$/;"	f	file:
+workio_commands	cpu-miner.c	/^enum workio_commands {$/;"	g	file:
+workio_get_work	cpu-miner.c	/^static bool workio_get_work(struct workio_cmd *wc, CURL *curl)$/;"	f	file:
+workio_submit_work	cpu-miner.c	/^static bool workio_submit_work(struct workio_cmd *wc, CURL *curl)$/;"	f	file:
+workio_thread	cpu-miner.c	/^static void *workio_thread(void *userdata)$/;"	f	file:
+xnonce1	miner.h	/^	unsigned char *xnonce1;$/;"	m	struct:stratum_ctx
+xnonce1_size	miner.h	/^	size_t xnonce1_size;$/;"	m	struct:stratum_ctx
+xnonce2	cpu-miner.c	/^	unsigned char xnonce2[32];$/;"	m	struct:work	file:
+xnonce2	miner.h	/^	unsigned char *xnonce2;$/;"	m	struct:stratum_job
+xnonce2_len	cpu-miner.c	/^	size_t xnonce2_len;$/;"	m	struct:work	file:
+xnonce2_size	miner.h	/^	size_t xnonce2_size;$/;"	m	struct:stratum_ctx
+xor_salsa8	scrypt.c	/^static inline void xor_salsa8(uint32_t B[16], const uint32_t Bx[16])$/;"	f	file:
