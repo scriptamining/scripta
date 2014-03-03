@@ -1,9 +1,9 @@
 ---== Scripta ==---
 The turnkey solution for litecoin mining with raspberry pi and fpga/asic boards
 
----===                     ===---  
+---===                                        ===---  
 ---=== INSTALL INTRUCTIONS ===---
----===                     ===---
+---===                                        ===---
 
 ---=== The easy way ===---
 1) Download the full image here 
@@ -13,7 +13,7 @@ The turnkey solution for litecoin mining with raspberry pi and fpga/asic boards
 5) Enjoy
 
 
----=== The way of the dragon ===---
+---=== The way of the turtle ===---
 
 Start from a fresh raspbian wheezy (2014-01-07)
 
