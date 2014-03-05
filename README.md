@@ -9,7 +9,7 @@ The turnkey solution for litecoin mining with raspberry pi and fpga/asic boards
 
 ---=== The easy way ===---
 
-1) Download the full image here
+1) Download the full image here http://www.lateralfactory.com/download.php?file=scripta-1_1.tgz
 
 2) Burn it on a ssd in your favourite way
 
