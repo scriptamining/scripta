@@ -1,0 +1,58 @@
+<h3>Backup</h3>
+
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+        <p class="help-block" ng-show="settings.userHelp">
+          <b>Add Item</b> allows you to include more files and/or folders into a backup.<br />
+          <b>Backup to device</b> will copy the selected items to the specified folder in the backup folder.<br />
+          <b>Export</b> will make a backup on device and then serve it as a download.
+        </p>
+        <p class="help-block" ng-show="settings.userHelp">
+          Backed up items will be confirmed by a green label. Problematic items get a red label.<br />
+          Click backup again and Scripta will attempt to backup the not yet backed up items again.
+        </p>
+        <button type="button" class="btn btn-default" ng-click="backupLocal()" ng-disabled="selItem()==0">Backup</button>
+        <button type="button" class="btn btn-default" ng-click="backupExport()" ng-disabled="selItem()==0">Export current configuration</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<h3>Restore</h3>
+<div class="row">
+  <div class="col-sm-3 col-md-2">
+    <div class="list-group">
+      <a href="" ng-repeat="b in backups" ng-click="choose($index)" class="list-group-item" ng-class="{active:restoring==$index}">{{b.dir}}</a>
+    </div>
+  </div>
+  <div class="col-sm-9 col-md-10">
+    <div ng-hide="backups[restoring].items" class="alert alert-warning">
+      There seems to be no files in this backup, this can happen if permission was denied.
+    </div>
+    <!-- <div class="list-group">
+      <div ng-repeat="i in backups[restoring].items" class="list-group-item">
+        {{i}}
+      </div>
+    </div> -->
+    <p class="help-block" ng-show="settings.userHelp">
+      <b>Reload list</b> will scan the backup folder for saved backups.<br />
+      <b>Restore</b> will copy the items in the currently selected backup to the active Scripta folder. Restart the miner to let it use the restored settings.<br />
+      <b>Export ...</b> will make a zipfile of the items in the currently selected backup and serve it as a download.<br />
+      <b>Import file...</b> lets you upload a zip file and will add it to the list of backups. If it does not show up, try to reload the list.
+    </p>
+    <button type="button" class="btn btn-default" ng-click="reload()">Reload list</button>
+    <button type="button" class="btn btn-default" ng-click="restore()">Restore</button>
+    <button type="button" class="btn btn-default" ng-click="exportZip()">Export archived backup</button>
+    <label for="file" class="btn btn-default">Import file...</label>
+  </div>
+</div>
+
+<div class="hide">
+  <form action="f_backup.php" method="post" enctype="multipart/form-data" target="norefresh">
+    <input type="file" name="file" id="file" onchange="document.getElementById('fileSubmit').click();" >
+    <input type="submit" name="submit" id="fileSubmit" value="Submit" id="importSubmit" ng-click="reload(500)">
+  </form>
+  <iframe id="norefresh" name="norefresh"></iframe>
+</div>

@@ -1,0 +1,153 @@
+body
+{
+	font-family: 'News Cycle', sans-serif;
+	color: #222;
+	line-height: 1.4;
+	text-rendering: optimizeLegibility;
+/* 	-webkit-text-stroke: 0.35px; */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'News Cycle', sans-serif;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+a, .btn { color: #68a72f; }
+a:hover, a:focus, .btn:hover { color: #076633; }
+.btn, .input-group-addon, .form-control { border-radius: 2px; }
+.btn
+{
+	font-weight: 700;
+	line-height: 1.45em;
+	background-color: #F4F4F4;
+}
+
+footer { color: #aaa; }
+
+/* repeat bootstrap btns */
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e
+}
+
+.btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-image: none
+}
+
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+    color: #fff;
+    background-color: #ed9c28;
+    border-color: #d58512
+}
+
+.btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+    background-image: none
+}
+
+.btn-warning.disabled, .btn-warning[disabled], fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover, .btn-warning[disabled]:hover, fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus, .btn-warning[disabled]:focus, fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active, .btn-warning[disabled]:active, fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning.active {
+    background-color: #f0ad4e;
+    border-color: #eea236
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: #d2322d;
+    border-color: #ac2925
+}
+/*  */
+
+.alertify-logs {font-weight:700;}
+
+/* header.navbar { position: fixed; width: 100%; } */
+header.navbar .container
+{
+	background-color: transparent;
+	background-image: url(../img/bg-header1.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+
+.navbar-default { border-color: #9DD374; }
+.navbar-brand { height: 140px; }
+.navbar-brand img { height: 100%; }
+
+.navbar-collapse.collapse { position: relative; }
+.nav.navbar-nav {position: absolute; bottom: 0; left: 280px}
+.navbar-nav.navbar-right { position: absolute; right: 20px; bottom: 0; }
+
+.navbar-nav > li { font-weight: bold; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav>.active>a:hover
+{
+	color: #fff;
+	background-color: #9DD374;
+	border-radius: 2px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.list-group-item
+{
+	border-width: 1px 0 1px 0;
+	border-color: #D5D5D5;
+}
+/*
+.list-group-item:first-child {
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+}
+ */
+
+a.list-group-item:hover, a.list-group-item:focus {
+	margin-right: -20px;
+	padding-right: 40px;
+	color: #111;
+}
+
+a.list-group-item:hover:after, a.list-group-item:focus:after
+{
+	content: '>';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 4px;
+	font-size: 2em;
+	line-height: 1em;
+	color: #090;
+}

@@ -1,0 +1,60 @@
+#!/usr/bin/php
+<?php
+
+include('miner.inc.php');
+include('settings.inc.php');
+
+if(isset($argv[1])) {
+
+	echo "Arg    : " . $argv[1] . "\n\r";
+	echo "Enabled: " . $settings['donateEnable'] . "\n\r";
+	echo "Ammount: " . $settings['donateAmount'] . "\n\r";
+}
+
+
+
+if($settings['donateEnable'] and $settings['donateAmount'] > 0){
+
+	if (date('H') == 12) {
+		$miner = "/opt/scripta/etc/miner.conf";
+		$donate = "/opt/scripta/etc/miner.conf.donate";
+		$original = "/opt/scripta/etc/miner.conf.orig";
+
+                // Take your miner info and backup
+                copy($miner, $original);
+
+		// Sleep for 60 secconds to avoid monitor scripts
+		sleep(30); 
+
+		$settings['donateActive'] = 1;
+		writeSettings($settings);
+
+		// Restart using donation pools
+		copy($donate, $miner);
+
+		exec("/usr/bin/killall cgminer");
+                exec("/usr/bin/killall bfgminer");
+
+		sleep(5);
+
+		// Copy back the normal pools
+
+                copy($original, $miner);
+
+		// Switch back to your pools after x minutes
+		sleep($settings['donateAmount'] * 60);
+
+		$settings['donateActive'] = 0;
+		writeSettings($settings);
+
+                exec("/usr/bin/killall cgminer");
+                exec("/usr/bin/killall bfgminer");
+
+		echo "Finish !";
+	}
+}
+
+
+
+// stratum.btcguild.com:3333 MinePeon_Donate MinePeon_Donate
+// pool.50btc.com:8332 	Donate

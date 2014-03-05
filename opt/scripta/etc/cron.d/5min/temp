@@ -1,0 +1,46 @@
+#!/usr/bin/php 
+<?php
+
+include('inc/settings.inc.php');
+
+$metric  = 'temp';
+$RRDFILE = $metric . '.rrd';
+$RRDPATH = '/opt/scripta/var/rrd/';
+$RRD     = $RRDPATH . $RRDFILE;
+
+if (!file_exists($RRD)) {
+
+	$options = array(
+		"--step", "300",        
+		"--start", "-12 months",    
+		"DS:" . $metric . ":GAUGE:600:0:U",
+		"RRA:AVERAGE:0.5:1:288",
+		"RRA:AVERAGE:0.5:12:168",
+		"RRA:AVERAGE:0.5:228:365"
+	);
+
+	rrd_create($RRD, $options);
+	// echo rrd_error();
+}
+
+
+
+$command = exec('/opt/vc/bin/vcgencmd measure_temp');
+
+$command = substr($command, 5);
+
+$command = substr($command, 0, -2);
+
+$result = time() . ':' . $command;
+
+$update = array(
+	$result
+);
+
+
+$ret = rrd_update($RRD, $update);
+
+// echo $result;
+//echo $t ."
+//". $tz
+?>

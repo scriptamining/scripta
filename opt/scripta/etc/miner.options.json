@@ -1,0 +1,46 @@
+[
+    {
+        "key": "api-listen",
+        "value": true
+    },
+    {
+        "key": "api-port",
+        "value": "4028"
+    },
+    {
+	"key": "expiry",
+	"value": "120"
+    },
+	{
+		"key": "hotplug",
+        	"value": "5"
+	},
+	{
+                "key": "log",
+                "value": "5"
+        },
+	{
+                "key": "no-pool-disable",
+                "value": true
+        },
+	{
+                "key": "queue",
+                "value": "1"
+        },
+	{
+                "key": "scan-time",
+                "value": "30"
+        },
+	{
+                "key": "scan-time",
+                "value": "30"
+        },
+{
+                "key": "scrypt",
+                "value": true
+        },
+{
+                "key": "shares",
+                "value": "0"
+        }
+]

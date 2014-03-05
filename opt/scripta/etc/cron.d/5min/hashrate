@@ -1,0 +1,45 @@
+#!/usr/bin/php
+<?php
+
+include('inc/settings.inc.php');
+
+$metric  = 'hashrate';
+$RRDFILE = $metric . '.rrd';
+$RRDPATH = '/opt/scripta/var/rrd/';
+$RRD     = $RRDPATH . $RRDFILE;
+
+
+if (!file_exists($RRD)) {
+
+        $options = array(
+                "--step", "300",
+                "--start", "-12 months",
+                "DS:" . $metric . ":GAUGE:600:0:U",
+                "RRA:AVERAGE:0.5:1:288",
+                "RRA:AVERAGE:0.5:12:168",
+                "RRA:AVERAGE:0.5:228:365"
+        );
+
+        rrd_create($RRD, $options);
+        // echo rrd_error();
+}
+
+// ############################### Get the data
+
+require('inc/miner.inc.php');
+
+$return = cgminer("summary", "");
+
+$hashrate = $return['SUMMARY'][0]['MHSav'] * 1000;
+$hashrate = time() . ':' . $hashrate;
+$update = array(
+        $hashrate
+);
+
+// ###############################
+
+$ret = rrd_update($RRD, $update);
+
+//$hashrate;
+
+?>

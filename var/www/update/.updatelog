@@ -1,0 +1,697 @@
+<2013-12-09 10:08:29>Checking for a new update. . .
+<2013-12-09 10:08:29>New version found `0.2`.
+<2013-12-09 10:08:29>Updating...
+<2013-12-09 10:08:29>Downloading update...
+<2013-12-09 10:08:29>Latest update downloaded to `/var/www/zerodivision/minerui/updatetest/update/temp///2.zip`.
+<2013-12-09 10:08:29>Updating `files/`!
+<2013-12-09 10:08:29>Updating `files/file1.php`!
+<2013-12-09 10:08:29>Updating `files/files2.php`!
+<2013-12-09 10:08:29>Updating `index.php`!
+<2013-12-09 10:08:29>Updating `somefile.php`!
+<2013-12-09 10:08:29>Temporary directory `/var/www/zerodivision/minerui/updatetest/update/temp//` deleted.
+<2013-12-09 10:08:29>Update `2` installed.
+<2013-12-09 11:57:52>Checking for a new update. . .
+<2013-12-09 11:57:52>New version found `0.2`.
+<2013-12-09 11:57:52>Updating...
+<2013-12-09 11:57:52>Downloading update...
+<2013-12-09 11:57:52>Latest update downloaded to `/var/www/zerodivision/mineruiupdatetest/update/temp///2.zip`.
+<2013-12-09 11:57:52>Updating `files/`!
+<2013-12-09 11:57:52>Updating `files/file1.php`!
+<2013-12-09 11:57:52>Could not update `/var/www/zerodivision/mineruiupdatetest/update/../files/file1.php`, not writeable!
+<2013-12-09 11:59:47>Checking for a new update. . .
+<2013-12-09 11:59:47>New version found `0.2`.
+<2013-12-09 11:59:47>Updating...
+<2013-12-09 11:59:47>Downloading update...
+<2013-12-09 11:59:47>Latest update downloaded to `/var/www/zerodivision/mineruiupdatetest/update/temp///3.zip`.
+<2013-12-09 11:59:47>Updating `README.md`!
+<2013-12-09 11:59:47>Updating `apple-touch-icon-precomposed.png`!
+<2013-12-09 11:59:47>Updating `css/`!
+<2013-12-09 11:59:47>Updating `css/bootstrap.min.css`!
+<2013-12-09 11:59:47>Updating `css/custom.css`!
+<2013-12-09 11:59:47>Updating `css/alertify.css`!
+<2013-12-09 11:59:47>Updating `css/theme.css`!
+<2013-12-09 11:59:47>Updating `f_backup.php`!
+<2013-12-09 11:59:47>Updating `f_graph.php`!
+<2013-12-09 11:59:47>Updating `f_miner.php`!
+<2013-12-09 11:59:47>Updating `f_minercompat.php`!
+<2013-12-09 11:59:47>Updating `f_settings.php`!
+<2013-12-09 11:59:47>Updating `f_status.php`!
+<2013-12-09 11:59:47>Updating `favicon.ico`!
+<2013-12-09 11:59:47>Updating `img/`!
+<2013-12-09 11:59:47>Updating `img/favicon-1.ico`!
+<2013-12-09 11:59:47>Updating `img/bg-header1.png`!
+<2013-12-09 11:59:47>Updating `img/favicon.ico`!
+<2013-12-09 11:59:47>Updating `img/scripta-logo-152.png`!
+<2013-12-09 11:59:47>Updating `img/favicon-1.png`!
+<2013-12-09 11:59:47>Updating `inc/`!
+<2013-12-09 11:59:47>Updating `inc/kitten.wav`!
+<2013-12-09 11:59:47>Updating `inc/kitten.mp3`!
+<2013-12-09 11:59:47>Updating `inc/functions.inc.php`!
+<2013-12-09 11:59:47>Updating `inc/settings.inc.php`!
+<2013-12-09 11:59:47>Updating `inc/cgminer.inc.php`!
+<2013-12-09 11:59:47>Updating `inc/miner.inc.php`!
+<2013-12-09 11:59:47>Updating `inc/backup.inc.php`!
+<2013-12-09 11:59:47>Updating `index.html`!
+<2013-12-09 11:59:47>Updating `index.lighttpd.html`!
+<2013-12-09 11:59:47>Updating `info.php`!
+<2013-12-09 11:59:47>Updating `js/`!
+<2013-12-09 11:59:47>Updating `js/bootstrap.min.js`!
+<2013-12-09 11:59:47>Updating `js/highcharts.js`!
+<2013-12-09 11:59:47>Updating `js/jquery.min.js`!
+<2013-12-09 11:59:47>Updating `js/alertify.min.js`!
+<2013-12-09 11:59:47>Updating `js/angular.min.js`!
+<2013-12-09 11:59:47>Updating `miner.php`!
+<2013-12-09 11:59:47>Updating `ng/`!
+<2013-12-09 11:59:47>Updating `ng/filters.js`!
+<2013-12-09 11:59:47>Updating `ng/app.js`!
+<2013-12-09 11:59:47>Updating `ng/controllers.js`!
+<2013-12-09 11:59:47>Updating `ng/services.js`!
+<2013-12-09 11:59:47>Updating `ng/directives.js`!
+<2013-12-09 11:59:47>Updating `old/`!
+<2013-12-09 11:59:47>Updating `old/foot.php`!
+<2013-12-09 11:59:47>Updating `old/index.php`!
+<2013-12-09 11:59:47>Updating `old/head.php`!
+<2013-12-09 11:59:47>Updating `old/pools.php`!
+<2013-12-09 11:59:47>Updating `old/menu.php`!
+<2013-12-09 11:59:47>Updating `old/settings.php`!
+<2013-12-09 11:59:47>Updating `partials/`!
+<2013-12-09 11:59:47>Updating `partials/settings.html`!
+<2013-12-09 11:59:47>Updating `partials/miner.html`!
+<2013-12-09 11:59:47>Updating `partials/backup.html`!
+<2013-12-09 11:59:47>Updating `partials/status.html`!
+<2013-12-09 11:59:47>Updating `partials/timezone.html`!
+<2013-12-09 11:59:47>Updating `updatetest/`!
+<2013-12-09 11:59:47>Updating `updatetest/update/`!
+<2013-12-09 11:59:47>Updating `updatetest/update/.updatelog`!
+<2013-12-09 11:59:47>Could not update `/var/www/zerodivision/mineruiupdatetest/update/../updatetest/update/.updatelog`, not writeable!
+<2013-12-09 11:59:51>Checking for a new update. . .
+<2013-12-09 11:59:51>New version found `0.2`.
+<2013-12-09 11:59:51>Updating...
+<2013-12-09 11:59:51>Latest update already downloaded to `/var/www/zerodivision/mineruiupdatetest/update/temp///3.zip`.
+<2013-12-09 11:59:51>Updating `README.md`!
+<2013-12-09 11:59:51>Updating `apple-touch-icon-precomposed.png`!
+<2013-12-09 11:59:51>Updating `css/`!
+<2013-12-09 11:59:51>Updating `css/bootstrap.min.css`!
+<2013-12-09 11:59:51>Updating `css/custom.css`!
+<2013-12-09 11:59:51>Updating `css/alertify.css`!
+<2013-12-09 11:59:51>Updating `css/theme.css`!
+<2013-12-09 11:59:51>Updating `f_backup.php`!
+<2013-12-09 11:59:51>Updating `f_graph.php`!
+<2013-12-09 11:59:51>Updating `f_miner.php`!
+<2013-12-09 11:59:51>Updating `f_minercompat.php`!
+<2013-12-09 11:59:51>Updating `f_settings.php`!
+<2013-12-09 11:59:51>Updating `f_status.php`!
+<2013-12-09 11:59:51>Updating `favicon.ico`!
+<2013-12-09 11:59:51>Updating `img/`!
+<2013-12-09 11:59:51>Updating `img/favicon-1.ico`!
+<2013-12-09 11:59:51>Updating `img/bg-header1.png`!
+<2013-12-09 11:59:51>Updating `img/favicon.ico`!
+<2013-12-09 11:59:51>Updating `img/scripta-logo-152.png`!
+<2013-12-09 11:59:51>Updating `img/favicon-1.png`!
+<2013-12-09 11:59:51>Updating `inc/`!
+<2013-12-09 11:59:51>Updating `inc/kitten.wav`!
+<2013-12-09 11:59:51>Updating `inc/kitten.mp3`!
+<2013-12-09 11:59:51>Updating `inc/functions.inc.php`!
+<2013-12-09 11:59:51>Updating `inc/settings.inc.php`!
+<2013-12-09 11:59:51>Updating `inc/cgminer.inc.php`!
+<2013-12-09 11:59:51>Updating `inc/miner.inc.php`!
+<2013-12-09 11:59:51>Updating `inc/backup.inc.php`!
+<2013-12-09 11:59:51>Updating `index.html`!
+<2013-12-09 11:59:51>Updating `index.lighttpd.html`!
+<2013-12-09 11:59:51>Updating `info.php`!
+<2013-12-09 11:59:51>Updating `js/`!
+<2013-12-09 11:59:51>Updating `js/bootstrap.min.js`!
+<2013-12-09 11:59:51>Updating `js/highcharts.js`!
+<2013-12-09 11:59:51>Updating `js/jquery.min.js`!
+<2013-12-09 11:59:51>Updating `js/alertify.min.js`!
+<2013-12-09 11:59:51>Updating `js/angular.min.js`!
+<2013-12-09 11:59:51>Updating `miner.php`!
+<2013-12-09 11:59:51>Updating `ng/`!
+<2013-12-09 11:59:51>Updating `ng/filters.js`!
+<2013-12-09 11:59:51>Updating `ng/app.js`!
+<2013-12-09 11:59:51>Updating `ng/controllers.js`!
+<2013-12-09 11:59:51>Updating `ng/services.js`!
+<2013-12-09 11:59:51>Updating `ng/directives.js`!
+<2013-12-09 11:59:51>Updating `old/`!
+<2013-12-09 11:59:51>Updating `old/foot.php`!
+<2013-12-09 11:59:51>Updating `old/index.php`!
+<2013-12-09 11:59:51>Updating `old/head.php`!
+<2013-12-09 11:59:51>Updating `old/pools.php`!
+<2013-12-09 11:59:51>Updating `old/menu.php`!
+<2013-12-09 11:59:51>Updating `old/settings.php`!
+<2013-12-09 11:59:51>Updating `partials/`!
+<2013-12-09 11:59:51>Updating `partials/settings.html`!
+<2013-12-09 11:59:51>Updating `partials/miner.html`!
+<2013-12-09 11:59:51>Updating `partials/backup.html`!
+<2013-12-09 11:59:51>Updating `partials/status.html`!
+<2013-12-09 11:59:51>Updating `partials/timezone.html`!
+<2013-12-09 11:59:51>Updating `updatetest/`!
+<2013-12-09 11:59:51>Updating `updatetest/update/`!
+<2013-12-09 11:59:51>Updating `updatetest/update/.updatelog`!
+<2013-12-09 11:59:51>Could not update `/var/www/zerodivision/mineruiupdatetest/update/../updatetest/update/.updatelog`, not writeable!
+<2013-12-10 13:45:06>Checking for a new update. . .
+<2013-12-10 13:45:06>New version found `0.2`.
+<2013-12-10 13:45:56>Checking for a new update. . .
+<2013-12-10 13:45:56>New version found `0.2`.
+<2013-12-10 13:46:14>Checking for a new update. . .
+<2013-12-10 13:46:14>New version found `0.2`.
+<2013-12-10 13:47:30>Checking for a new update. . .
+<2013-12-10 13:47:30>New version found `0.2`.
+<2013-12-10 13:47:40>Checking for a new update. . .
+<2013-12-10 13:47:40>New version found `0.2`.
+<2013-12-10 13:47:54>Checking for a new update. . .
+<2013-12-10 13:47:54>New version found `0.2`.
+<2013-12-10 13:55:11>Checking for a new update. . .
+<2013-12-10 13:55:12>New version found `0.2`.
+<2013-12-10 13:55:44>Checking for a new update. . .
+<2013-12-10 13:55:45>New version found `0.2`.
+<2013-12-10 13:59:58>Checking for a new update. . .
+<2013-12-10 13:59:58>New version found `0.2`.
+<2013-12-10 14:00:39>Checking for a new update. . .
+<2013-12-10 14:00:39>New version found `0.2`.
+<2013-12-10 14:01:34>Checking for a new update. . .
+<2013-12-10 14:01:34>New version found `0.2`.
+<2013-12-10 14:03:00>Checking for a new update. . .
+<2013-12-10 14:03:00>New version found `0.2`.
+<2013-12-10 14:03:52>Checking for a new update. . .
+<2013-12-10 14:03:53>New version found `0.2`.
+<2013-12-10 14:04:21>Checking for a new update. . .
+<2013-12-10 14:04:21>New version found `0.2`.
+<2013-12-10 14:04:34>Checking for a new update. . .
+<2013-12-10 14:04:34>New version found `0.2`.
+<2013-12-10 14:05:15>Checking for a new update. . .
+<2013-12-10 14:05:15>New version found `0.2`.
+<2013-12-10 14:06:36>Checking for a new update. . .
+<2013-12-10 14:06:36>New version found `0.2`.
+<2013-12-10 14:12:48>Checking for a new update. . .
+<2013-12-10 14:12:48>New version found `0.2`.
+<2013-12-10 14:24:16>Checking for a new update. . .
+<2013-12-10 14:24:15>Checking for a new update. . .
+<2013-12-10 14:24:16>New version found `0.2`.
+<2013-12-10 14:24:16>New version found `0.2`.
+<2013-12-10 14:24:28>Checking for a new update. . .
+<2013-12-10 14:24:28>New version found `0.2`.
+<2013-12-10 14:24:44>Checking for a new update. . .
+<2013-12-10 14:24:44>New version found `0.2`.
+<2013-12-10 14:25:08>Checking for a new update. . .
+<2013-12-10 14:25:08>New version found `0.2`.
+<2013-12-10 14:25:21>Checking for a new update. . .
+<2013-12-10 14:25:21>New version found `0.2`.
+<2013-12-10 14:25:42>Checking for a new update. . .
+<2013-12-10 14:25:42>New version found `0.2`.
+<2013-12-10 14:26:24>Checking for a new update. . .
+<2013-12-10 14:26:24>New version found `0.2`.
+<2013-12-10 14:28:34>Checking for a new update. . .
+<2013-12-10 14:28:34>New version found `0.2`.
+<2013-12-10 14:29:20>Checking for a new update. . .
+<2013-12-10 14:29:20>New version found `0.2`.
+<2013-12-10 14:30:19>Checking for a new update. . .
+<2013-12-10 14:30:19>New version found `1.1`.
+<2013-12-10 14:30:41>Checking for a new update. . .
+<2013-12-10 14:30:42>New version found `1.1`.
+<2013-12-10 14:40:11>Checking for a new update. . .
+<2013-12-10 14:40:11>New version found `1.1`.
+<2013-12-10 14:40:27>Checking for a new update. . .
+<2013-12-10 14:40:28>New version found `1.1`.
+<2013-12-10 14:40:28>Updating...
+<2013-12-10 14:40:28>Downloading update...
+<2013-12-10 14:40:28>Latest update downloaded to `/var/www/update/temp///1.zip`.
+<2013-12-10 14:40:28>Updating `apple-touch-icon-precomposed.png`!
+<2013-12-10 14:40:28>Updating `css/`!
+<2013-12-10 14:40:28>Updating `favicon.ico`!
+<2013-12-10 14:40:28>Updating `favicon.ico.1`!
+<2013-12-10 14:40:28>Updating `f_backup.php`!
+<2013-12-10 14:40:28>Updating `f_graph.php`!
+<2013-12-10 14:40:28>Updating `f_login.php`!
+<2013-12-10 14:40:28>Updating `f_logout.php`!
+<2013-12-10 14:40:28>Updating `f_minercompat.php`!
+<2013-12-10 14:40:28>Updating `f_miner.php`!
+<2013-12-10 14:40:28>Updating `f_settings.php`!
+<2013-12-10 14:40:28>Updating `f_status.php`!
+<2013-12-10 14:40:28>Updating `img/`!
+<2013-12-10 14:40:28>Updating `inc/`!
+<2013-12-10 14:40:28>Updating `index.php`!
+<2013-12-10 14:40:28>Updating `js/`!
+<2013-12-10 14:40:28>Updating `login.php`!
+<2013-12-10 14:40:28>Updating `miner.php`!
+<2013-12-10 14:40:28>Updating `ng/`!
+<2013-12-10 14:40:28>Updating `partials/`!
+<2013-12-10 14:40:28>Updating `rrd/`!
+<2013-12-10 14:40:28>Updating `test.php`!
+<2013-12-10 14:40:28>Updating `update/`!
+<2013-12-10 14:40:28>Temporary directory `/var/www/update/temp//` deleted.
+<2013-12-10 14:40:28>Update `1` installed.
+<2013-12-10 14:40:29>Checking for a new update. . .
+<2013-12-10 14:40:29>New version found `1.1`.
+<2013-12-10 14:41:23>Checking for a new update. . .
+<2013-12-10 14:41:23>New version found `1.1`.
+<2013-12-10 14:41:23>Updating...
+<2013-12-10 14:41:23>Downloading update...
+<2013-12-10 14:41:24>Latest update downloaded to `/var/www/update/temp///1.zip`.
+<2013-12-10 14:41:24>Updating `apple-touch-icon-precomposed.png`!
+<2013-12-10 14:41:24>Updating `css/`!
+<2013-12-10 14:41:24>Updating `favicon.ico`!
+<2013-12-10 14:41:24>Updating `favicon.ico.1`!
+<2013-12-10 14:41:24>Updating `f_backup.php`!
+<2013-12-10 14:41:24>Updating `f_graph.php`!
+<2013-12-10 14:41:24>Updating `f_login.php`!
+<2013-12-10 14:41:24>Updating `f_logout.php`!
+<2013-12-10 14:41:24>Updating `f_minercompat.php`!
+<2013-12-10 14:41:24>Updating `f_miner.php`!
+<2013-12-10 14:41:24>Updating `f_settings.php`!
+<2013-12-10 14:41:24>Updating `f_status.php`!
+<2013-12-10 14:41:24>Updating `img/`!
+<2013-12-10 14:41:24>Updating `inc/`!
+<2013-12-10 14:41:24>Updating `index.php`!
+<2013-12-10 14:41:24>Updating `js/`!
+<2013-12-10 14:41:24>Updating `login.php`!
+<2013-12-10 14:41:24>Updating `miner.php`!
+<2013-12-10 14:41:24>Updating `ng/`!
+<2013-12-10 14:41:24>Updating `partials/`!
+<2013-12-10 14:41:24>Updating `rrd/`!
+<2013-12-10 14:41:24>Updating `test.php`!
+<2013-12-10 14:41:24>Updating `update/`!
+<2013-12-10 14:41:24>Temporary directory `/var/www/update/temp//` deleted.
+<2013-12-10 14:41:24>Update `1` installed.
+<2013-12-10 16:03:34>Checking for a new update. . .
+<2013-12-10 16:03:34>New version found `1.1`.
+<2013-12-10 16:08:50>Checking for a new update. . .
+<2013-12-10 16:08:50>New version found `1.1`.
+<2013-12-10 16:10:08>Checking for a new update. . .
+<2013-12-10 16:10:08>New version found `1.1`.
+<2013-12-10 16:10:10>Checking for a new update. . .
+<2013-12-10 16:10:15>New version found `1.1`.
+<2013-12-10 16:10:15>Updating...
+<2013-12-10 16:10:15>Downloading update...
+<2013-12-10 16:10:16>Latest update downloaded to `/var/www/update/temp///1.zip`.
+<2013-12-10 16:10:16>Updating `apple-touch-icon-precomposed.png`!
+<2013-12-10 16:10:16>Updating `css/`!
+<2013-12-10 16:10:16>Updating `favicon.ico`!
+<2013-12-10 16:10:16>Updating `favicon.ico.1`!
+<2013-12-10 16:10:16>Updating `f_backup.php`!
+<2013-12-10 16:10:16>Updating `f_graph.php`!
+<2013-12-10 16:10:16>Updating `f_login.php`!
+<2013-12-10 16:10:16>Updating `f_logout.php`!
+<2013-12-10 16:10:16>Updating `f_minercompat.php`!
+<2013-12-10 16:10:16>Updating `f_miner.php`!
+<2013-12-10 16:10:16>Updating `f_settings.php`!
+<2013-12-10 16:10:16>Updating `f_status.php`!
+<2013-12-10 16:10:16>Updating `img/`!
+<2013-12-10 16:10:16>Updating `inc/`!
+<2013-12-10 16:10:16>Updating `index.php`!
+<2013-12-10 16:10:16>Updating `js/`!
+<2013-12-10 16:10:16>Updating `login.php`!
+<2013-12-10 16:10:16>Updating `miner.php`!
+<2013-12-10 16:10:16>Updating `ng/`!
+<2013-12-10 16:10:16>Updating `partials/`!
+<2013-12-10 16:10:16>Updating `rrd/`!
+<2013-12-10 16:10:16>Updating `test.php`!
+<2013-12-10 16:10:16>Updating `update/`!
+<2013-12-10 16:10:16>Updating `css/bootstrap.min.css`!
+<2013-12-10 16:10:16>Updating `css/custom.css`!
+<2013-12-10 16:10:16>Updating `css/theme.css`!
+<2013-12-10 16:10:16>Updating `css/alertify.css`!
+<2013-12-10 16:10:16>Updating `css/font-awesome.min.css`!
+<2013-12-10 16:10:16>Updating `css/bootstrap.no-icons.min.css`!
+<2013-12-10 16:10:16>Updating `img/favicon.ico`!
+<2013-12-10 16:10:16>Updating `img/bg-header1.png`!
+<2013-12-10 16:10:16>Updating `img/scripta-logo-152.png`!
+<2013-12-10 16:10:16>Updating `img/favicon-1.png`!
+<2013-12-10 16:10:16>Updating `img/favicon-1.ico`!
+<2013-12-10 16:10:16>Updating `img/scripta-logo-ext-152.png`!
+<2013-12-10 16:10:16>Updating `img/favicon.png`!
+<2013-12-10 16:10:16>Updating `inc/backup.inc.php`!
+<2013-12-10 16:10:16>Updating `inc/cgminer.inc.php`!
+<2013-12-10 16:10:16>Updating `inc/kitten.wav`!
+<2013-12-10 16:10:16>Updating `inc/miner.inc.php`!
+<2013-12-10 16:10:16>Updating `inc/kitten.mp3`!
+<2013-12-10 16:10:16>Updating `inc/settings.inc.php`!
+<2013-12-10 16:10:16>Updating `inc/functions.inc.php`!
+<2013-12-10 16:10:16>Updating `js/alertify.min.js`!
+<2013-12-10 16:10:16>Updating `js/angular.min.js`!
+<2013-12-10 16:10:16>Updating `js/bootstrap.min.js`!
+<2013-12-10 16:10:16>Updating `js/jquery.min.js`!
+<2013-12-10 16:10:16>Updating `js/highcharts.js`!
+<2013-12-10 16:10:16>Updating `ng/directives.js`!
+<2013-12-10 16:10:16>Updating `ng/services.js`!
+<2013-12-10 16:10:16>Updating `ng/controllers.js`!
+<2013-12-10 16:10:16>Updating `ng/filters.js`!
+<2013-12-10 16:10:16>Updating `ng/app.js`!
+<2013-12-10 16:10:16>Updating `partials/status.html`!
+<2013-12-10 16:10:16>Updating `partials/miner.html`!
+<2013-12-10 16:10:16>Updating `partials/timezone.html`!
+<2013-12-10 16:10:16>Updating `partials/.backup.html.swp`!
+<2013-12-10 16:10:16>Could not update `/var/www/update/../partials/.backup.html.swp`, not writeable!
+<2013-12-10 16:10:25>Checking for a new update. . .
+<2013-12-10 16:10:25>New version found `1.1`.
+<2013-12-10 17:57:12>Checking for a new update. . .
+<2013-12-10 17:57:12>New version found `1.1`.
+<2013-12-10 17:58:36>Checking for a new update. . .
+<2013-12-10 17:58:36>New version found `1.1`.
+<2013-12-10 18:00:00>Checking for a new update. . .
+<2013-12-10 18:00:00>New version found `1.1`.
+<2013-12-10 18:04:03>Checking for a new update. . .
+<2013-12-10 18:04:04>New version found `1.1`.
+<2013-12-10 18:05:39>Checking for a new update. . .
+<2013-12-10 18:05:39>New version found `1.1`.
+<2013-12-10 18:06:04>Checking for a new update. . .
+<2013-12-10 18:06:04>New version found `1.1`.
+<2013-12-10 18:14:41>Checking for a new update. . .
+<2013-12-10 18:14:41>New version found `1.1`.
+<2013-12-10 19:39:28>Checking for a new update. . .
+<2013-12-10 19:39:29>New version found `1.1`.
+<2013-12-10 19:43:59>Checking for a new update. . .
+<2013-12-10 19:43:59>New version found `1.1`.
+<2013-12-10 20:23:08>Checking for a new update. . .
+<2013-12-10 20:23:08>New version found `1.1`.
+<2013-12-10 20:23:43>Checking for a new update. . .
+<2013-12-10 20:23:43>New version found `1.1`.
+<2013-12-10 20:24:56>Checking for a new update. . .
+<2013-12-10 20:24:56>New version found `1.1`.
+<2013-12-10 20:25:01>Checking for a new update. . .
+<2013-12-10 20:25:06>New version found `1.1`.
+<2013-12-10 20:26:23>Checking for a new update. . .
+<2013-12-10 20:26:23>New version found `1.1`.
+<2013-12-10 20:29:46>Checking for a new update. . .
+<2013-12-10 20:29:46>New version found `1.1`.
+<2013-12-10 20:40:55>Checking for a new update. . .
+<2013-12-10 20:40:55>New version found `1.1`.
+<2013-12-10 20:41:41>Checking for a new update. . .
+<2013-12-10 20:41:41>New version found `1.1`.
+<2013-12-10 20:42:00>Checking for a new update. . .
+<2013-12-10 20:42:00>New version found `1.1`.
+<2013-12-10 20:44:01>Checking for a new update. . .
+<2013-12-10 20:44:01>New version found `1.1`.
+<2013-12-10 20:44:26>Checking for a new update. . .
+<2013-12-10 20:44:26>New version found `1.1`.
+<2013-12-10 20:45:35>Checking for a new update. . .
+<2013-12-10 20:45:35>New version found `1.1`.
+<2013-12-10 20:46:04>Checking for a new update. . .
+<2013-12-10 20:46:04>New version found `1.1`.
+<2013-12-10 20:46:25>Checking for a new update. . .
+<2013-12-10 20:46:25>New version found `1.1`.
+<2013-12-10 20:46:46>Checking for a new update. . .
+<2013-12-10 20:46:46>New version found `1.1`.
+<2013-12-10 20:46:59>Checking for a new update. . .
+<2013-12-10 20:46:59>New version found `1.1`.
+<2013-12-10 20:47:31>Checking for a new update. . .
+<2013-12-10 20:47:31>New version found `1.1`.
+<2013-12-10 20:49:47>Checking for a new update. . .
+<2013-12-10 20:49:47>New version found `1.1`.
+<2013-12-10 20:52:01>Checking for a new update. . .
+<2013-12-10 20:52:01>New version found `1.1`.
+<2013-12-10 20:52:55>Checking for a new update. . .
+<2013-12-10 20:52:55>New version found `1.1`.
+<2013-12-10 20:53:14>Checking for a new update. . .
+<2013-12-10 20:53:14>New version found `1.1`.
+<2013-12-10 20:54:37>Checking for a new update. . .
+<2013-12-10 20:54:37>New version found `1.1`.
+<2013-12-10 20:55:01>Checking for a new update. . .
+<2013-12-10 20:55:01>New version found `1.1`.
+<2013-12-10 20:56:01>Checking for a new update. . .
+<2013-12-10 20:56:01>New version found `1.1`.
+<2013-12-10 20:56:05>Checking for a new update. . .
+<2013-12-10 20:56:06>New version found `1.1`.
+<2013-12-10 20:56:06>Updating...
+<2013-12-10 20:56:06>Downloading update...
+<2013-12-10 20:56:07>Latest update downloaded to `/var/www/update/temp///1.zip`.
+<2013-12-10 20:56:07>Updating `apple-touch-icon-precomposed.png`!
+<2013-12-10 20:56:07>Updating `css/`!
+<2013-12-10 20:56:07>Updating `favicon.ico`!
+<2013-12-10 20:56:07>Updating `favicon.ico.1`!
+<2013-12-10 20:56:07>Updating `f_backup.php`!
+<2013-12-10 20:56:07>Updating `f_graph.php`!
+<2013-12-10 20:56:07>Updating `f_login.php`!
+<2013-12-10 20:56:07>Updating `f_logout.php`!
+<2013-12-10 20:56:07>Updating `f_minercompat.php`!
+<2013-12-10 20:56:07>Updating `f_miner.php`!
+<2013-12-10 20:56:07>Updating `f_settings.php`!
+<2013-12-10 20:56:07>Updating `f_status.php`!
+<2013-12-10 20:56:07>Updating `img/`!
+<2013-12-10 20:56:07>Updating `inc/`!
+<2013-12-10 20:56:07>Updating `index.php`!
+<2013-12-10 20:56:07>Updating `js/`!
+<2013-12-10 20:56:07>Updating `login.php`!
+<2013-12-10 20:56:07>Updating `miner.php`!
+<2013-12-10 20:56:07>Updating `ng/`!
+<2013-12-10 20:56:07>Updating `partials/`!
+<2013-12-10 20:56:07>Updating `rrd/`!
+<2013-12-10 20:56:07>Updating `test.php`!
+<2013-12-10 20:56:07>Updating `update/`!
+<2013-12-10 20:56:07>Updating `css/bootstrap.min.css`!
+<2013-12-10 20:56:07>Updating `css/custom.css`!
+<2013-12-10 20:56:07>Updating `css/theme.css`!
+<2013-12-10 20:56:07>Updating `css/alertify.css`!
+<2013-12-10 20:56:07>Updating `css/font-awesome.min.css`!
+<2013-12-10 20:56:07>Updating `css/bootstrap.no-icons.min.css`!
+<2013-12-10 20:56:07>Updating `img/favicon.ico`!
+<2013-12-10 20:56:07>Updating `img/bg-header1.png`!
+<2013-12-10 20:56:07>Updating `img/scripta-logo-152.png`!
+<2013-12-10 20:56:07>Updating `img/favicon-1.png`!
+<2013-12-10 20:56:07>Updating `img/favicon-1.ico`!
+<2013-12-10 20:56:07>Updating `img/scripta-logo-ext-152.png`!
+<2013-12-10 20:56:07>Updating `img/favicon.png`!
+<2013-12-10 20:56:07>Updating `inc/backup.inc.php`!
+<2013-12-10 20:56:07>Updating `inc/cgminer.inc.php`!
+<2013-12-10 20:56:07>Updating `inc/kitten.wav`!
+<2013-12-10 20:56:07>Updating `inc/miner.inc.php`!
+<2013-12-10 20:56:07>Updating `inc/kitten.mp3`!
+<2013-12-10 20:56:07>Updating `inc/settings.inc.php`!
+<2013-12-10 20:56:07>Updating `inc/functions.inc.php`!
+<2013-12-10 20:56:07>Updating `js/alertify.min.js`!
+<2013-12-10 20:56:07>Updating `js/angular.min.js`!
+<2013-12-10 20:56:07>Updating `js/bootstrap.min.js`!
+<2013-12-10 20:56:07>Updating `js/jquery.min.js`!
+<2013-12-10 20:56:07>Updating `js/highcharts.js`!
+<2013-12-10 20:56:07>Updating `ng/directives.js`!
+<2013-12-10 20:56:07>Updating `ng/services.js`!
+<2013-12-10 20:56:07>Updating `ng/controllers.js`!
+<2013-12-10 20:56:07>Updating `ng/filters.js`!
+<2013-12-10 20:56:07>Updating `ng/app.js`!
+<2013-12-10 20:56:07>Updating `partials/status.html`!
+<2013-12-10 20:56:07>Updating `partials/miner.html`!
+<2013-12-10 20:56:07>Updating `partials/timezone.html`!
+<2013-12-10 20:56:07>Updating `partials/.backup.html.swp`!
+<2013-12-10 20:56:07>Could not update `/var/www/update/../partials/.backup.html.swp`, not writeable!
+<2013-12-10 20:59:10>Checking for a new update. . .
+<2013-12-10 20:59:11>New version found `1.1`.
+<2013-12-10 20:59:29>Checking for a new update. . .
+<2013-12-10 20:59:29>New version found `1.1`.
+<2013-12-10 21:00:39>Checking for a new update. . .
+<2013-12-10 21:00:40>New version found `1.1`.
+<2013-12-10 21:02:47>Checking for a new update. . .
+<2013-12-10 21:02:47>New version found `1.1`.
+<2013-12-10 21:02:50>Checking for a new update. . .
+<2013-12-10 21:02:51>New version found `1.1`.
+<2013-12-10 21:02:51>Updating...
+<2013-12-10 21:02:51>Downloading update...
+<2013-12-10 21:02:51>Latest update downloaded to `/var/www/update/temp///1.zip`.
+<2013-12-10 21:02:51>Updating `apple-touch-icon-precomposed.png`!
+<2013-12-10 21:02:51>Updating `css/`!
+<2013-12-10 21:02:51>Updating `css/bootstrap.min.css`!
+<2013-12-10 21:02:51>Updating `css/custom.css`!
+<2013-12-10 21:02:51>Updating `css/theme.css`!
+<2013-12-10 21:02:51>Updating `css/alertify.css`!
+<2013-12-10 21:02:51>Updating `css/font-awesome.min.css`!
+<2013-12-10 21:02:51>Updating `css/bootstrap.no-icons.min.css`!
+<2013-12-10 21:02:51>Updating `favicon.ico`!
+<2013-12-10 21:02:51>Updating `favicon.ico.1`!
+<2013-12-10 21:02:51>Updating `f_backup.php`!
+<2013-12-10 21:02:51>Updating `f_graph.php`!
+<2013-12-10 21:02:51>Updating `f_login.php`!
+<2013-12-10 21:02:51>Updating `f_logout.php`!
+<2013-12-10 21:02:51>Updating `f_minercompat.php`!
+<2013-12-10 21:02:51>Updating `f_miner.php`!
+<2013-12-10 21:02:51>Updating `f_settings.php`!
+<2013-12-10 21:02:51>Updating `f_status.php`!
+<2013-12-10 21:02:51>Updating `img/`!
+<2013-12-10 21:02:51>Updating `img/favicon.ico`!
+<2013-12-10 21:02:51>Updating `img/bg-header1.png`!
+<2013-12-10 21:02:51>Updating `img/scripta-logo-152.png`!
+<2013-12-10 21:02:51>Updating `img/favicon-1.png`!
+<2013-12-10 21:02:51>Updating `img/favicon-1.ico`!
+<2013-12-10 21:02:51>Updating `img/scripta-logo-ext-152.png`!
+<2013-12-10 21:02:51>Updating `img/favicon.png`!
+<2013-12-10 21:02:51>Updating `inc/`!
+<2013-12-10 21:02:51>Updating `inc/backup.inc.php`!
+<2013-12-10 21:02:51>Updating `inc/cgminer.inc.php`!
+<2013-12-10 21:02:51>Updating `inc/kitten.wav`!
+<2013-12-10 21:02:51>Updating `inc/miner.inc.php`!
+<2013-12-10 21:02:51>Updating `inc/kitten.mp3`!
+<2013-12-10 21:02:51>Updating `inc/settings.inc.php`!
+<2013-12-10 21:02:51>Updating `inc/functions.inc.php`!
+<2013-12-10 21:02:51>Updating `index.html_orig`!
+<2013-12-10 21:02:51>Updating `index.lighttpd.html`!
+<2013-12-10 21:02:51>Updating `index.php`!
+<2013-12-10 21:02:51>Updating `js/`!
+<2013-12-10 21:02:51>Updating `js/alertify.min.js`!
+<2013-12-10 21:02:51>Updating `js/angular.min.js`!
+<2013-12-10 21:02:51>Updating `js/bootstrap.min.js`!
+<2013-12-10 21:02:51>Updating `js/jquery.min.js`!
+<2013-12-10 21:02:51>Updating `js/highcharts.js`!
+<2013-12-10 21:02:51>Updating `login.php`!
+<2013-12-10 21:02:51>Updating `miner.php`!
+<2013-12-10 21:02:51>Updating `ng/`!
+<2013-12-10 21:02:51>Updating `ng/directives.js`!
+<2013-12-10 21:02:51>Updating `ng/services.js`!
+<2013-12-10 21:02:51>Updating `ng/controllers.js`!
+<2013-12-10 21:02:51>Updating `ng/filters.js`!
+<2013-12-10 21:02:52>Updating `ng/app.js`!
+<2013-12-10 21:02:52>Updating `old_/`!
+<2013-12-10 21:02:52>Updating `old_/head.php`!
+<2013-12-10 21:02:52>Updating `old_/pools.php`!
+<2013-12-10 21:02:52>Updating `old_/foot.php`!
+<2013-12-10 21:02:52>Updating `old_/index.php`!
+<2013-12-10 21:02:52>Updating `old_/menu.php`!
+<2013-12-10 21:02:52>Updating `old_/settings.php`!
+<2013-12-10 21:02:52>Updating `partials/`!
+<2013-12-10 21:02:52>Updating `partials/status.html`!
+<2013-12-10 21:02:52>Updating `partials/miner.html`!
+<2013-12-10 21:02:52>Updating `partials/timezone.html`!
+<2013-12-10 21:02:52>Updating `partials/settings.html`!
+<2013-12-10 21:02:52>Updating `partials/backup.html`!
+<2013-12-10 21:02:52>Updating `README.md`!
+<2013-12-10 21:02:52>Updating `rrd/`!
+<2013-12-10 21:02:52>Updating `rrd/mhsav-week.png`!
+<2013-12-10 21:02:52>Updating `rrd/mhsav-day.png`!
+<2013-12-10 21:02:52>Updating `rrd/mhsav-month.png`!
+<2013-12-10 21:02:52>Updating `rrd/mhsav-hour.png`!
+<2013-12-10 21:02:52>Updating `rrd/mhsav-year.png`!
+<2013-12-10 21:02:52>Updating `test.php`!
+<2013-12-10 21:02:52>Updating `update/`!
+<2013-12-10 21:02:52>Updating `update/start.php`!
+<2013-12-10 21:02:52>Updating `update/ctrl.php`!
+<2013-12-10 21:02:52>Updating `update/version.php`!
+<2013-12-10 21:02:52>Updating `update/update.php`!
+<2013-12-10 21:02:52>Temporary directory `/var/www/update/temp//` deleted.
+<2013-12-10 21:02:52>Update `1` installed.
+<2013-12-10 21:03:30>Checking for a new update. . .
+<2013-12-10 21:03:30>New version found `1.1`.
+<2013-12-10 21:03:30>Checking for a new update. . .
+<2013-12-10 21:03:31>New version found `1.1`.
+<2013-12-10 21:15:54>Checking for a new update. . .
+<2013-12-10 21:15:54>New version found `1.1`.
+<2013-12-10 22:23:33>Checking for a new update. . .
+<2013-12-10 22:23:33>New version found `1.1`.
+<2013-12-10 22:39:21>Checking for a new update. . .
+<2013-12-10 22:39:21>New version found `1.1`.
+<2013-12-10 22:52:23>Checking for a new update. . .
+<2013-12-10 22:52:23>New version found `1.1`.
+<2013-12-10 23:18:47>Checking for a new update. . .
+<2013-12-10 23:18:47>New version found `1.1`.
+<2013-12-10 23:20:16>Checking for a new update. . .
+<2013-12-10 23:20:17>New version found `1.1`.
+<2013-12-10 23:23:29>Checking for a new update. . .
+<2013-12-10 23:23:29>New version found `1.1`.
+<2013-12-10 23:27:38>Checking for a new update. . .
+<2013-12-10 23:27:38>New version found `1.1`.
+<2013-12-10 23:30:41>Checking for a new update. . .
+<2013-12-10 23:30:41>New version found `1.1`.
+<2013-12-10 23:32:48>Checking for a new update. . .
+<2013-12-10 23:32:48>New version found `1.1`.
+<2013-12-10 23:35:26>Checking for a new update. . .
+<2013-12-10 23:35:26>New version found `1.1`.
+<2013-12-10 23:42:31>Checking for a new update. . .
+<2013-12-10 23:42:31>New version found `1.1`.
+<2013-12-11 00:18:48>Checking for a new update. . .
+<2013-12-11 00:18:48>New version found `1.1`.
+<2013-12-11 00:20:02>Checking for a new update. . .
+<2013-12-11 00:20:02>New version found `1.1`.
+<2013-12-11 00:20:35>Checking for a new update. . .
+<2013-12-11 00:20:35>New version found `1.1`.
+<2013-12-11 00:20:42>Checking for a new update. . .
+<2013-12-11 00:20:42>New version found `1.1`.
+<2013-12-11 00:23:00>Checking for a new update. . .
+<2013-12-11 00:23:00>New version found `1.1`.
+<2013-12-11 00:23:15>Checking for a new update. . .
+<2013-12-11 00:23:15>New version found `1.1`.
+<2013-12-11 00:44:59>Checking for a new update. . .
+<2013-12-11 00:44:59>New version found `1.1`.
+<2013-12-11 00:52:23>Checking for a new update. . .
+<2013-12-11 00:52:23>New version found `1.1`.
+<2013-12-11 00:53:35>Checking for a new update. . .
+<2013-12-11 00:53:35>New version found `1.1`.
+<2013-12-11 00:53:46>Checking for a new update. . .
+<2013-12-11 00:53:46>New version found `1.1`.
+<2013-12-11 00:54:33>Checking for a new update. . .
+<2013-12-11 00:54:33>New version found `1.1`.
+<2013-12-11 01:08:53>Checking for a new update. . .
+<2013-12-11 01:08:53>New version found `1.1`.
+<2013-12-11 09:59:16>Checking for a new update. . .
+<2013-12-11 09:59:17>New version found `1.1`.
+<2013-12-11 18:42:51>Checking for a new update. . .
+<2013-12-11 18:42:52>New version found `1.1`.
+<2013-12-11 18:43:33>Checking for a new update. . .
+<2013-12-11 18:43:34>New version found `1.1`.
+<2013-12-11 18:47:41>Checking for a new update. . .
+<2013-12-11 18:47:41>New version found `1.1`.
+<2013-12-11 18:53:42>Checking for a new update. . .
+<2013-12-11 18:53:42>New version found `1.1`.
+<2013-12-11 18:53:54>Checking for a new update. . .
+<2013-12-11 18:53:54>New version found `1.1`.
+<2013-12-11 19:26:50>Checking for a new update. . .
+<2013-12-11 19:26:51>New version found `1.1`.
+<2013-12-11 19:28:38>Checking for a new update. . .
+<2013-12-11 19:28:38>New version found `1.1`.
+<2013-12-11 19:30:04>Checking for a new update. . .
+<2013-12-11 19:30:04>New version found `1.1`.
+<2013-12-11 19:31:43>Checking for a new update. . .
+<2013-12-11 19:31:43>New version found `1.1`.
+<2013-12-11 19:42:19>Checking for a new update. . .
+<2013-12-11 19:42:19>New version found `1.1`.
+<2013-12-11 19:43:03>Checking for a new update. . .
+<2013-12-11 19:43:04>New version found `1.1`.
+<2013-12-11 19:45:13>Checking for a new update. . .
+<2013-12-11 19:45:13>New version found `1.1`.
+<2013-12-11 20:25:24>Checking for a new update. . .
+<2013-12-11 20:25:24>New version found `1.1`.
+<2014-02-21 08:15:49>Checking for a new update. . .
+<2014-02-21 08:15:50>New version found `1.1`.
+<2014-02-21 08:15:56>Checking for a new update. . .
+<2014-02-21 08:15:56>New version found `1.1`.
+<2014-02-22 14:08:55>Checking for a new update. . .
+<2014-02-22 14:08:56>New version found `1.1`.
+<2014-02-22 14:34:21>Checking for a new update. . .
+<2014-02-22 14:34:26>New version found `1.1`.
+<2014-02-22 14:36:24>Checking for a new update. . .
+<2014-02-22 14:36:26>New version found `1.1`.
+<2014-02-22 14:38:56>Checking for a new update. . .
+<2014-02-22 14:38:56>New version found `1.1`.
+<2014-02-22 14:40:52>Checking for a new update. . .
+<2014-02-22 14:40:53>New version found `1.1`.
+<2014-02-22 14:43:15>Checking for a new update. . .
+<2014-02-22 14:43:16>New version found `1.1`.
+<2014-03-01 17:12:10>Checking for a new update. . .
+<2014-03-01 17:12:10>New version found `1.1`.
+<2014-03-01 17:18:53>Checking for a new update. . .
+<2014-03-01 17:18:53>New version found `1.1`.
+<2014-03-01 17:20:13>Checking for a new update. . .
+<2014-03-01 17:20:14>New version found `1.1`.
+<2014-03-01 17:21:17>Checking for a new update. . .
+<2014-03-01 17:21:17>New version found `1.1`.
+<2014-03-01 17:22:02>Checking for a new update. . .
+<2014-03-01 17:22:02>New version found `1.1`.
+<2014-03-01 17:24:47>Checking for a new update. . .
+<2014-03-01 17:24:48>New version found `1.1`.
+<2014-03-01 17:25:51>Checking for a new update. . .
+<2014-03-01 17:25:51>New version found `1.1`.
+<2014-03-03 21:08:23>Checking for a new update. . .
+<2014-03-03 21:08:24>New version found `1.1`.
+<2014-03-03 21:11:34>Checking for a new update. . .
+<2014-03-03 21:11:34>New version found `1.1`.
+<2014-03-03 21:22:41>Checking for a new update. . .
+<2014-03-03 21:22:41>New version found `1.1`.
+<2014-03-03 21:33:21>Checking for a new update. . .
+<2014-03-03 21:33:21>New version found `1.1`.
+<2014-03-03 23:02:36>Checking for a new update. . .
+<2014-03-03 23:02:37>New version found `1.1`.
+<2014-03-03 23:02:41>Checking for a new update. . .
+<2014-03-03 23:02:42>New version found `1.1`.
+<2014-03-03 23:02:46>Checking for a new update. . .
+<2014-03-03 23:02:46>New version found `1.1`.
+<2014-03-03 23:02:49>Checking for a new update. . .
+<2014-03-03 23:02:49>New version found `1.1`.
+<2014-03-03 23:03:22>Checking for a new update. . .
+<2014-03-03 23:03:22>New version found `1.1`.
+<2014-03-03 23:03:42>Checking for a new update. . .
+<2014-03-03 23:03:42>New version found `1.1`.

@@ -1,0 +1,215 @@
+<button type="button" class="btn btn-default pull-right" ng-click="sync('settings',0,1)">Reload settings</button>
+<h3>Scr|pta</h3>
+<form name="formUser" class="form-horizontal">
+  <fieldset>
+    <!-- <div class="form-group"> -->
+    <!--  <label for="userHelp" class="control-label col-sm-3 col-md-2">Help text</label> -->
+      <!-- <div class="col-sm-9 col-md-10"> -->
+        <!-- <div class="checkbox"> -->
+        <!--  <label> -->
+        <!--    <input type="checkbox" id="userHelp" ng-model="settings.userHelp"> Show more information about settings and how the interface works -->
+        <!--  </label> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <div class="form-group">
+      <label class="control-label col-sm-3 col-md-2">Graph interval</label>
+      <div class="col-sm-3 col-md-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-{{intervalAuto?'primary':'default'}}" ng-click="intervalSet(0)">Auto<span ng-show="intervalAuto">: {{interval}}</span></button>
+          <!-- <button type="button" class="btn btn-{{intervalMax==3?'primary':'default'}}" ng-click="intervalSet(3)">3</button> -->
+          <button type="button" class="btn btn-{{intervalMax==10?'primary':'default'}}" ng-click="intervalSet(10)">10</button>
+          <button type="button" class="btn btn-{{intervalMax==30?'primary':'default'}}" ng-click="intervalSet(50)">50</button>
+          <button type="button" class="btn btn-{{intervalMax==200?'primary':'default'}}" ng-click="intervalSet(200)">200</button>
+        </div>
+      </div>
+      <label for="liveMax" class="control-label col-sm-3 col-md-2">Graph points</label>
+      <div class="col-sm-3 col-md-4">
+        <input type="number" id="liveMax" ng-model="settings.liveMax" placeholder="Default: 50" class="form-control" required>
+      </div>
+      <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+        <p class="help-block" ng-show="settings.userHelp">
+          <b>Auto</b>matic will refresh quickly on page load or if the miner was down recently. The refresh interval will slowly rise.<br />
+          <b>Graph points</b> is the amount of data points shown on the live graph. 50 is good.
+        </p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="userTimezone" class="control-label col-sm-3 col-md-2">Timezone</label>
+      <div class="col-sm-3 col-md-4">
+        <div ng-model="settings.userTimezone" ng-include="'partials/timezone.html'">x</div>
+      </div>
+      <label for="userTimezone" class="control-label col-sm-3 col-md-2">System time</label>
+      <div class="col-sm-3 col-md-4">
+        <button type="button" class="btn btn-default pull-right" ng-click="sync('timezone',settings.userTimezone,1)">Update</button>
+        <p class="form-control-static">{{settings.date}}</p>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<form name="formPass" class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label for="userPassword" class="control-label col-sm-3 col-md-2">Web password</label>
+      <div class="col-sm-3 col-md-4">
+        <input type="password" placeholder="Web password" id="userPassword" name="userPassword" ng-model="userPassword" class="form-control">
+      </div>
+      <label for="userPassword2" class="control-label col-sm-3 col-md-2">Repeat</label>
+      <div class="col-sm-3 col-md-4">
+        <input type="password" placeholder="Repeat password" id="userPassword2" name="userPassword2" ng-model="userPassword2" class="form-control">
+      </div>
+      <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+        <p class="help-block" ng-show="settings.userHelp">
+          <b>Web password</b> is needed to access this interface. Default password is <code>p</code>. It cannot be empty. Changing it will log you out.
+        </p>
+      </div>
+    </div>
+  </fieldset>
+  <p class="clearfix text-right">
+    <button type="button" class="btn btn-success" ng-click="sync('settings',settings,1);formUser.$setPristine()" ng-show="formUser.$dirty">Save settings</button>
+    <button type="button" class="btn {{userPassword!=userPassword2?'btn-danger':'btn-success'}}" ng-click="sync('pass',userPassword,1);formPass.$setPristine()" ng-show="formPass.$dirty" ng-disabled="userPassword!=userPassword2">Save password</button>
+  </p>
+</form>
+
+
+<form name="formMining" class="form-horizontal clearfix">
+  <h3>Mining</h3>
+  <fieldset>
+    <div class="form-group">
+      <label for="remoteEnable" class="control-label col-sm-3 col-md-2">Services</label>
+      <div class="col-sm-9 col-md-10">
+        <!-- <label class="checkbox-inline"> -->
+        <!--  <input type="checkbox" id="remoteEnable" ng-model="settings.remoteEnable"> Enable Remote control -->
+        <!-- </label> -->
+        <label class="checkbox-inline">
+          <input type="checkbox" id="recoverEnable" ng-model="settings.recoverEnable"> Automatic recovery
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="alertEnable" ng-model="settings.alertEnable"> E-mail alerts
+        </label>
+		
+        <!-- <label class="checkbox-inline">
+			<input type="checkbox" id="donateEnable" ng-model="settings.donateEnable"> Enable Donation 
+        </label> -->
+		
+        <p class="help-block" ng-show="settings.userHelp">
+          <b>Remote control</b> shares stats with a remote server. Scripta will accept commands from the server.<br />
+          <b>Automatic recovery</b> responds to alert events by restarting the miner. First gently, then rough.<br />
+          <b>E-mail alerts</b> send an e-mail when alerts events are fired.<br />
+          <b>Donation</b> donates a couple of mining minutes to the Scripta project.
+        </p>
+      </div>
+    </div> 
+    <div class="form-group" ng-show="settings.recoverEnable">
+      <label for="miningExpHash" class="control-label col-sm-3 col-md-2">Lower limit (hashrate)</label>
+      <div class="col-sm-3 col-md-4">
+        <div class="input-group">
+          <input type="number" id="miningExpHash" ng-model="settings.miningExpHash" class="form-control" required>
+          <span class="input-group-addon">MH/s</span>
+        </div>
+      </div>
+      <label for="miningExpDev" class="control-label col-sm-3 col-md-2">Expected device count</label>
+      <div class="col-sm-3 col-md-4">
+        <input type="number" id="miningExpDev" ng-model="settings.miningExpDev" class="form-control" required>
+      </div>
+      <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+        <p class="help-block" ng-show="settings.userHelp">
+          When <b>Expected hashrate</b> is higher than the hashrate reported by cgminer an alert event will be fired.<br/>
+          When <b>Expected devices</b> is higher than the device count reported by cgminer an alert event will be fired.
+        </p>
+      </div>
+    </div>
+  </fieldset>
+  <p class="clearfix text-right">
+    <button type="button" class="btn btn-success" ng-click="sync('settings',settings,1);formMining.$setPristine()" ng-show="formMining.$dirty">Save settings</button>
+  </p>
+</form>
+
+
+<form name="formMods" class="form-horizontal clearfix">
+  <fieldset ng-show="settings.remoteEnable">
+    <h3>Remote control</h3>
+    <div class="form-group" ng-show="settings.remoteEnable">
+      <label for="remotePriv" class="control-label col-sm-3 col-md-2">Private key</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="text" id="remotePriv" ng-model="settings.remotePriv" class="form-control">
+        <p class="help-block" ng-show="settings.userHelp">
+          Use this key to let a Remote Control server authenticate to your Scripta.
+        </p>
+      </div>
+    </div>
+  </fieldset>
+  
+    <h3>Donate</h3> 
+    <fieldset>
+		<div class="form-group">
+			<label for="remoteEnable" class="control-label col-sm-3 col-md-2">Enable</label>
+			<div class="col-sm-9 col-md-10">
+				<label class="checkbox-inline">
+					<input type="checkbox" id="donateEnable" ng-model="settings.donateEnable"> 
+				</label>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset ng-show="settings.donateEnable"> 
+		<div class="form-group" ng-show="settings.donateEnable"> 
+		  <label for="donateAmount" class="control-label col-sm-3 col-md-2">Donation minutes</label> 
+		  <div class="col-sm-9 col-md-10"> 
+			<input type="number" id="donateAmount" ng-model="settings.donateAmount" class="form-control"> 
+			<p class="help-block" ng-show="settings.userHelp"> 
+			  Please donate! 
+			</p> 
+		  </div> 
+		</div> 
+	</fieldset> 
+  
+  <fieldset ng-show="settings.alertEnable">
+    <h3>E-mail alerts</h3>
+    <div class="form-group">
+      <label for="alertDevice" class="control-label col-sm-3 col-md-2">Device Name</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="text" id="alertDevice" ng-model="settings.alertDevice" ng-required="settings.alertEnable" class="form-control">
+      </div>
+    </div> 
+    <div class="form-group">
+      <label for="alertEmail" class="control-label col-sm-3 col-md-2">E-mail</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="email" id="alertEmail" ng-model="settings.alertEmail" ng-required="settings.alertEnable" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server address</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="text" id="alertSmtp" ng-model="settings.alertSmtp" ng-required="settings.alertEnable" class="form-control">
+        <p class="help-block" ng-show="settings.userHelp">Please choose your own SMTP server ip address.</p>
+      </div> 
+    </div>
+	<div class="form-group">
+      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server port</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="text" id="alertSmtpPort" ng-model="settings.alertSmtpPort" ng-required="settings.alertEnable" class="form-control" placeholder="25" value="25">
+        <p class="help-block" ng-show="settings.userHelp">Please choose your own SMTP server port.</p>
+      </div> 
+    </div>
+
+	 <div class="form-group">
+      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP User</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="text" id="alertSmtpUser" ng-model="settings.alertSmtpUser" ng-required="settings.alertEnable" class="form-control">
+        <p class="help-block" ng-show="settings.userHelp">Please choose your own user name for SMTP server.</p>
+      </div>
+    </div>
+	 <div class="form-group">
+      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Password</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="password" id="alertSmtpPwd" ng-model="settings.alertSmtpPwd" ng-required="settings.alertEnable" class="form-control">
+        <p class="help-block" ng-show="settings.userHelp">Please choose your own password for SMTP server.</p>
+      </div>
+    </div>
+  </fieldset>
+   
+  <p class="clearfix text-right">
+    <button type="button" class="btn btn-success" ng-click="sync('settings',settings,1);formMods.$setPristine()" ng-show="formMods.$dirty">Save settings</button>
+  </p>
+</form>

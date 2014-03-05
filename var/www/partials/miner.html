@@ -1,0 +1,75 @@
+
+<div class="row">
+  <div class="col-sm-3 col-md-3">
+    <br />
+    <!-- <p> -->
+    <!--  <button type="button" ng-click="minerCompat()" class="btn btn-warning btn-block">Compatibility reload</button> -->
+    <!-- </p> -->
+
+
+    <h4>Available pools</h4>
+    <p class="help-block" ng-show="settings.userHelp">
+      Click to add pool to pool's list
+    </p>
+    <div class="list-group">
+      <a href="" ng-click="poolAdd({url:'coinotron.com:3334',pass:' '})" class="list-group-item">Coinotron</a>
+<a href="" ng-click="poolAdd({url:'ltc-eu.give-me-coins.com:3333'})" class="list-group-item">GiveMeCoins (EU)</a>  <a href="" ng-click="poolAdd({url:'ltc-eu.give-me-coins.com:3333'})" class="list-group-item">GiveMeCoins (EU)</a><a href="" ng-click="poolAdd({url:'stratum+tcp://litecoinpool.org:3333'})" class="list-group-item">Litecoinpool - London (UK)</a>
+<a href="" ng-click="poolAdd({url:'stratum+tcp://us.litecoinpool.org:3333'})" class="list-group-item">Litecoinpool - New York (USA)</a>
+<a href="" ng-click="poolAdd({url:'stratum+tcp://eu-1.liteguardian.com:3334'})" class="list-group-item">Liteguardian (EU)</a>
+<a href="" ng-click="poolAdd({url:'stratum+tcp://usa-1.liteguardian.com:3334'})" class="list-group-item">Liteguardian (USA)</a>
+<a href="" ng-click="poolAdd({url:'stratum+tcp://global.wemineltc.com:3335'})" class="list-group-item">WeMineLTC</a>
+    </div>
+  </div>
+  <div class="col-sm-9 col-md-8 pull-right">
+		<div class="clearfix">
+			<div class="pull-right">
+				<br />
+				<p>
+					<button type="button" ng-click="minerRestart=1" class="btn btn-warning">Miner commands</button>
+				</p>
+				<p class="help-block" ng-show="minerRestart&&settings.userHelp">
+					Ordered from gentle to rough.
+				</p>
+				<div class="list-group" ng-show="minerRestart">
+					<a title="Reset miner" href="" ng-click="cgminer('restart')" class="list-group-item">Reset</a>
+					<a title="Start miner" href="" ng-click="cgminerHardCtl('1')" class="list-group-item">Start</a>
+					<a title="Stop miner" href="" ng-click="cgminerHardCtl('0')" class="list-group-item">Stop</a>
+					<a title="Shutdown your PI (be careful!)" href="" id="link_shutdown" onclick="ctrl_host(1)" class="list-group-item">Shutdown</a>
+					<a title="Reboot your PI" href="" id="link_reboot"  onclick="ctrl_host(0)" class="list-group-item">Reboot</a>
+				</div>
+			</div>
+		</div>
+
+    <h3>Pools</h3>
+
+    <p class="help-block" ng-show="settings.userHelp">
+      The settings below serve as direct input to the miner. <strong>One little error can and will let the miner crash.</strong>
+    </p>
+    <form name="poolForm" class="form-horizontal">
+      <div class="row">
+        <label class="col-sm-5">URL</label>
+        <label class="col-sm-5">User</label>
+        <label class="col-sm-2">Pass</label>
+      </div>
+      <div class="form-group" ng-repeat="pool in pools">
+        <div class="col-sm-5">
+          <input type="text" ng-model="pool.url" class="form-control" required>
+        </div>
+        <div class="col-sm-5">
+          <input type="text" ng-model="pool.user" class="form-control" required>
+        </div>
+        <div class="col-sm-2">
+          <div class="input-group">
+            <input type="text" ng-model="pool.pass" class="form-control" required>
+            <div class="input-group-btn">
+              <button type="button" ng-click="poolRemove($index)" class="btn btn-default pull-right">&times;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-default" ng-click="poolBack()">Reload pools</button>
+      <button type="button" class="btn btn-default" ng-click="poolAdd()">Add pool</button>
+      <button type="button" ng-show="poolForm.$dirty && poolForm.$valid" class="btn btn-success" ng-click="poolSave()">Save pools</button>
+    </form>
+  </div>
+</divdadas

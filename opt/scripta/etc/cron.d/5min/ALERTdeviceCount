@@ -1,0 +1,73 @@
+#!/usr/bin/php
+<?php
+
+
+include('inc/miner.inc.php');
+include('inc/settings.inc.php');
+include('inc/functions.inc.php');
+
+
+$stats = cgminer("devs", "");
+$devs = $stats['DEVS'];
+
+$devcount = deviceCount($devs);
+
+
+if(isset($argv[1])) {
+
+	echo "Arg    : " . $argv[1] . "\n\r";
+	echo "Devices: " . $devcount . "\n\r";
+	echo "Enabled: " . $settings['devicesWarn'] . "\n\r";
+	echo "Expected: " . $settings['miningExpDev'] . "\n\r";
+    //echo "Donating: " . $settings['donateActive'] . "\n\r";
+
+}
+
+if ($settings['alertEnable']) {
+
+
+	//if ($settings['miningExpDev'] <> $devcount and $settings['donateActive'] == 0) {
+	if ($settings['miningExpDev'] <> $devcount ) {
+
+		// Send an email if the devices dont match and set the deviceWarn falt
+
+		$message = "Scripta notification: " . $settings['alertDevice'] . ": Unexpected device count " . $devcount . " (Expected " . $settings['miningExpDev'] . ")";
+
+		sendEmail($settings, $message, $message);
+
+		//  Set the warning flag
+
+		$settings['devicesWarn'] = 1;
+		writeSettings($settings);
+
+
+	} 
+
+	if($settings['devicesWarn'] == 1 and $settings['miningExpDev'] == $devcount) {
+
+		$message = "Scripta notification: " . $settings['alertDevice'] . ": Unexpected device count recovered";
+
+		sendEmail($settings, $message, $message);
+
+		// Clear the warning flag
+		$settings['devicesWarn'] = 0;
+		writeSettings($settings);
+
+	}
+
+}
+var_dump($settings);
+
+function deviceCount($devs) {
+
+	$devices = 0;
+
+	foreach ($devs as $dev) {
+		if ($dev['MHS5s'] > 0) {
+			$devices++;
+		}
+	}
+
+	return $devices;
+
+}

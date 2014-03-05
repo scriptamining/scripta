@@ -1,0 +1,62 @@
+
+/* Structure */
+body{
+  padding-bottom: 50px;
+}
+.navbar{
+margin-bottom: 0px;
+}
+.container.down{
+  opacity: .5
+}
+
+/* Display on hover */
+.scripta-trigger .scripta-more{
+  display: none;
+}
+.scripta-trigger:hover .scripta-more{
+  display: inline-block;
+}
+
+/* Status charts */
+.graph-live{
+  height: 159px;
+  width: 100%
+}
+
+/* Status tables */
+td,th{
+  white-space: nowrap;
+}
+.table-right td,.table-right tfoot th{
+  text-align: right
+}
+.table-right td.text-left,.table-right tfoot th.text-left{
+  text-align: left
+}
+tr.text-muted{
+  background: #f5f5f5;
+}
+
+/* Index / Shorten wide values in tables and show them on hover */
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80px;
+}
+.ellipsis:hover{
+  overflow: visible;
+  max-width:none;
+  width:auto;
+  background-color: #fff!important;
+}
+
+/* Settings */
+input:required:invalid{
+  border-color: rgb(233, 50, 45);
+  box-shadow: 0px 0px 6px rgb(248, 185, 183);
+  color: rgb(185, 74, 72);
+  border-color: rgb(238, 95, 91);
+}
