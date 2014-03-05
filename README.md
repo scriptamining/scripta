@@ -23,7 +23,7 @@ The turnkey solution for litecoin mining with raspberry pi and fpga/asic boards
 
 ---=== The way of the turtle ===---
 
-Start from a fresh raspbian wheezy (2014-01-07)
+Start from a fresh raspbian wheezy (tested with 2014-01-07) Download here http://downloads.raspberrypi.org/raspbian_latest
 
 $>raspi-config ( if needed "Expand Filesystem" and reboot )
 
