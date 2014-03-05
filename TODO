@@ -52,4 +52,8 @@
  ]
 }
 
-5) the purpose of this file is to enable to freely associate each device to an executable and a set of parameters, along with the pools the dev should mine on. In the initial phase, for sake of semplicity, we could assume all pools to be the same (including worker name and pw) and focus on the various aspect of managing different executables/groups of parameters. This is a flexible solution able to manage quick integration of new hardware using custom-made miner software (for exmaple a patched cgminer) and, to support, when possible, a single miner software scenario.
+5) the purpose of this file is to enable to freely associate each device to an executable and a set of parameters, 
+along with the pools the dev should mine on. In the initial phase, for sake of semplicity, we could assume all pools 
+to be the same (including worker name and pw) and focus on the various aspect of managing different executables/groups 
+of parameters. This is a flexible solution able to manage quick integration of new hardware using custom-made miner 
+software (for exmaple a patched cgminer) and, to support, when possible, a single miner software scenario.
