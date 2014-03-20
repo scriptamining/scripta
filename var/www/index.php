@@ -85,7 +85,7 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
           &nbsp;-&nbsp;
           Temp {{status.pi.temp}} °C
           &nbsp;-&nbsp;
-          Load {{100*status.pi.load|number:0}}
+          Load {{status.pi.load|number:2}}
         </span>
         <a href='http://www.lateralfactory.com/scripta/'>Scripta</a>, by <a href='http://www.lateralfactory.com'>Lateral Factory</a> under GPLv3 License
       </p>
