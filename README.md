@@ -10,8 +10,8 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * TODO: TLS Warning (BRANCH=next rpi-update)  
 
 3. Set ssh port to 22.  Should probably turn off root ssh access and change password.  
-    ssh root@10.0.1.28
-    password: scripta
+    ssh root@10.0.1.28  
+    password: scripta  
     
 4. Change locales to en_US
 
@@ -28,8 +28,8 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * Miner commands seem broken.   
     * Pool URL is sometimes wrong.  
     * Replace Name with Serial number.  
-    * Replace Freq with Temp.  
-    * Khash instead of Mhash.  
+    * Replace Temp with Freq.  
+    * Show Khash instead of Mhash.  
     * Add option to choose miner exe.  
 
 10. Add GridSeed specific options to Miner form.  
