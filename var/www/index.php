@@ -89,7 +89,7 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
         </span>
         <a href='http://www.lateralfactory.com/scripta/'>Scripta</a>, by <a href='http://www.lateralfactory.com'>Lateral Factory</a> under GPLv3 License
       </p>
-LTC Donations welcome : Lcb3cy5nPnh3pQWPCpa55Zg8ShZj5kUHYC	
+<!-- LTC Donations welcome : Lcb3cy5nPnh3pQWPCpa55Zg8ShZj5kUHYC -->	
     </div>
   </footer>
   <script src="js/alertify.min.js"></script>
