@@ -2,7 +2,7 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
 [fourm posts](https://litecointalk.org/index.php?topic=9908.msg143787#msg143787)
 
 1. Started with Scripta 1.1 [image](http://www.lateralfactory.com/download.php?file=scripta-1_1.tgz)
-    * source file in image do not match [repo]([https://github.com/scriptamining/scripta.git])  
+    * source file in image do not match [repo]([https://github.com/scriptamining/scripta.git)  
     * rsync git files to image to get starting code base (all uses of "minepeon" replaced with "scripta" - why?)  
     
 2. Update raspberry to newest kernel (3.10.25+) and added 'slub_debug=FP' to bootline.conf
