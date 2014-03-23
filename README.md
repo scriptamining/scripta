@@ -1,83 +1,35 @@
----== Scripta ==---
+Inital information compiled from lots of good stuff around Scripta at litecointalk
+[fourm posts](https://litecointalk.org/index.php?topic=9908.msg143787#msg143787)
 
-The turnkey solution for litecoin mining with raspberry pi and fpga/asic boards
+1. Started with Scripta 1.1 [image](http://www.lateralfactory.com/download.php?file=scripta-1_1.tgz)
+    source file in image do not match [repo]([https://github.com/scriptamining/scripta.git])
+    rsync git files to image to get starting code base (all uses of "minepeon" replaced with "scripta" - why?)
+    
+2. Update raspberry to newest kernel (3.10.25+) and added 'slub_debug=FP' to bootline.conf
+    This should maybe fix the wierd USB debug error logging issues. 
+    TODO: TLS Warning (BRANCH=next rpi-update)
 
+3. Set ssh port to 22.  Should probably turn off root ssh access and change password.
+    ssh root@10.0.1.28
+    password: scripta
+    
+4. Change locales to en_US
 
----===         INSTALL INTRUCTIONS            ===---
+5. Add wifi support (wlan0)
+    set ssid and psk in 'network' block at '/etc/wpa_supplicant/wpa_supplicant.conf'
 
+6. Built GridSeed GS3355 specific version of cgminer with mulit-frequency support from [repo](https://github.com/girnyau/cgminer-gc3355)
 
+7. Edit '/opt/scripta/startup/miner-start.sh' to use cgminer-gc3355
 
----=== The easy way ===---
+8. Remove Scripta LTC donation address.  Disable MinePeon BTC hash time donation option.  Need to determine the right thing to do since _all_ of the web interface stuff is directly from the [MinePeon project](http://minepeon.com/index.php/Main_Page).  
 
-1) Download the full image here http://www.lateralfactory.com/download.php?file=scripta-1_1.tgz
+9. Issues:
+    Miner commands seem broken.  
+    Pool URL is sometimes wrong.  
+    Replace Name with Serial number.
+    Replace Freq with Temp.
+    Khash instead of Mhash.
+    Add option to choose miner exe.
 
-2) Burn it on a ssd in your favourite way
-
-3) Log in as root from a console (pw is "scripta")
-
-4) Remember to change root password with passwd 
-
-5) Enjoy
-
-
-
----=== The way of the turtle ===---
-
-Start from a fresh raspbian wheezy (tested with 2014-01-07) Download here http://downloads.raspberrypi.org/raspbian_latest
-
-$>raspi-config ( if needed "Expand Filesystem" and reboot )
-
-$>sudo apt-get update
-
-$>sudo apt-get install lighttpd
-
-$>sudo apt-get install php5-common php5-cgi php5 (Pay attention to packet's order)
-
-$>sudo lighty-enable-mod fastcgi-php
-
-$>sudo /etc/init.d/lighttpd force-reload
-
----= Add pi user to www-data group =---
-
-$>sudousermod -a -G www-data pi 
-
-$>sudo apt-get install php5-rrd libexpect-php5 php-auth-sasl php-mail php-net-smtp php-net-socket
-
-
----= Needed to enable https =---
-
-$>sudo mkdir /etc/lighttpd/certs
-
-$>sudo su
-
-$>cd /etc/lighttpd/certs
-
-$>openssl req -new -x509 -keyout lighttpd.pem -out lighttpd.pem -days 365 -nodes
-
-$>chmod 400 lighttpd.pem
-
-$>/etc/init.d/lighttpd force-reload
-
-
----= edit /etc/lighttpd/lighttpd.conf =---
- 
-$>pico /etc/lighttpd/lighttpd.conf 
- 
----= add the following lines at the end =---
- 
-$SERVER["socket"] == ":443" {
-  ssl.engine = "enable" 
-  ssl.pemfile = "/etc/lighttpd/certs/lighttpd.pem" 
-}
-
----= libs for cgminer =---
-
-$>sudo apt-get install libjansson4 libusb-1.0-0 ntpdate screen
-
----= install scripta package =---
-
-$>cd /
-
-$>tar -xf scripta_1-1.tgz
-
----= point your browser on raspberry ip address, enjoy! =---
+10. Add GridSeed specific options to Miner form.  
