@@ -66,18 +66,10 @@ if(!empty($r['status']['devs'])){
   }
 }
 
-
-$ret = explode(' ',$MHS5s);
-$KHS5s = ($ret[0]/1024). " Kh/s";
-$ret = explode(' ',$MHSav);
-$KHSav = ($ret[0]/1024). " Kh/s";
-
 $r['status']['dtot']=array(
   'devices'=>$devices,
   'MHS5s'=>$MHS5s,
   'MHSav'=>$MHSav,
-  'KHS5s'=>$KHS5s,
-  'KHSav'=>$KHSav,
   'Accepted'=>$Accepted,
   'Rejected'=>$Rejected,
   'HardwareErrors'=>$HardwareErrors,

@@ -38,7 +38,7 @@ elseif (!empty($_REQUEST['settings'])) {
     foreach ($newdata as $key => $value) {
       $r['data'][$key]=$value;
     }
-    file_put_contents($configScripta, json_encode($r['data'], JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
+    file_put_contents($configScripta, json_encode($r['data'], JSON_PRETTY_PRINT));
     $r['info'][]=array('type' => 'success', 'text' => 'Configuration saved');
   }
   // Load current settings
@@ -59,7 +59,7 @@ elseif (!empty($_REQUEST['pools'])) {
 
   // Overwrite current with new pools
   if(!empty($newdata)&&is_array($newdata)){
-    file_put_contents($configPools, json_encode($newdata, JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
+    file_put_contents($configPools, json_encode($newdata, JSON_PRETTY_PRINT));
     minerConfigGenerate();
     $r['data']=$newdata;
     $r['info'][]=array('type' => 'success', 'text' => 'Pools config saved');
@@ -82,7 +82,7 @@ elseif (!empty($_REQUEST['options'])) {
 
   // Overwrite current with new config
   if(!empty($newdata)&&is_array($newdata)){
-    file_put_contents($configOptns, json_encode($newdata, JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
+    file_put_contents($configOptns, json_encode($newdata, JSON_PRETTY_PRINT));
     minerConfigGenerate();
     $r['data']=$newdata;
     $r['info'][]=array('type' => 'success', 'text' => 'Miner options saved');

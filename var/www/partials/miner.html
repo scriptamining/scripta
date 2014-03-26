@@ -12,12 +12,14 @@
       Click to add pool to pool's list
     </p>
     <div class="list-group">
-      <a href="" ng-click="poolAdd({url:'coinotron.com:3334',pass:' '})" class="list-group-item">Coinotron</a>
-<a href="" ng-click="poolAdd({url:'ltc-eu.give-me-coins.com:3333'})" class="list-group-item">GiveMeCoins (EU)</a>  <a href="" ng-click="poolAdd({url:'ltc-eu.give-me-coins.com:3333'})" class="list-group-item">GiveMeCoins (EU)</a><a href="" ng-click="poolAdd({url:'stratum+tcp://litecoinpool.org:3333'})" class="list-group-item">Litecoinpool - London (UK)</a>
-<a href="" ng-click="poolAdd({url:'stratum+tcp://us.litecoinpool.org:3333'})" class="list-group-item">Litecoinpool - New York (USA)</a>
-<a href="" ng-click="poolAdd({url:'stratum+tcp://eu-1.liteguardian.com:3334'})" class="list-group-item">Liteguardian (EU)</a>
-<a href="" ng-click="poolAdd({url:'stratum+tcp://usa-1.liteguardian.com:3334'})" class="list-group-item">Liteguardian (USA)</a>
-<a href="" ng-click="poolAdd({url:'stratum+tcp://global.wemineltc.com:3335'})" class="list-group-item">WeMineLTC</a>
+        <a href="" ng-click="poolAdd({url:'coinotron.com:3334',pass:' '})" class="list-group-item">Coinotron</a>
+        <a href="" ng-click="poolAdd({url:'ltc-eu.give-me-coins.com:3333'})" class="list-group-item">GiveMeCoins (EU)</a>  
+        <a href="" ng-click="poolAdd({url:'ltc-eu.give-me-coins.com:3333'})" class="list-group-item">GiveMeCoins (EU)</a>
+        <a href="" ng-click="poolAdd({url:'stratum+tcp://litecoinpool.org:3333'})" class="list-group-item">Litecoinpool - London (UK)</a>
+        <a href="" ng-click="poolAdd({url:'stratum+tcp://us.litecoinpool.org:3333'})" class="list-group-item">Litecoinpool - New York (USA)</a>
+        <a href="" ng-click="poolAdd({url:'stratum+tcp://eu-1.liteguardian.com:3334'})" class="list-group-item">Liteguardian (EU)</a>
+        <a href="" ng-click="poolAdd({url:'stratum+tcp://usa-1.liteguardian.com:3334'})" class="list-group-item">Liteguardian (USA)</a>
+        <a href="" ng-click="poolAdd({url:'stratum+tcp://global.wemineltc.com:3335'})" class="list-group-item">WeMineLTC</a>
     </div>
   </div>
   <div class="col-sm-9 col-md-8 pull-right">
@@ -41,7 +43,6 @@
 		</div>
 
     <h3>Pools</h3>
-
     <p class="help-block" ng-show="settings.userHelp">
       The settings below serve as direct input to the miner. <strong>One little error can and will let the miner crash.</strong>
     </p>
@@ -71,5 +72,31 @@
       <button type="button" class="btn btn-default" ng-click="poolAdd()">Add pool</button>
       <button type="button" ng-show="poolForm.$dirty && poolForm.$valid" class="btn btn-success" ng-click="poolSave()">Save pools</button>
     </form>
+
+    <h3>Options <small><a href="https://github.com/ckolivas/cgminer#readme">more info on GitHub</a><a hreff="https://github.com/dtbartle/cgminer-gc3355">  (gc3355)</a></small></h3>
+
+    <form name="optionForm" class="form-horizontal optionform">
+      <div class="row">
+        <label class="col-sm-6 col-xs-6">Option</label>
+        <label class="col-sm-6 col-xs-6">Info</label>
+      </div>
+      <div class="form-group" ng-repeat="o in options">
+        <div class="col-sm-6 col-xs-6">
+          <input type="text" ng-model="o.key" class="form-control" required />
+        </div>
+        <div class="col-sm-6 col-xs-6">
+          <div class="input-group">
+            <input type="text" ng-model="o.value" class="form-control" required />
+            <div class="input-group-btn">
+              <button type="button" ng-click="optionRemove($index)" class="btn btn-default">&times;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-default" ng-click="optionBack()">Reload options</button>
+      <button type="button" class="btn btn-default" ng-click="optionAdd()">Add option</button>
+      <button type="button" ng-show="optionForm.$dirty && optionForm.$valid" class="btn btn-success" ng-click="optionSave()">Save config</button>
+    </form>
   </div>
+
 </divdadas

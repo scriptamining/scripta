@@ -1,7 +1,43 @@
-<h3>Backup</h3>
+<h3>Backup settings</h3>
 
 <form class="form-horizontal">
   <fieldset>
+    <div class="form-group">
+      <label for="backupName" class="control-label col-sm-3 col-md-2">Backup to</label>
+      <div class="col-sm-9 col-md-10">
+        <div class="input-group">
+          <tt class="input-group-addon">{{backupFolder}}</tt>
+          <input type="text" placeholder="Folder" id="backupName" name="backupName" class="form-control" ng-model="backupName">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3 col-md-2">
+        Items<br />
+        {{selItem()}} of {{items.length}} selected
+      </label>
+      <div class="col-sm-9 col-md-10">
+        <div class="checkbox" ng-repeat="item in items">
+          <label ng-class="{'text-muted': !item.selected}">
+            <input type="checkbox" ng-model="item.selected">
+            {{thisFolder}}{{item.name}}
+            <span class="label label-success" ng-show="item.bak">done</span>
+            <span class="label label-danger"  ng-show="item.fail">fail</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+        <div class="input-group">
+          <tt class="input-group-addon">{{thisFolder}}</tt>
+          <input type="text" ng-model="newItem" placeholder="add more items here" class="form-control">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="addItem()" ng-disabled="!newItem">Add item</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="form-group">
       <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
         <p class="help-block" ng-show="settings.userHelp">
@@ -11,16 +47,16 @@
         </p>
         <p class="help-block" ng-show="settings.userHelp">
           Backed up items will be confirmed by a green label. Problematic items get a red label.<br />
-          Click backup again and Scripta will attempt to backup the not yet backed up items again.
+          Click backup again and MinePeon will attempt to backup the not yet backed up items again.
         </p>
-        <button type="button" class="btn btn-default" ng-click="backupLocal()" ng-disabled="selItem()==0">Backup</button>
-        <button type="button" class="btn btn-default" ng-click="backupExport()" ng-disabled="selItem()==0">Export current configuration</button>
+        <button type="button" class="btn btn-default" ng-click="backupLocal()" ng-disabled="selItem()==0">Backup to device</button>
+        <button type="button" class="btn btn-default" ng-click="backupExport()" ng-disabled="selItem()==0">Export {{backupName}}.zip</button>
       </div>
     </div>
   </fieldset>
 </form>
 
-<h3>Restore</h3>
+<h3>Restore settings from backup</h3>
 <div class="row">
   <div class="col-sm-3 col-md-2">
     <div class="list-group">
@@ -31,20 +67,20 @@
     <div ng-hide="backups[restoring].items" class="alert alert-warning">
       There seems to be no files in this backup, this can happen if permission was denied.
     </div>
-    <!-- <div class="list-group">
+    <div class="list-group">
       <div ng-repeat="i in backups[restoring].items" class="list-group-item">
         {{i}}
       </div>
-    </div> -->
+    </div>
     <p class="help-block" ng-show="settings.userHelp">
       <b>Reload list</b> will scan the backup folder for saved backups.<br />
-      <b>Restore</b> will copy the items in the currently selected backup to the active Scripta folder. Restart the miner to let it use the restored settings.<br />
+      <b>Restore</b> will copy the items in the currently selected backup to the active MinePeon folder. Restart the miner to let it use the restored settings.<br />
       <b>Export ...</b> will make a zipfile of the items in the currently selected backup and serve it as a download.<br />
       <b>Import file...</b> lets you upload a zip file and will add it to the list of backups. If it does not show up, try to reload the list.
     </p>
     <button type="button" class="btn btn-default" ng-click="reload()">Reload list</button>
     <button type="button" class="btn btn-default" ng-click="restore()">Restore</button>
-    <button type="button" class="btn btn-default" ng-click="exportZip()">Export archived backup</button>
+    <button type="button" class="btn btn-default" ng-click="exportZip()">Export {{backups[restoring].dir}}.zip</button>
     <label for="file" class="btn btn-default">Import file...</label>
   </div>
 </div>
