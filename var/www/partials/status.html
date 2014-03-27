@@ -60,8 +60,8 @@
       <td ng-bind="d.Name" class='text-left' ng-class="{danger:d.MHS5s>0 && (d.Rejected/d.TotalShares > .05 || d.HardwareErrors/d.TotalShares > .1)}"></td>
       <td ng-bind="d.ID"></td>
       <td>{{d.Temperature}} °C</td>
-	  <td>{{(d.KHS5s/1024)|mhs}}h/s</td>
-      <td>{{(d.KHSav/1024)|mhs}}h/s</td> 
+	  <td>{{(d.MHS5s*1024)}} Kh/s</td>
+      <td>{{(d.MHSav*1024)}} Kh/s</td> 
       <td ng-bind="d.Accepted"></td>
       <td ng-bind-template="{{d.Rejected}}&nbsp;[{{100*d.Rejected/d.TotalShares|number:2}}%]" ng-class="{danger:d.Rejected/d.TotalShares > .05&&d.MHS5s>0}"></td>
       <td ng-bind-template="{{d.HardwareErrors}}&nbsp;[{{100*d.HardwareErrors/d.TotalShares|number:2}}%]" ng-class="{danger:d.HardwareErrors/d.TotalShares > .1&&d.MHS5s>0}"></td>

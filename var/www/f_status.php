@@ -12,6 +12,7 @@ returns success, status data and errors
 header('Content-type: application/json');
 
 include('inc/cgminer.inc.php');
+include('inc/ChromePhp.php');
 
 // Miner data
 //$r['summary'] = cgminer('summary', '')['SUMMARY'];
@@ -95,6 +96,8 @@ if(!empty($_REQUEST['all'])){
 }
 
 $r['status']['time'] = time();
+
+//ChromePhp::log($r);
 
 echo json_encode($r);
 ?>

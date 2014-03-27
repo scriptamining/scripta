@@ -6,6 +6,8 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
 	die();
 }
 
+include('inc/ChromePhp.php');
+
 /*
 f_settings syncs settings in different files and always returns new state
 returns settings and ['date']
@@ -38,7 +40,7 @@ elseif (!empty($_REQUEST['settings'])) {
     foreach ($newdata as $key => $value) {
       $r['data'][$key]=$value;
     }
-    file_put_contents($configScripta, json_encode($r['data'], JSON_PRETTY_PRINT));
+    file_put_contents($configScripta, json_encode($r['data'], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     $r['info'][]=array('type' => 'success', 'text' => 'Configuration saved');
   }
   // Load current settings
@@ -57,9 +59,22 @@ elseif (!empty($_REQUEST['pools'])) {
   $newdata   = json_decode($_REQUEST['pools'], true);
   $r['data'] = json_decode(@file_get_contents($configPools), true);
 
+  foreach ($r['data'] as $id => $p) 
+  { 
+    $r['data'][$id]['url'] = str_replace('stratum tcp','stratum+tcp',$p['url']);
+  }
+  foreach ($newdata as $id => $p) 
+  { 
+    $newdata[$id]['url'] = str_replace('stratum tcp','stratum+tcp',$p['url']);
+  }
+  
+
+  ChromePhp::log($newdata);
+  ChromePhp::log(json_encode($newdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));    
+    
   // Overwrite current with new pools
   if(!empty($newdata)&&is_array($newdata)){
-    file_put_contents($configPools, json_encode($newdata, JSON_PRETTY_PRINT));
+    file_put_contents($configPools, json_encode($newdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     minerConfigGenerate();
     $r['data']=$newdata;
     $r['info'][]=array('type' => 'success', 'text' => 'Pools config saved');
@@ -82,7 +97,7 @@ elseif (!empty($_REQUEST['options'])) {
 
   // Overwrite current with new config
   if(!empty($newdata)&&is_array($newdata)){
-    file_put_contents($configOptns, json_encode($newdata, JSON_PRETTY_PRINT));
+    file_put_contents($configOptns, json_encode($newdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     minerConfigGenerate();
     $r['data']=$newdata;
     $r['info'][]=array('type' => 'success', 'text' => 'Miner options saved');
@@ -121,6 +136,6 @@ function minerConfigGenerate(){
   }
 
   $miner['pools']= json_decode(@file_get_contents($configPools), true);
-  file_put_contents($configMiner, json_encode($miner, JSON_PRETTY_PRINT));
+  file_put_contents($configMiner, json_encode($miner, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 }
 ?>

@@ -1040,7 +1040,7 @@ function fmt($section, $name, $value, $when, $alldata)
     
     if ($ret === '')
         $ret = $b;
-    
+        
     return array(
         $ret,
         $class
