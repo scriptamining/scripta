@@ -91,7 +91,7 @@
       <th>URL</th>
       <th>User</th>
       <th>Status</th>
-      <th><div title="Priority">Pr</div></th>
+      <th><div title="Priority">Prio</div></th>
       <th><div title="GetWorks">GW</div></th>
       <th><div title="Accepted">Acc</div></th>
       <th><div title="Rejected">Rej</div></th>
@@ -116,8 +116,10 @@
       <td ng-bind="p.Discarded"></td>
       <td ng-bind="1000*p.LastShareTime|date:'HH:mm:ss'"></td>
       <td ng-bind="p.Diff1Shares"></td> 
-      <td ng-bind-template="{{p.DifficultyAccepted}}&nbsp;[{{100*p.DifficultyAccepted/p.Diff1Shares|number:2}}%]"></td>
-      <td ng-bind-template="{{p.DifficultyRejected}}&nbsp;[{{100*p.DifficultyRejected/p.Diff1Shares|number:2}}%]"></td>
+<!--  <td ng-bind-template="{{p.DifficultyAccepted}}&nbsp;[{{100*p.DifficultyAccepted/p.Diff1Shares|number:2}}%]"></td>
+      <td ng-bind-template="{{p.DifficultyRejected}}&nbsp;[{{100*p.DifficultyRejected/p.Diff1Shares|number:2}}%]"></td> -->
+      <td ng-bind="p.DifficultyAccepted"></td>
+      <td ng-bind="p.DifficultyRejected"></td>         
       <td ng-bind="p.LastShareDifficulty"></td>
       <td ng-bind="p.BestShare"></td> 
     </tr>

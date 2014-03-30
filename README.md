@@ -30,7 +30,7 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * different PI web-based controller for Gridseed at [Hashra](https://github.com/HASHRA)
 
 9. Fix pool URL JSON encoding.  Add back miner config name/values settings from MinePeonUI.  All cgminer settings can be changed or added from miner form. 
-    * ability to set per GSD frequency based on Serial # from list: 
+    * ability to set per GSD frequency based on Serial # from freq list: 
     ```
         static const int opt_frequency[] = {
             700,  706,  713,  719,  725,  731,  738,  744,
@@ -51,7 +51,7 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * replace Temperature with Frequency
     
 11. Open Issues
-    * miner commands menu seem broken   
-    * DAcc seems crazy
+    * miner commands seem broken   
+    * DAcc and DRej seem crazy
     * maybe reported [hashrate](http://cryptomining-blog.com/1760-what-is-the-actual-hashrate-you-get-from-your-gridseed-asic/) is not quite accurate
 

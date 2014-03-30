@@ -99,7 +99,5 @@ if(!empty($_REQUEST['all'])){
 
 $r['status']['time'] = time();
 
-//ChromePhp::log($r);
-
 echo json_encode($r);
 ?>
