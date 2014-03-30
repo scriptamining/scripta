@@ -22,7 +22,7 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
   <link href="css/font-awesome.min.css" rel="stylesheet"> -->
   <link href="css/theme.css" rel="stylesheet">
   <link href="css/alertify.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
   <link href="css/custom.css" rel="stylesheet">
 </head>
 <body ng-controller="CtrlMain">

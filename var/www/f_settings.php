@@ -67,11 +67,7 @@ elseif (!empty($_REQUEST['pools'])) {
   { 
     $newdata[$id]['url'] = str_replace('stratum tcp','stratum+tcp',$p['url']);
   }
-  
-
-  ChromePhp::log($newdata);
-  ChromePhp::log(json_encode($newdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));    
-    
+      
   // Overwrite current with new pools
   if(!empty($newdata)&&is_array($newdata)){
     file_put_contents($configPools, json_encode($newdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));

@@ -43,7 +43,7 @@
 <table ng-show="status.devs" id="statusDevs" class="table table-bordered table-right table-hover">
   <thead>
     <tr>
-      <th>Serial</th>
+      <th>GDC Serial</th>
       <th>ID</th>
       <th>Freq</th>
       <th>Hashrate 5s</th>
@@ -57,11 +57,11 @@
   </thead>
   <tbody>
     <tr ng-repeat="d in status.devs" ng-class="{'text-muted':d.MHS5s==0}">
-      <td ng-bind="d.Name" class='text-left' ng-class="{danger:d.MHS5s>0 && (d.Rejected/d.TotalShares > .05 || d.HardwareErrors/d.TotalShares > .1)}"></td>
+      <td ng-bind="d.Serial" class='text-left' ng-class="{danger:d.MHS5s>0 && (d.Rejected/d.TotalShares > .05 || d.HardwareErrors/d.TotalShares > .1)}"></td>
       <td ng-bind="d.ID"></td>
-      <td>{{d.Temperature}} °C</td>
-	  <td>{{(d.MHS5s*1024)}} Kh/s</td>
-      <td>{{(d.MHSav*1024)}} Kh/s</td> 
+      <td ng-bind="d.Frequency"></td>
+	  <td>{{d.KHS5s}} Kh/s</td>
+      <td>{{d.KHSav}} Kh/s</td> 
       <td ng-bind="d.Accepted"></td>
       <td ng-bind-template="{{d.Rejected}}&nbsp;[{{100*d.Rejected/d.TotalShares|number:2}}%]" ng-class="{danger:d.Rejected/d.TotalShares > .05&&d.MHS5s>0}"></td>
       <td ng-bind-template="{{d.HardwareErrors}}&nbsp;[{{100*d.HardwareErrors/d.TotalShares|number:2}}%]" ng-class="{danger:d.HardwareErrors/d.TotalShares > .1&&d.MHS5s>0}"></td>

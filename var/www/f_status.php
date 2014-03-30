@@ -54,6 +54,8 @@ $Rejected = 0;
 $HardwareErrors = 0;
 $Utility = 0;
 
+ChromePhp::log($r['status']);
+
 if(!empty($r['status']['devs'])){
   foreach ($r['status']['devs'] as $id => $dev) {
     $devices += $dev['MHS5s']>0?1:0; // Only count hashing devices

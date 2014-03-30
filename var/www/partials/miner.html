@@ -52,19 +52,23 @@
     <form name="poolForm" class="form-horizontal">
       <div class="row">
         <label class="col-sm-5">URL</label>
-        <label class="col-sm-5">User</label>
-        <label class="col-sm-2">Pass</label>
+        <label class="col-sm-3">Username</label>
+        <label class="col-sm-2">Password</label>
+        <label class="col-sm-2">Priority</label>
       </div>
       <div class="form-group" ng-repeat="pool in pools">
         <div class="col-sm-5">
           <input type="text" ng-model="pool.url" class="form-control" required>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <input type="text" ng-model="pool.user" class="form-control" required>
         </div>
         <div class="col-sm-2">
+          <input type="text" ng-model="pool.pass" class="form-control" required>
+        </div>
+        <div class="col-sm-2">
           <div class="input-group">
-            <input type="text" ng-model="pool.pass" class="form-control" required>
+            <input type="text" ng-model="pool.prio" class="form-control" required>
             <div class="input-group-btn">
               <button type="button" ng-click="poolRemove($index)" class="btn btn-default pull-right">&times;</button>
             </div>
@@ -76,7 +80,7 @@
       <button type="button" ng-show="poolForm.$dirty && poolForm.$valid" class="btn btn-success" ng-click="poolSave()">Save pools</button>
     </form>
 
-    <h3>Options <small><a href="https://github.com/ckolivas/cgminer#readme">more info on GitHub</a><a hreff="https://github.com/dtbartle/cgminer-gc3355">  (gc3355)</a></small></h3>
+    <h3>Options <small><a href="https://github.com/ckolivas/cgminer#readme">more info on GitHub</a><a href="https://github.com/dtbartle/cgminer-gc3355">  (gc3355)</a></small></h3>
 
     <form name="optionForm" class="form-horizontal optionform">
       <div class="row">
