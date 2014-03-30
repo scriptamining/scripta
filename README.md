@@ -31,20 +31,20 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
 
 9. Fix pool URL JSON encoding.  Add back miner config name/values settings from MinePeonUI.  All cgminer settings can be changed or added from miner form. 
     * ability to set per GSD frequency based on Serial # from list: 
-```
-    static const int opt_frequency[] = {
-        700,  706,  713,  719,  725,  731,  738,  744,
-        750,  756,  763,  769,  775,  781,  788,  794,
-        800,  813,  825,  838,  850,  863,  875,  888,
-        900,  913,  925,  938,  950,  963,  975,  988,
-       1000, 1013, 1025, 1038, 1050, 1063, 1075, 1088,
-       1100, 1113, 1125, 1138, 1150, 1163, 1175, 1188,
-       1200, 1213, 1225, 1238, 1250, 1263, 1275, 1288,
-       1300, 1313, 1325, 1338, 1350, 1363, 1375, 1388,
-       1400,
-         -1
-    };
-```
+    ```
+        static const int opt_frequency[] = {
+            700,  706,  713,  719,  725,  731,  738,  744,
+            750,  756,  763,  769,  775,  781,  788,  794,
+            800,  813,  825,  838,  850,  863,  875,  888,
+            900,  913,  925,  938,  950,  963,  975,  988,
+           1000, 1013, 1025, 1038, 1050, 1063, 1075, 1088,
+           1100, 1113, 1125, 1138, 1150, 1163, 1175, 1188,
+           1200, 1213, 1225, 1238, 1250, 1263, 1275, 1288,
+           1300, 1313, 1325, 1338, 1350, 1363, 1375, 1388,
+           1400,
+             -1
+        };
+    ```
 10. Modify Status table
     * show KHs instead of MHs
     * replace Name with Serial Number

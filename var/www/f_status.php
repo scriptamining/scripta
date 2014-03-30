@@ -54,7 +54,7 @@ $Rejected = 0;
 $HardwareErrors = 0;
 $Utility = 0;
 
-ChromePhp::log($r['status']);
+// ChromePhp::log($r['status']);
 
 if(!empty($r['status']['devs'])){
   foreach ($r['status']['devs'] as $id => $dev) {
