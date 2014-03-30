@@ -58,16 +58,29 @@ elseif (!empty($_REQUEST['settings'])) {
 elseif (!empty($_REQUEST['pools'])) {
   $newdata   = json_decode($_REQUEST['pools'], true);
   $r['data'] = json_decode(@file_get_contents($configPools), true);
-
+    
   foreach ($r['data'] as $id => $p) 
   { 
     $r['data'][$id]['url'] = str_replace('stratum tcp','stratum+tcp',$p['url']);
   }
+  $m=0;
   foreach ($newdata as $id => $p) 
   { 
     $newdata[$id]['url'] = str_replace('stratum tcp','stratum+tcp',$p['url']);
+    if($p['prio'] > $m) $m=$p['prio'];
   }
-      
+
+  // reorder pool list based on priority
+  if($m>0){
+    $pl=array();
+    for ($pp = 0; $pp <= $m; $pp++) {      
+      foreach ($newdata as $id => $p){
+        if($p['prio'] == $pp) $pl[]=$newdata[$id];
+      }
+    }
+    $newdata = $pl;
+  }      
+
   // Overwrite current with new pools
   if(!empty($newdata)&&is_array($newdata)){
     file_put_contents($configPools, json_encode($newdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));

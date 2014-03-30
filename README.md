@@ -51,7 +51,7 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * replace Temperature with Frequency
     
 11. Open Issues
-    * miner command menu seem broken   
-    * need to reorder pool list based on priority value
+    * miner commands menu seem broken   
     * DAcc seems crazy
+    * maybe reported [hashrate](http://cryptomining-blog.com/1760-what-is-the-actual-hashrate-you-get-from-your-gridseed-asic/) is not quite accurate
 
