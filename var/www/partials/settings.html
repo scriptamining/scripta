@@ -88,11 +88,11 @@
         <label class="checkbox-inline">
           <input type="checkbox" id="alertEnable" ng-model="settings.alertEnable"> E-mail alerts
         </label>
-		
+
         <!-- <label class="checkbox-inline">
-			<input type="checkbox" id="donateEnable" ng-model="settings.donateEnable"> Enable Donation 
+			<input type="checkbox" id="donateEnable" ng-model="settings.donateEnable"> Enable Donation
         </label> -->
-		
+
         <p class="help-block" ng-show="settings.userHelp">
           <b>Remote control</b> shares stats with a remote server. Scripta will accept commands from the server.<br />
           <b>Automatic recovery</b> responds to alert events by restarting the miner. First gently, then rough.<br />
@@ -100,7 +100,7 @@
           <b>Donation</b> donates a couple of mining minutes to the Scripta project.
         </p>
       </div>
-    </div> 
+    </div>
     <div class="form-group" ng-show="settings.recoverEnable">
       <label for="miningExpHash" class="control-label col-sm-3 col-md-2">Lower limit (hashrate)</label>
       <div class="col-sm-3 col-md-4">
@@ -140,30 +140,30 @@
       </div>
     </div>
   </fieldset>
-  
-    <h3>Donate</h3> 
+
+    <h3>Donate</h3>
     <fieldset>
 		<div class="form-group">
 			<label for="remoteEnable" class="control-label col-sm-3 col-md-2">Enable</label>
 			<div class="col-sm-9 col-md-10">
 				<label class="checkbox-inline">
-					<input type="checkbox" id="donateEnable" ng-model="settings.donateEnable"> 
+					<input type="checkbox" id="donateEnable" ng-model="settings.donateEnable">
 				</label>
 			</div>
 		</div>
 	</fieldset>
-	<fieldset ng-show="settings.donateEnable"> 
-		<div class="form-group" ng-show="settings.donateEnable"> 
-		  <label for="donateAmount" class="control-label col-sm-3 col-md-2">Donation minutes</label> 
-		  <div class="col-sm-9 col-md-10"> 
-			<input type="number" id="donateAmount" ng-model="settings.donateAmount" class="form-control"> 
-			<p class="help-block" ng-show="settings.userHelp"> 
-			  Please donate! 
-			</p> 
-		  </div> 
-		</div> 
-	</fieldset> 
-  
+	<fieldset ng-show="settings.donateEnable">
+		<div class="form-group" ng-show="settings.donateEnable">
+		  <label for="donateAmount" class="control-label col-sm-3 col-md-2">Donation minutes</label>
+		  <div class="col-sm-9 col-md-10">
+			<input type="number" id="donateAmount" ng-model="settings.donateAmount" class="form-control">
+			<p class="help-block" ng-show="settings.userHelp">
+			  Please donate!
+			</p>
+		  </div>
+		</div>
+	</fieldset>
+
   <fieldset ng-show="settings.alertEnable">
     <h3>E-mail alerts</h3>
     <div class="form-group">
@@ -171,7 +171,7 @@
       <div class="col-sm-9 col-md-10">
         <input type="text" id="alertDevice" ng-model="settings.alertDevice" ng-required="settings.alertEnable" class="form-control">
       </div>
-    </div> 
+    </div>
     <div class="form-group">
       <label for="alertEmail" class="control-label col-sm-3 col-md-2">E-mail</label>
       <div class="col-sm-9 col-md-10">
@@ -179,18 +179,24 @@
       </div>
     </div>
     <div class="form-group">
+      <label for="alertSender" class="control-label col-sm-3 col-md-2">Alert Sender E-mail</label>
+      <div class="col-sm-9 col-md-10">
+        <input type="email" id="alertSender" ng-model="settings.alertSender" ng-required="settings.alertEnable" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
       <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server address</label>
       <div class="col-sm-9 col-md-10">
         <input type="text" id="alertSmtp" ng-model="settings.alertSmtp" ng-required="settings.alertEnable" class="form-control">
         <p class="help-block" ng-show="settings.userHelp">Please choose your own SMTP server ip address.</p>
-      </div> 
+      </div>
     </div>
 	<div class="form-group">
       <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server port</label>
       <div class="col-sm-9 col-md-10">
         <input type="text" id="alertSmtpPort" ng-model="settings.alertSmtpPort" ng-required="settings.alertEnable" class="form-control" placeholder="25" value="25">
         <p class="help-block" ng-show="settings.userHelp">Please choose your own SMTP server port.</p>
-      </div> 
+      </div>
     </div>
 
 	 <div class="form-group">
@@ -208,7 +214,7 @@
       </div>
     </div>
   </fieldset>
-   
+
   <p class="clearfix text-right">
     <button type="button" class="btn btn-success" ng-click="sync('settings',settings,1);formMods.$setPristine()" ng-show="formMods.$dirty">Save settings</button>
   </p>
