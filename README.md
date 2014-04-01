@@ -12,7 +12,8 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
 
 3. Set ssh port to 22.  Should probably turn off root ssh access and change password.  
     ssh root@10.0.1.28  
-    password: scripta  
+    root password: scripta
+    web password: scripta
     
 4. Change locales to en_US
 
@@ -56,3 +57,5 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * miner commands seem broken   
     * maybe reported [hashrate](http://cryptomining-blog.com/1760-what-is-the-actual-hashrate-you-get-from-your-gridseed-asic/) is not quite accurate
     * something wierd with system time display, timezone, day-light savings
+
+mega [scripta-20140330](https://mega.co.nz/#!D5RiSZTR!wcDqC3yOeUrYC6tqYM7Lh5YbRjVpdtQhg29CagL4ZsI)
