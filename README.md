@@ -58,4 +58,4 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * maybe reported [hashrate](http://cryptomining-blog.com/1760-what-is-the-actual-hashrate-you-get-from-your-gridseed-asic/) is not quite accurate
     * something wierd with system time display, timezone, day-light savings
 
-mega [scripta-20140330](https://mega.co.nz/#!D5RiSZTR!wcDqC3yOeUrYC6tqYM7Lh5YbRjVpdtQhg29CagL4ZsI)
+mega link [scripta-20140330.img](https://mega.co.nz/#!D5RiSZTR!wcDqC3yOeUrYC6tqYM7Lh5YbRjVpdtQhg29CagL4ZsI)
