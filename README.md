@@ -19,7 +19,7 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
 5. Add wifi support (wlan0)
     * set ssid and psk in 'network' block at '/etc/wpa_supplicant/wpa_supplicant.conf'
 
-6. Built GridSeed GS3355 specific version of cgminer with mulit-frequency support from [repo](https://github.com/girnyau/cgminer-gc3355)
+6. Build GridSeed GS3355 specific version of cgminer with mulit-frequency support from [repo](https://github.com/girnyau/cgminer-gc3355)
     * modified cgminer-gc3355 to report Frequency and Serial in API calls: [repo](https://github.com/mox235/cgminer-gc3355)
 
 7. Edit '/opt/scripta/startup/miner-start.sh' to use cgminer-gc3355
@@ -30,6 +30,7 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * different PI web-based controller for Gridseed at [Hashra](https://github.com/HASHRA)
 
 9. Fix pool URL JSON encoding.  Add back miner config name/values settings from MinePeonUI.  All cgminer settings can be changed or added from miner form. 
+    * priority used to reorder pool list
     * ability to set per GSD frequency based on Serial # from freq list: 
     ```
         static const int opt_frequency[] = {
@@ -47,11 +48,11 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     ```
 10. Modify Status table
     * show KHs instead of MHs
-    * replace Name with Serial Number
+    * replace Name with GSD Serial Number
     * replace Temperature with Frequency
+    * remove percentages for DiffAccept and DiffReject 
     
 11. Open Issues
     * miner commands seem broken   
-    * DAcc and DRej seem crazy
     * maybe reported [hashrate](http://cryptomining-blog.com/1760-what-is-the-actual-hashrate-you-get-from-your-gridseed-asic/) is not quite accurate
-
+    * something wierd with system time display, timezone, day-light savings
