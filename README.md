@@ -6,9 +6,8 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * rsync github files to image to get starting code base (all uses of "minepeon" replaced with "scripta")
     * origianl MinePeon [project](http://minepeon.com/index.php/Main_Page) has lots of good PI setup and helpful info
     
-2. Update raspberry to newest kernel (3.10.25+) and added 'slub_debug=FP' to bootline.conf
+2. Update raspberry to newest kernel (3.10.33+) and added 'slub_debug=FP' to bootline.conf
     * this should fix the wierd USB debug error logging issues.   
-    * TODO: TLS Warning (BRANCH=next rpi-update)  
 
 3. Set ssh port to 22.  Should probably turn off root ssh access and change password.  
     ssh root@10.0.1.28  
@@ -58,6 +57,13 @@ Inital information compiled from lots of good stuff around Scripta at litecointa
     * maybe reported [hashrate](http://cryptomining-blog.com/1760-what-is-the-actual-hashrate-you-get-from-your-gridseed-asic/) is not quite accurate
     * something wierd with system time display, timezone, day-light savings
     * graphs should auto-refresh at login
-    * check if e-mail alerts work
+    * need to check if e-mail alerts work
+    * reboot shell comand does something bad after restart
 
 mega link [scripta-20140330.img](https://mega.co.nz/#!D5RiSZTR!wcDqC3yOeUrYC6tqYM7Lh5YbRjVpdtQhg29CagL4ZsI)
+
+  * updated PI firmware to maybe fix usb slub crash
+  * fix cgminer to always start at boot (/etc/rc.local)
+  * gzip image
+
+mega link [scripta-20140401.img.gz](https://mega.co.nz/#!Tx42mJab!XMpNsU6cfS23GAuli3C_BgwrdJ15sFLqEF7QNgrYTN4)
