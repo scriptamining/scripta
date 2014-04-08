@@ -88,35 +88,35 @@ The system watchdog daemon will check the following every 30 seconds:
   - syslog still alive
   - cgminer specific watchdog script `/opt/scripta/bin/wdog.py` then uses the following logic:
   ```
-      if (UI manual reboot)  
-      {  
-        force PI reboot  
-      }  
-      if (UI auto reboot)  
-      {  
-        if (sytem up for more than 60 seconds)  
-        {  
-          if (cgminer process not running)  
-          {  
-            if (UI enable) send email  
-            force PI reboot  
-          }  
-          if (ASIC device count less UI device count)  
-          {  
-            if (UI enable) send email  
-            force PI reboot  
-          }  
-          for (each ASIC device)   
-          {  
-            if (device hashrate less than UI value)  
-            {  
-              if (UI enable) send email  
-              force PI reboot  
-            }  
-          }  
-        }  
-      }  
-      OK  
+    if (UI manual reboot)
+    {
+      force PI reboot
+    }
+    if (UI auto reboot)
+    {
+      if (sytem up for more than 60 seconds
+      {
+        if (cgminer process not running
+        {
+          if (UI enable) send email
+          force PI reboot
+        }
+        if (ASIC device count less UI device count)
+        {
+          if (UI enable) send email
+          force PI reboot
+        }
+        for (each ASIC device)
+        {
+          if (device hashrate less than UI value)
+          {
+            if (UI enable) send email
+            force PI reboot
+          }
+        }
+      }
+    }
+    OK
   ```
   - watchdog details logged to syslog
   
