@@ -11,9 +11,9 @@
 #
 # By default this script does nothing.
 
-sudo /opt/scripta/startup/miner-start.sh &
-
+/opt/scripta/startup/miner-start.sh
 sleep 10
+
 # Print the IP address
 _IP=$(hostname -I) || true
 echo "                                               " 
@@ -23,7 +23,6 @@ echo " \_____  \_/ ___\_  __ \  \____ \   __\__  \   "
 echo " /        \  \___|  | \/  |  |_> >  |  / __ \_ "
 echo "/_______  /\___  >__|  |__|   __/|__| (____  / "
 echo "        \/     \/         |__|             \/  "
-
 printf "Connect to http://%s to manage Scripta.\n" "$_IP"
 printf "Happy mining!\n"
 
