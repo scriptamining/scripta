@@ -87,7 +87,6 @@ The system watchdog daemon will check the following every 30 seconds:
   - more than 1 page of RAM available
   - syslog still alive
   - cgminer specific watchdog script `/opt/scripta/bin/wdog.py` then uses the following logic:
-
   ```
   if (UI manual reboot)
   {
