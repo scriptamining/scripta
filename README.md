@@ -83,10 +83,12 @@ scripta-20140408
 Once the watchdog is enabled, it can be easy to get in a reboot loop.  To disable the system watchdog, try to quickly edit `/etc/watchdog.conf` and comment out `watchdog-device = /dev/watchdog`.  The cgminer API based watchdog script can be disabled using the UI checkbox or by commenting out `test-binary = /opt/scripta/bin/wdog.py` in the same config file.  You will have about 30 seconds each loop to try and unscrew things.   
 
 The system watchdog daemon will check the following every 30 seconds:
+  - watchdog details logged to syslog
   - sytem load less than 24/18/12
   - more than 1 page of RAM available
   - syslog still alive
   - cgminer specific watchdog script `/opt/scripta/bin/wdog.py` then uses the following logic:
+
   ```
   if (UI manual reboot)
   {
@@ -118,6 +120,5 @@ The system watchdog daemon will check the following every 30 seconds:
   }
   OK
   ```
-  - watchdog details logged to syslog
   
 mega link [scripta-20140408.img.gz](https://mega.co.nz/???)   
