@@ -79,9 +79,9 @@ scripta-20140408
   * modify `/opt/watchdog.conf` to reboot PI if bad things happen.  See below. 
   * add UI option for cgminer specific watchdog script `/opt/scripta/bin/wdog.py`.  See below.
   * add/fix UI option for manual reboot
-  * option of email notification on PI automatic reboot.  *YOUR EMAIL PASSWORD IS STORED IN PLAIN TEXT SO PLAN ACCORDINGLY*  
+  * option for email notification on PI automatic reboot.  *YOUR EMAIL PASSWORD IS STORED IN PLAIN TEXT SO PLAN ACCORDINGLY*  
   
-Once the watchdog is enabled, it can be easy to get in a reboot loop.  To disable the system watchdog, try to quickly edit `/etc/watchdog.conf` and comment out `watchdog-device = /dev/watchdog`.  The cgminer API based watchdog script can be disabled using the UI checkbox or by commenting out `test-binary = /opt/scripta/bin/wdog.py` in the same config file.  You will have about 30 seconds each loop to try and unscrew things.   
+Once the watchdog is enabled, it is possible to get in a reboot loop.  If this happens, disable the system watchdog by quick edit of `/etc/watchdog.conf` after boot and comment out `watchdog-device = /dev/watchdog`.  The cgminer API based watchdog script can be disabled by using the UI checkbox or commenting out `test-binary = /opt/scripta/bin/wdog.py` in the same config file.  You will have about 30 seconds each loop to try and unscrew things.   
 
 The system watchdog daemon will check the following every 30 seconds:
   - sytem load less than 24/18/12
@@ -118,7 +118,7 @@ The system watchdog daemon will check the following every 30 seconds:
       }
     }
   }
-  OK
+  OK (yay!!!)
   ```
   - watchdog details logged to syslog
   
