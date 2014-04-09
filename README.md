@@ -75,11 +75,11 @@ mega link [scripta-20140401.img.gz](https://mega.co.nz/#!Tx42mJab!XMpNsU6cfS23GA
 scripta-20140408
 
   * install [watchdog](http://linux.die.net/man/8/watchdog) service
-  * load bcm2708_wdog kernel module
-  * modify `/opt/watchdog.conf` to reboot PI if bad things happen.  See below 
-  * add UI option for cgminer specific watchdog script `/opt/scripta/bin/wdog.py`.  See below
+  * load `bcm2708_wdog` kernel module
+  * modify `/opt/watchdog.conf` to reboot PI if bad things happen.  See below. 
+  * add UI option for cgminer specific watchdog script `/opt/scripta/bin/wdog.py`.  See below.
   * add/fix UI option for manual reboot
-  * option of email notification on PI automatic reboot.  _YOUR EMAIL PASSWORD IS STORED IN PLAIN TEXT SO PLAN ACCORDINGLY_.  
+  * option of email notification on PI automatic reboot.  *YOUR EMAIL PASSWORD IS STORED IN PLAIN TEXT SO PLAN ACCORDINGLY*  
   
 Once the watchdog is enabled, it can be easy to get in a reboot loop.  To disable the system watchdog, try to quickly edit `/etc/watchdog.conf` and comment out `watchdog-device = /dev/watchdog`.  The cgminer API based watchdog script can be disabled using the UI checkbox or by commenting out `test-binary = /opt/scripta/bin/wdog.py` in the same config file.  You will have about 30 seconds each loop to try and unscrew things.   
 
