@@ -65,7 +65,7 @@ mega link [scripta-20140330.img](https://mega.co.nz/#!D5RiSZTR!wcDqC3yOeUrYC6tqY
 scripta-20140401
 
   * updated PI firmware to maybe fix usb slub crash
-  * fix cgminer to always start at boot (`/etc/rc.local`)
+  * fix cgminer to always start at boot `/etc/rc.local`
   * gzip image
 
 mega link [scripta-20140401.img.gz](https://mega.co.nz/#!Tx42mJab!XMpNsU6cfS23GAuli3C_BgwrdJ15sFLqEF7QNgrYTN4)
@@ -76,18 +76,18 @@ scripta-20140408
 
   * install [watchdog](http://linux.die.net/man/8/watchdog) service
   * load bcm2708_wdog kernel module
-  * modify `/opt/watchdog.conf` to reboot PI if bad things happen 
-  * add UI option for cgminer specific watchdog script `/opt/scripta/bin/wdog.py`
-  * add/fix UI option for manula reboot
+  * modify `/opt/watchdog.conf` to reboot PI if bad things happen.  See below 
+  * add UI option for cgminer specific watchdog script `/opt/scripta/bin/wdog.py`.  See below
+  * add/fix UI option for manual reboot
+  * option of email notification on PI automatic reboot.  _YOUR EMAIL PASSWORD IS STORED IN PLAIN TEXT SO PLAN ACCORDINGLY_.  
   
 Once the watchdog is enabled, it can be easy to get in a reboot loop.  To disable the system watchdog, try to quickly edit `/etc/watchdog.conf` and comment out `watchdog-device = /dev/watchdog`.  The cgminer API based watchdog script can be disabled using the UI checkbox or by commenting out `test-binary = /opt/scripta/bin/wdog.py` in the same config file.  You will have about 30 seconds each loop to try and unscrew things.   
 
 The system watchdog daemon will check the following every 30 seconds:
-  - watchdog details logged to syslog
   - sytem load less than 24/18/12
   - more than 1 page of RAM available
   - syslog still alive
-  - cgminer specific watchdog script `/opt/scripta/bin/wdog.py` then uses the following logic:
+  - cgminer specific watchdog script `/opt/scripta/bin/wdog.py` that uses the following logic:
 
   ```
   if (UI manual reboot)
@@ -96,9 +96,9 @@ The system watchdog daemon will check the following every 30 seconds:
   }
   if (UI auto reboot)
   {
-    if (sytem up for more than 60 seconds
+    if (sytem up for more than 60 seconds)
     {
-      if (cgminer process not running
+      if (cgminer process not running)
       {
         if (UI enable) send email
         force PI reboot
@@ -120,5 +120,6 @@ The system watchdog daemon will check the following every 30 seconds:
   }
   OK
   ```
+  - watchdog details logged to syslog
   
-mega link [scripta-20140408.img.gz](https://mega.co.nz/???)   
+mega link [scripta-20140408.img.gz](https://mega.co.nz/#!ah4XkCpL!A-b_10rNj1GvfQN36waTzxCRCHB_8UltIA4pFgaXIkw)   
