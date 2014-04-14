@@ -28,7 +28,7 @@ from pprint import pprint
 cgminer_host = 'localhost'
 cgminer_port = 4028
 monitor_interval = 15
-monitor_wait_after_email = 30
+monitor_wait_after_email = 10
 
 shared_output = ''
 shared_output_lock = threading.Lock()
@@ -106,7 +106,7 @@ def SendEmail(from_addr, to_addr_list, cc_addr_list,
     server.quit()
     print 'send email: ' + to_addr_list[0]
 
-
+    
 if __name__ == "__main__":
 
     now = (datetime.datetime.now()-datetime.datetime(1970,1,1)).total_seconds()
@@ -120,7 +120,11 @@ if __name__ == "__main__":
       ts_file.write(str(now));
       ts_file.close;
       dt = 0.0;
-      
+
+    if os.path.exists('/tmp/reboot.ts'):
+      print 'OK - wait for reboot command' 
+      sys.exit(0)
+          
     conf_file=open('/opt/scripta/etc/scripta.conf')
     conf = json.load(conf_file)
     pprint(conf)
@@ -155,18 +159,24 @@ if __name__ == "__main__":
         print 'OK - cgminer process running'
       else:
         output = 'ERROR - cgminer process not running (pid ' + ps + ')'  
-        if conf['alertEnable']:
-          SendEmail(
-            from_addr='scripta@hotmail.com', 
-            to_addr_list=[conf['alertEmailTo']], 
-            cc_addr_list=[],
-            subject='Scripta Reboot [' + conf['alertDevice'] + ']',
-            message=output,
-            login=conf['alertSmtpUser'],
-            password=conf['alertSmtpPwd'],
-            smtpserver=conf['alertSmtp'] + ':' + str(conf['alertSmtpPort']))
-          time.sleep(monitor_wait_after_email)  
-        sys.exit(1) # reboot    
+        time.sleep(3)
+        if not os.path.exists(ps):
+          output = 'ERROR - cgminer process not running (pid ' + ps + ')'  
+          if conf['alertEnable']:
+            SendEmail(
+              from_addr='scripta@hotmail.com', 
+              to_addr_list=[conf['alertEmailTo']], 
+              cc_addr_list=[],
+              subject='Scripta Reboot [' + conf['alertDevice'] + ']',
+              message=output,
+              login=conf['alertSmtpUser'],
+              password=conf['alertSmtpPwd'],
+              smtpserver=conf['alertSmtp'] + ':' + str(conf['alertSmtpPort']))
+            time.sleep(monitor_wait_after_email)  
+          ts_file=open('/tmp/reboot.ts','w')
+          ts_file.write(str(now));
+          ts_file.close;
+          sys.exit(1) # reboot    
         
     client = CgminerClient(cgminer_host, cgminer_port)
 
@@ -186,7 +196,10 @@ if __name__ == "__main__":
             login=conf['alertSmtpUser'],
             password=conf['alertSmtpPwd'],
             smtpserver=conf['alertSmtp'] + ':' + str(conf['alertSmtpPort']))
-          time.sleep(monitor_wait_after_email)  
+          time.sleep(monitor_wait_after_email)
+        ts_file=open('/tmp/reboot.ts','w')
+        ts_file.write(str(now));
+        ts_file.close;          
         sys.exit(1) # reboot    
       else:
         print 'OK - device count: ' + str(dev)  
@@ -211,6 +224,9 @@ if __name__ == "__main__":
               password=conf['alertSmtpPwd'],
               smtpserver=conf['alertSmtp'] + ':' + str(conf['alertSmtpPort']))
             time.sleep(monitor_wait_after_email)  
+          ts_file=open('/tmp/reboot.ts','w')
+          ts_file.write(str(now));
+          ts_file.close;            
           sys.exit(1) # reboot
         else:
           print 'OK - ' + str(d['Serial']) + ' hashrate: ' + str(d['KHS av']) 

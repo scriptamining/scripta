@@ -123,3 +123,12 @@ The system watchdog daemon will check the following every 30 seconds:
   - watchdog details logged to syslog
   
 mega link [scripta-20140408.img.gz](https://mega.co.nz/#!ah4XkCpL!A-b_10rNj1GvfQN36waTzxCRCHB_8UltIA4pFgaXIkw)   
+
+---
+
+scripta-20140412
+
+  * install wicd and wicd-curses to help with WiFi network configuration.  Use `wicd-curses` to setup your WiFi.
+  * fixed double emails from "cgminer process not running" reboot.
+  * update openssl (heartbleed)
+  * upgrade/downgrade rpi firmware to use 3.10.36+ kernel.  Maybe more stable USB than 20140408 version using "next" branch (??)
