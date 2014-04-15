@@ -11,12 +11,13 @@ returns success, status data and errors
 */
 header('Content-type: application/json');
 
-include('inc/cgminer.inc.php');
+include('inc/bfgminer.inc.php');
+include('inc/ChromePhp.php');
 
 // Miner data
-//$r['summary'] = cgminer('summary', '')['SUMMARY'];
-$devs=cgminer('devs');
-$pools=cgminer('pools');
+//$r['summary'] = bfgminer('summary', '')['SUMMARY'];
+$devs=bfgminer('devs');
+$pools=bfgminer('pools');
 
 if(!empty($devs['data']['DEVS'])){
   $r['status']['devs'] = $devs['data']['DEVS'];
@@ -53,6 +54,8 @@ $Rejected = 0;
 $HardwareErrors = 0;
 $Utility = 0;
 
+ChromePhp::log($r['status']);
+
 if(!empty($r['status']['devs'])){
   foreach ($r['status']['devs'] as $id => $dev) {
     $devices += $dev['MHS5s']>0?1:0; // Only count hashing devices
@@ -66,18 +69,10 @@ if(!empty($r['status']['devs'])){
   }
 }
 
-
-$ret = explode(' ',$MHS5s);
-$KHS5s = ($ret[0]/1024). " Kh/s";
-$ret = explode(' ',$MHSav);
-$KHSav = ($ret[0]/1024). " Kh/s";
-
 $r['status']['dtot']=array(
   'devices'=>$devices,
   'MHS5s'=>$MHS5s,
   'MHSav'=>$MHSav,
-  'KHS5s'=>$KHS5s,
-  'KHSav'=>$KHSav,
   'Accepted'=>$Accepted,
   'Rejected'=>$Rejected,
   'HardwareErrors'=>$HardwareErrors,
@@ -93,7 +88,7 @@ if(!empty($_REQUEST['all'])){
   $r['status']['pi']['temp'] = exec('cat /sys/class/thermal/thermal_zone0/temp')/1000;
 
   // What other interesting stuff is in summary?
-  $summary=cgminer('summary');
+  $summary=bfgminer('summary');
   if(!empty($summary['data']['SUMMARY'][0]['Elapsed'])){
     $r['status']['uptime'] = $summary['data']['SUMMARY'][0]['Elapsed'];
   }
@@ -103,6 +98,8 @@ if(!empty($_REQUEST['all'])){
 }
 
 $r['status']['time'] = time();
+
+//ChromePhp::log($r);
 
 echo json_encode($r);
 ?>

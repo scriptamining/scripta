@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_A4eN5W
 ---== Scripta ==---
 
 The turnkey solution for litecoin mining with raspberry pi and fpga/asic boards
@@ -81,3 +82,15 @@ $>cd /
 $>tar -xf scripta_1-1.tgz
 
 ---= point your browser on raspberry ip address, enjoy! =---
+=======
+All document for building USB BTC/LTC dual miner based on GC3355 chips.
+
+1. Hardware
+Include Schematic, PCB, BOM.
+
+2. Firmware
+Firmware for ARM Cortex STM32F103 CPU, to control set of GC3355 mining chips.
+
+3. Software
+cgminer and cpuminer program for BTC and LTC mining.
+>>>>>>> .merge_file_P17nAC

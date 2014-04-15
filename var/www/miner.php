@@ -94,6 +94,7 @@ $mobilepage        = array(
     'DEVS+NOTIFY' => array(
         'DEVS.Name=Name',
         'DEVS.ID=ID',
+        'DEVS.devscan=Serial',
         'DEVS.Status=Status',
         'DEVS.Temperature=Temp',
         'DEVS.MHS av=MHS av',
@@ -1041,6 +1042,10 @@ function fmt($section, $name, $value, $when, $alldata)
     if ($ret === '')
         $ret = $b;
     
+include('inc/ChromePhp.php');
+ChromePhp::log($ret);
+ChromePhp::log($class);
+    
     return array(
         $ret,
         $class
@@ -1462,7 +1467,7 @@ function showrigs($anss, $headname, $rigname)
         'Description' => 1,
         'When' => 1,
         'API' => 1,
-        'CGMiner' => 1
+        'BFGminer' => 1
     );
     showhead('', $dthead);
     
@@ -1710,8 +1715,8 @@ function pagebuttons($rig, $pg)
         $rg = '';
         if (count($rigs) > 1)
             $rg = " Rig $rig";
-        echo "<input type=button value='Restart' onclick='prc(\"restart&rig=$rig\",\"Restart CGMiner$rg\")'>";
-        echo "&nbsp;<input type=button value='Quit' onclick='prc(\"quit&rig=$rig\",\"Quit CGMiner$rg\")'>";
+        echo "<input type=button value='Restart' onclick='prc(\"restart&rig=$rig\",\"Restart BFGminer$rg\")'>";
+        echo "&nbsp;<input type=button value='Quit' onclick='prc(\"quit&rig=$rig\",\"Quit BFGminer$rg\")'>";
     }
     refreshbuttons();
     if (isset($_SESSION[$ses]))
@@ -1746,7 +1751,7 @@ function doOne($rig, $preprocess)
     if ($notify)
         $cmds['notify'] = 'device status';
     
-    $cmds['config'] = 'cgminer config';
+    $cmds['config'] = 'bfgminer config';
     
     process($cmds, $rig);
     

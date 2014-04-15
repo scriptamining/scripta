@@ -1,4 +1,3 @@
-
 <div ng-hide="graphShowLive">
   <h3>
     Graphs
@@ -43,7 +42,7 @@
 <table ng-show="status.devs" id="statusDevs" class="table table-bordered table-right table-hover">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Device</th>
       <th>ID</th>
       <th>Temp</th>
       <th>Hashrate 5s</th>
@@ -60,10 +59,8 @@
       <td ng-bind="d.Name" class='text-left' ng-class="{danger:d.MHS5s>0 && (d.Rejected/d.TotalShares > .05 || d.HardwareErrors/d.TotalShares > .1)}"></td>
       <td ng-bind="d.ID"></td>
       <td>{{d.Temperature}} °C</td>
-      <td>{{d.MHS5s|mhs}}h/s</td>
-      <td>{{d.MHSav|mhs}}h/s</td>
-	  <!-- <td>{{d.KHS5s|mhs}}h/s</td>
-      <td>{{d.KHSav|mhs}}h/s</td> -->
+	  <td>{{(d.MHS5s*1024)}} Kh/s</td>
+      <td>{{(d.MHSav*1024)}} Kh/s</td> 
       <td ng-bind="d.Accepted"></td>
       <td ng-bind-template="{{d.Rejected}}&nbsp;[{{100*d.Rejected/d.TotalShares|number:2}}%]" ng-class="{danger:d.Rejected/d.TotalShares > .05&&d.MHS5s>0}"></td>
       <td ng-bind-template="{{d.HardwareErrors}}&nbsp;[{{100*d.HardwareErrors/d.TotalShares|number:2}}%]" ng-class="{danger:d.HardwareErrors/d.TotalShares > .1&&d.MHS5s>0}"></td>
@@ -118,8 +115,10 @@
       <td ng-bind="p.Discarded"></td>
       <td ng-bind="1000*p.LastShareTime|date:'HH:mm:ss'"></td>
       <td ng-bind="p.Diff1Shares"></td> 
-      <td ng-bind-template="{{p.DifficultyAccepted}}&nbsp;[{{100*p.DifficultyAccepted/p.Diff1Shares|number:2}}%]"></td>
-      <td ng-bind-template="{{p.DifficultyRejected}}&nbsp;[{{100*p.DifficultyRejected/p.Diff1Shares|number:2}}%]"></td>
+<!-- <td ng-bind-template="{{p.DifficultyAccepted}}&nbsp;[{{100*p.DifficultyAccepted/p.Diff1Shares|number:2}}%]"></td>
+		<td ng-bind-template="{{p.DifficultyRejected}}&nbsp;[{{100*p.DifficultyRejected/p.Diff1Shares|number:2}}%]"></td> -->
+	  <td ng-bind="p.DifficultyAccepted"></td>
+      <td ng-bind="p.DifficultyRejected"></td> 
       <td ng-bind="p.LastShareDifficulty"></td>
       <td ng-bind="p.BestShare"></td> 
     </tr>

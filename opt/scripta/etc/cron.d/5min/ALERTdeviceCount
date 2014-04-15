@@ -7,7 +7,7 @@ include('inc/settings.inc.php');
 include('inc/functions.inc.php');
 
 
-$stats = cgminer("devs", "");
+$stats = bfgminer("devs", "");
 $devs = $stats['DEVS'];
 
 $devcount = deviceCount($devs);
