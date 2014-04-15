@@ -1,0 +1,54 @@
+[
+    {
+        "key": "api-listen",
+        "value": true
+    },
+    {
+        "key": "api-port",
+        "value": "4028"
+    },
+    {
+        "key": "expiry",
+        "value": "120"
+    },
+    {
+        "key": "hotplug",
+        "value": "5"
+    },
+    {
+        "key": "log",
+        "value": "5"
+    },
+    {
+        "key": "no-pool-disable",
+        "value": true
+    },
+    {
+        "key": "queue",
+        "value": "1"
+    },
+    {
+        "key": "scan-time",
+        "value": "30"
+    },
+    {
+        "key": "scan-time",
+        "value": "30"
+    },
+    {
+        "key": "scrypt",
+        "value": true
+    },
+    {
+        "key": "shares",
+        "value": "0"
+    },
+    {
+        "key": "gridseed-options",
+        "value": "baud=115200,chips=5,freq=700"
+    },
+    {
+        "key": "gridseed-freq",
+        "value": "6D8512995148=913,6D8B54835251=850,6D9021724857=900,6D81116F5650=888,6D973F855057=825,6D82475A4857=825"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "url": "stratum+tcp://usa.wemineltc.com:3336",
+        "user": "mox235.1",
+        "pass": "1",
+        "prio": "2"
+    },
+    {
+        "url": "stratum+tcp://megahash.wemineltc.com:3333",
+        "user": "mox235.1",
+        "pass": "1",
+        "prio": "1"
+    },
+    {
+        "url": "stratum+tcp://stratum.scryptguild.com:3333",
+        "user": "mox235_gridseed",
+        "pass": "1",
+        "prio": "0"
+    },
+    {
+        "url": "stratum+tcp://us.ltcrabbit.com:3334",
+        "user": "mox235.1",
+        "pass": "1",
+        "prio": "3"
+    }
+]
