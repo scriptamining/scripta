@@ -9,10 +9,10 @@ set-device - dualminer:clock=850 or gridseed:clock=850
 If the device does not automatically recognize your miners, you can ssh root@"scripta IP address" and use command "screen -r" to manually add devices in BFG menu.
 
 Known Issues:
-1)Static Graphs not working
-2)WebUI does not load if RPi is turned on with Miner's connected (to work-around this, plug in the RPi and wait until you see yellow and green activity LEDs, then wait 5-10 seconds before plugging in Miner)
-3)Individual Miner Serial numbers don't show. Plan on adding support to set per-device clock speed by individual serial number.
-4) Reboot and shutdown commands can be finicky.
+	1)Static Graphs not working
+	2)WebUI does not load if RPi is turned on with Miner's connected (to work-around this, plug in the RPi and wait until you see yellow and green activity LEDs, then wait 5-10 seconds before plugging in Miner)
+	3)Individual Miner Serial numbers don't show. Plan on adding support to set per-device clock speed by individual serial number.
+	4) Reboot and shutdown commands can be finicky.
 
 If you have found use for this version please consider a donation, as we opted out of building it into the program
 
