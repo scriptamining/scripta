@@ -28,7 +28,7 @@ if (!file_exists($RRD)) {
 
 require('inc/miner.inc.php');
 
-$return = bfgminer("summary", "");
+$return = cgminer("summary", "");
 
 $hashrate = $return['SUMMARY'][0]['MHSav'] * 1000;
 $hashrate = time() . ':' . $hashrate;
@@ -41,5 +41,4 @@ $update = array(
 $ret = rrd_update($RRD, $update);
 
 //$hashrate;
-
 ?>

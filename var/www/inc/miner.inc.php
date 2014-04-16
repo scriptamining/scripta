@@ -1,6 +1,6 @@
 <?php
 
-function bfgminer($command, $parameter) {
+function cgminer($command, $parameter) {
 
   $command = array (
     'command'  => $command,
