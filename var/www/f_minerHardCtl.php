@@ -8,10 +8,10 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
 
 header('Content-type: application/json');
 
-include('inc/cgminer.inc.php');
+include('inc/bfgminer.inc.php');
 
 //if ( !empty($_REQUEST['command']) ) {
-  $r = cgminerHardCtl($_REQUEST['command']);
+  $r = bfgminerHardCtl($_REQUEST['command']);
   echo json_encode($r);
 //}
 ?>

@@ -22,7 +22,7 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
   <link href="css/font-awesome.min.css" rel="stylesheet"> -->
   <link href="css/theme.css" rel="stylesheet">
   <link href="css/alertify.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
   <link href="css/custom.css" rel="stylesheet">
 </head>
 <body ng-controller="CtrlMain">
@@ -85,11 +85,11 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
           &nbsp;-&nbsp;
           Temp {{status.pi.temp}} °C
           &nbsp;-&nbsp;
-          Load {{100*status.pi.load|number:0}}
+          Load {{status.pi.load|number:2}}
         </span>
         <a href='http://www.lateralfactory.com/scripta/'>Scripta</a>, by <a href='http://www.lateralfactory.com'>Lateral Factory</a> under GPLv3 License
       </p>
-LTC Donations welcome : Lcb3cy5nPnh3pQWPCpa55Zg8ShZj5kUHYC	
+<!-- LTC Donations welcome : Lcb3cy5nPnh3pQWPCpa55Zg8ShZj5kUHYC -->	
     </div>
   </footer>
   <script src="js/alertify.min.js"></script>

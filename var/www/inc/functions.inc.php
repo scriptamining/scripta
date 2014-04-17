@@ -28,3 +28,4 @@ function sendEmail($settings, $subject, $body) {
     $esito = $mail->send($settings['alertEmail'], $headers, $body);
 	if (PEAR::isError($esito)) { print($esito->getMessage());}else{print "end";}
 }
+?>

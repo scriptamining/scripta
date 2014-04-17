@@ -41,5 +41,4 @@ $update = array(
 $ret = rrd_update($RRD, $update);
 
 //$hashrate;
-
 ?>

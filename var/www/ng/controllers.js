@@ -190,7 +190,7 @@ angular.module('Scripta.controllers', [])
     });
   }
 
-  $scope.cgminer = function(command,parameter) {
+  $scope.bfgminer = function(command,parameter) {
     $scope.tick();
 
     var execute = function(){
@@ -204,7 +204,7 @@ angular.module('Scripta.controllers', [])
     $timeout(execute, 1000);
   };
 
- $scope.cgminerHardCtl = function(command) {
+ $scope.bfgminerHardCtl = function(command) {
     $scope.tick();
 
     var execute = function(){
