@@ -1,5 +1,5 @@
 #!/bin/bash
-/usr/bin/screen -S bfgminer -X quit
+/usr/bin/screen -S miner -X quit
 cd
 git pull
 sudo chown -R www-data /opt/scripta
