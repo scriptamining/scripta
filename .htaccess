@@ -1,0 +1,4 @@
+AuthUserFile /opt/scripta/etc/uipassword
+AuthType Basic
+AuthName "root"
+Require valid-user
