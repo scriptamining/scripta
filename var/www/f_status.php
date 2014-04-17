@@ -15,9 +15,9 @@ include('inc/bfgminer.inc.php');
 include('inc/ChromePhp.php');
 
 // Miner data
-//$r['summary'] = bfgminer('summary', '')['SUMMARY'];
-$devs=bfgminer('devs');
-$pools=bfgminer('pools');
+//$r['summary'] = miner('summary', '')['SUMMARY'];
+$devs=miner('devs');
+$pools=miner('pools');
 
 if(!empty($devs['data']['DEVS'])){
   $r['status']['devs'] = $devs['data']['DEVS'];
@@ -88,7 +88,7 @@ if(!empty($_REQUEST['all'])){
   $r['status']['pi']['temp'] = exec('cat /sys/class/thermal/thermal_zone0/temp')/1000;
 
   // What other interesting stuff is in summary?
-  $summary=bfgminer('summary');
+  $summary=miner('summary');
   if(!empty($summary['data']['SUMMARY'][0]['Elapsed'])){
     $r['status']['uptime'] = $summary['data']['SUMMARY'][0]['Elapsed'];
   }

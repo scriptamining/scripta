@@ -6,7 +6,7 @@ r.data
 r.error
 */
 
-function bfgminerHardCtl($cmd){
+function minerHardCtl($cmd){
 openlog("myScriptLog", LOG_PID | LOG_PERROR, LOG_LOCAL0);
                 syslog(LOG_WARNING, "Attempting to exec");
                 closelog();
@@ -25,7 +25,7 @@ return true;
 }
 
 
-function bfgminer($command='summary',$parameter=false){
+function miner($command='summary',$parameter=false){
   $c['command'] = $command;
   $c['parameter']=$parameter;
 

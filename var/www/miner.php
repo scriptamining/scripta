@@ -22,7 +22,7 @@ $doctype = "<!DOCTYPE html>\n";
 # to configure miner.php
 #
 # Web page title
-$title = 'Mine';
+$title = 'Scripta';
 #
 # Set $readonly to true to force miner.php to be readonly
 # Set $readonly to false then it will check BFGMiner 'privileged'
@@ -55,7 +55,7 @@ $rigport = 4028;
 #
 # Set $rigs to an array of your BFGMiner rigs that are running
 #  format: 'IP' or 'Host' or 'IP:Port' or 'Host:Port' or 'Host:Port:Name'
-$rigs = array('127.0.0.1:4028');
+$rigs = array('127.0.0.1:4028:gateway');
 #
 # Set $rignames to false, or one of 'ip' or 'ipx'
 #  this says what to use if $rigs doesn't have a 'name'
