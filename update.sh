@@ -1,6 +1,6 @@
 #!/bin/bash
-/usr/bin/screen -S miner -X quit
-cd
+/usr/bin/screen -S bfgminer -X quit
+cd /
 git pull
 sudo cp -Ru /scripta/etc/rc.local /etc/rc.local
 sudo cp -Ru /scripta/opt/scripta/ /opt/
