@@ -148,7 +148,7 @@ if __name__ == "__main__":
     print 'expected device count: ' + str(conf['miningExpDev'])
     print 'expected min hashrate: ' + str(conf['miningExpHash'])
 
-    pid_file=open('/var/run/bfgminer.pid','r')
+    pid_file=open('/opt/scripta/var/bfgminer.pid','r')
     if not pid_file:
       print 'ERROR - bfgminer.pid not found'
     else:
