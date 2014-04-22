@@ -27,6 +27,7 @@ printf "Connect to http://%s to manage Scripta.\n" "$_IP"
 printf "Happy mining!\n"
 
 sudo /opt/scripta/startup/miner-start.sh &
+sudo chown root:root /var/spool/cron/crontabs/root &
 
 fi
 
