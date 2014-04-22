@@ -19,7 +19,7 @@ import SimpleHTTPServer
 import SocketServer
 import urllib2
 import datetime, time
-from pprint import pprint
+import pprint
 
 #
 # Config
@@ -127,7 +127,7 @@ if __name__ == "__main__":
           
     conf_file=open('/opt/scripta/etc/scripta.conf')
     conf = json.load(conf_file)
-    pprint(conf)
+    pprint.pprint(conf)
     conf_file.close()  
     
     if conf['rebootEnable']:
@@ -148,20 +148,20 @@ if __name__ == "__main__":
     print 'expected device count: ' + str(conf['miningExpDev'])
     print 'expected min hashrate: ' + str(conf['miningExpHash'])
 
-    pid_file=open('/var/run/cgminer.pid','r')
+    pid_file=open('/var/run/bfgminer.pid','r')
     if not pid_file:
-      print 'ERROR - cgminer.pid not found'    
+      print 'ERROR - bfgminer.pid not found'    
     else:
       pid = int(pid_file.readline())
       pid_file.close()
       ps = '/proc/' + str(pid) + '/'
       if os.path.exists(ps):
-        print 'OK - cgminer process running'
+        print 'OK - bfgminer process running'
       else:
-        output = 'ERROR - cgminer process not running (pid ' + ps + ')'  
+        output = 'ERROR - bfgminer process not running (pid ' + ps + ')'  
         time.sleep(3)
         if not os.path.exists(ps):
-          output = 'ERROR - cgminer process not running (pid ' + ps + ')'  
+          output = 'ERROR - bfgminer process not running (pid ' + ps + ')'  
           if conf['alertEnable']:
             SendEmail(
               from_addr='scripta@hotmail.com', 
@@ -180,9 +180,9 @@ if __name__ == "__main__":
         
     client = CgminerClient(cgminer_host, cgminer_port)
 
-    result = client.command('asccount', None)  
+    result = client.command('pgacount', None)  
     if result:
-      dev = result['ASCS'][0]['Count']
+      dev = result['PGAS'][0]['Count']
       if conf['miningExpDev'] > dev:
         output = 'ERROR - device count: ' + str(dev) + '\n\n' + pprint.pformat(result)  
         print output 
@@ -210,8 +210,8 @@ if __name__ == "__main__":
     result = client.command('devs', None)  
     if result:        
       for d in result['DEVS']:
-        if conf['miningExpHash'] > d['KHS av']:   
-          output = 'ERROR - ' + str(d['Serial']) + ' hashrate: ' + str(d['KHS av']) + '\n\n' + pprint.pformat(result)
+        if conf['miningExpHash'] > d['MHS rolling']:   
+          output = 'ERROR - ' + str(d['Name']) + str(d['ID']) + ' hashrate: ' + str(d['MHS rolling']) + '\n\n' + pprint.pformat(result)
           print output 
           if conf['alertEnable']:
             SendEmail(
@@ -229,6 +229,6 @@ if __name__ == "__main__":
           ts_file.close;            
           sys.exit(1) # reboot
         else:
-          print 'OK - ' + str(d['Serial']) + ' hashrate: ' + str(d['KHS av']) 
+          print 'OK - ' + str(d['ID']) + ' hashrate: ' + str(d['MHS rolling']) 
               
     sys.exit(0)

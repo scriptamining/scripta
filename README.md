@@ -126,9 +126,11 @@ mega link [scripta-20140408.img.gz](https://mega.co.nz/#!ah4XkCpL!A-b_10rNj1GvfQ
 
 ---
 
-scripta-20140412
+scripta-20140421
 
-  * install wicd and wicd-curses to help with WiFi network configuration.  Use `wicd-curses` to setup your WiFi.
+  * install wicd and wicd-curses to help with WiFi network configuration.  use `wicd-curses` to setup your WiFi.
   * fixed double emails from "cgminer process not running" reboot.
   * update openssl (heartbleed)
-  * upgrade/downgrade rpi firmware to use 3.10.36+ kernel.  Maybe more stable USB than 20140408 version using "next" branch (??)
+  * upgrade/downgrade rpi firmware to use 3.10.36+ kernel.  maybe more stable USB than 20140408 version using "next" branch (??)
+  * replace miner with bfgminer for stability.  update options to display status.
+  

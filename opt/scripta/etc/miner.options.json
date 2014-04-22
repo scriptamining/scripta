@@ -8,11 +8,15 @@
         "value": "4028"
     },
     {
-	"key": "expiry",
-	"value": "120"
+         "key": "api-allow",
+         "value": "W:127.0.0.1,192.168.100.0/24"
+    },  
+    {
+        "key": "expiry",
+	     "value": "120"
     },
     {
-	"key": "hotplug",
+	    "key": "hotplug",
        	"value": "5"
     },
     {
@@ -24,12 +28,20 @@
          "value": true
     },
     {
-         "key": "queue",
-         "value": "1"
-    },
+         "key": "no-show-processors",
+         "value": true
+    },  
     {
-         "key": "scan-time",
-         "value": "30"
+         "key": "no-show-procs",
+         "value": true
+    },  
+    {
+         "key": "no-submit-stale",
+         "value": true
+    },  
+    {
+         "key": "queue",
+         "value": "90"
     },
     {
          "key": "scan-time",
@@ -44,11 +56,17 @@
          "value": "0"
     },
     {
-	"key": "gridseed-options",
-	"value": "baud=115200,chips=5,freq=800"
+	     "key": "scan",
+	     "value": 
+          [
+            "gridseed:all"
+          ]
     },
     {
-	"key": "gridseed-freq",
-	"value": "6D8512995148=850,6D81116F5650=850,6D9021724857=850,6D82475A4857=850,6D973F855057=850,6D8B54835251=850"
+	     "key": "set-device",
+	     "value": 
+          [ 
+            "gridseed:clock=825"
+          ]
     }
 ]
