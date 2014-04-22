@@ -134,3 +134,4 @@ scripta-20140421
   * upgrade/downgrade rpi firmware to use 3.10.36+ kernel.  maybe more stable USB than 20140408 version using "next" branch (??)
   * replace miner with bfgminer for stability.  update options to display status.
   
+bfgminer 3.99.0 much more stable than cgminer wierd cgminer 3.7.2 branch.  gridseed support scheduled to be merged into main bfgminer in next (4.0.0) release.  
