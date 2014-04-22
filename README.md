@@ -1,3 +1,14 @@
+4-22-14
+New Image Link: https://www.dropbox.com/s/28u6vtbo3m95fnx/ScriptaGridBeta042114.img.zip
+
+To get the graphs working login to Scripta and run the following command
+```
+sudo chown root:root /var/spool/cron/crontabs/root
+```
+Should fix any static graph issues still present. Update script still in progress, reboot and shutdown commands as well.
+
+------------------------------------------------------------------------
+
 This is a new version of Scripta using BFGMiner 3.99 to support both the Round Gridseed and stick USB DualMiners. This particular version was built using the original code and some of Mox235's changes. I will post a complete image file shortly.
 
 For both WebUI and root access the password is "scripta" (and user is root)
@@ -11,7 +22,6 @@ set-device - dualminer:clock=850 or gridseed:clock=850
 If the device does not automatically recognize your miners, you can ssh root@"scripta IP address" and use command "screen -r" to manually add devices in BFG menu.
 
 Known Issues:
-- Static Graphs not working
 - WebUI does not load if RPi is turned on with Miner's connected (to work-around this, plug in the RPi and wait until you see yellow and green activity LEDs, then wait 5-10 seconds before plugging in Miner)
 - Individual Miner Serial numbers don't show. Plan on adding support to set per-device clock speed by individual serial number.
 - Reboot and shutdown commands can be finicky.
