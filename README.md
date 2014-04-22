@@ -128,10 +128,13 @@ mega link [scripta-20140408.img.gz](https://mega.co.nz/#!ah4XkCpL!A-b_10rNj1GvfQ
 
 scripta-20140421
 
-  * install wicd and wicd-curses to help with WiFi network configuration.  use `wicd-curses` to setup your WiFi.
-  * fixed double emails from "cgminer process not running" reboot.
-  * update openssl (heartbleed)
-  * upgrade/downgrade rpi firmware to use 3.10.36+ kernel.  maybe more stable USB than 20140408 version using "next" branch (??)
-  * replace miner with bfgminer for stability.  update options to display status.
+  * Install wicd and wicd-curses to help with WiFi network configuration.  Use `wicd-curses` to setup your WiFi.
+  * Fixed double emails from "cgminer process not running" reboot.
+  * Update openssl (heartbleed)
+  * Upgrade/downgrade rpi firmware to use 3.10.36+ kernel.  Maybe more stable USB than 20140408 version using "next" branch (??)
+  * Replace miner with bfgminer for stability.  Update browser options to display status.  No longer able to set/display individual GSD clock frequencies.
   
-bfgminer 3.99.0 much more stable than cgminer wierd cgminer 3.7.2 branch.  gridseed support scheduled to be merged into main bfgminer in next (4.0.0) release.  
+Miner bfgminer 3.99.0 seems to be more stable than wierd cgminer 3.7.2 branch.  Ongoing gridseed support scheduled to be merged into main bfgminer in next (4.0.0) main version release.  
+
+mega link [scripta-20140421.img.gz](https://mega.co.nz/#!L94ilAQY!C1huOBUMLY1n4mV3IVmAC5VJ2qHLGdHLM7aulZ4QRXU)
+
