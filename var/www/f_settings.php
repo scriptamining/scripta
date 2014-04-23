@@ -42,6 +42,7 @@ elseif (!empty($_REQUEST['settings'])) {
     }
     file_put_contents($configScripta, json_encode($r['data'], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     $r['info'][]=array('type' => 'success', 'text' => 'Configuration saved');
+    if ($r['data']['rebootEnable']) $r['info'][]=array('type' => 'success', 'text' => 'Reboot Now');    
   }
   // Load current settings
   else{
