@@ -210,8 +210,8 @@ if __name__ == "__main__":
     result = client.command('devs', None)  
     if result:        
       for d in result['DEVS']:
-        if conf['miningExpHash'] > d['MHS rolling']:   
-          output = 'ERROR - ' + str(d['Name']) + str(d['ID']) + ' hashrate: ' + str(d['MHS rolling']) + '\n\n' + pprint.pformat(result)
+        if conf['miningExpHash'] > d['MHS av']:   
+          output = 'ERROR - ' + str(d['Name']) + str(d['ID']) + ' hashrate: ' + str(d['MHS av']) + '\n\n' + pprint.pformat(result)
           print output 
           if conf['alertEnable']:
             SendEmail(
@@ -229,6 +229,6 @@ if __name__ == "__main__":
           ts_file.close;            
           sys.exit(1) # reboot
         else:
-          print 'OK - ' + str(d['ID']) + ' hashrate: ' + str(d['MHS rolling']) 
+          print 'OK - ' + str(d['ID']) + ' hashrate: ' + str(d['MHS av']) 
               
     sys.exit(0)
