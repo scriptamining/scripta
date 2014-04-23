@@ -141,7 +141,12 @@ function minerConfigGenerate(){
   // Angular objects ==> miner
   // {key:k,value:v} ==> {k:v}
   foreach ($options as $o) {
-    $miner[$o['key']]=$o['value'];
+    if ($o['key']=='scan' || $o['key']=='set-device'){ 
+      $miner[$o['key']]=array($o['value']);     
+    }
+    else{ 
+      $miner[$o['key']]=$o['value'];
+    }
   }
 
   $miner['pools']= json_decode(@file_get_contents($configPools), true);
