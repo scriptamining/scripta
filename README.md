@@ -126,7 +126,7 @@ mega link [scripta-20140408.img.gz](https://mega.co.nz/#!ah4XkCpL!A-b_10rNj1GvfQ
 
 ---
 
-scripta-20140421
+scripta-20140423
 
   * Install wicd and wicd-curses to help with WiFi network configuration.  Use `wicd-curses` to setup your WiFi.
   * Fixed double emails from "cgminer process not running" reboot.
@@ -136,5 +136,5 @@ scripta-20140421
   
 Miner bfgminer 3.99.0 seems to be more stable than wierd cgminer 3.7.2 branch.  Ongoing gridseed support scheduled to be merged into main bfgminer in next (4.0.0) main version release.  
 
-mega link [scripta-20140421.img.gz](https://mega.co.nz/#!L94ilAQY!C1huOBUMLY1n4mV3IVmAC5VJ2qHLGdHLM7aulZ4QRXU)
+mega link [scripta-20140423.img.gz](https://mega.co.nz/#!XwRV2LZJ!3F8aFj96qtLw6auWk40-DvD-uN0I48eKQwznxYIF4Yk)
 
