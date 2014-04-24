@@ -10,5 +10,6 @@ sudo chown -R www-data:www-data /opt/scripta
 sudo chown -R www-data:www-data /var/www
 sudo chmod -R 775 /opt/scripta/startup/*.sh
 sudo chmod -R 775 /etc/rc.local
+sudo chmod -R 775 /var/www
 sleep 5
 sudo reboot
