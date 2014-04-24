@@ -137,4 +137,3 @@ scripta-20140423
 Miner bfgminer 3.99.0 seems to be more stable than wierd cgminer 3.7.2 branch.  Ongoing gridseed support scheduled to be merged into main bfgminer in next (4.0.0) main version release.  
 
 mega link [scripta-20140423.img.gz](https://mega.co.nz/#!XwRV2LZJ!3F8aFj96qtLw6auWk40-DvD-uN0I48eKQwznxYIF4Yk)
-
