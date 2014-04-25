@@ -8,39 +8,65 @@
         "value": "4028"
     },
     {
-	"key": "expiry",
-	"value": "120"
+         "key": "api-allow",
+         "value": "W:127.0.0.1,192.168.100.0/24"
+    },  
+    {
+        "key": "expiry",
+	     "value": "120"
     },
-	{
-		"key": "hotplug",
-        	"value": "5"
-	},
-	{
-                "key": "log",
-                "value": "5"
-        },
-	{
-                "key": "no-pool-disable",
-                "value": true
-        },
-	{
-                "key": "queue",
-                "value": "1"
-        },
-	{
-                "key": "scan-time",
-                "value": "30"
-        },
-	{
-                "key": "scan-time",
-                "value": "30"
-        },
-{
-                "key": "scrypt",
-                "value": true
-        },
-{
-                "key": "shares",
-                "value": "0"
-        }
+    {
+	    "key": "hotplug",
+       	"value": "5"
+    },
+    {
+         "key": "log",
+         "value": "5"
+    },
+    {
+         "key": "no-pool-disable",
+         "value": true
+    },
+    {
+         "key": "no-show-processors",
+         "value": true
+    },  
+    {
+         "key": "no-show-procs",
+         "value": true
+    },  
+    {
+         "key": "no-submit-stale",
+         "value": true
+    },  
+    {
+         "key": "queue",
+         "value": "90"
+    },
+    {
+         "key": "scan-time",
+         "value": "30"
+    },
+    {
+         "key": "scrypt",
+         "value": true
+    },
+    {
+         "key": "shares",
+         "value": "0"
+    },
+    {
+	     "key": "scan",
+	     "value": 
+          [
+            "gridseed:all"
+          ]
+    },
+    {
+	     "key": "set-device",
+	     "value": 
+          [ 
+            "gridseed:clock=825"
+          ]
+    }
 ]

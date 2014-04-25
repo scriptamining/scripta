@@ -13,7 +13,7 @@
       <!-- </div> -->
     <!-- </div> -->
     <div class="form-group">
-      <label class="control-label col-sm-3 col-md-2">Graph interval</label>
+      <label class="control-label col-sm-3 col-md-2">Graph Interval</label>
       <div class="col-sm-3 col-md-4">
         <div class="btn-group">
           <button type="button" class="btn btn-{{intervalAuto?'primary':'default'}}" ng-click="intervalSet(0)">Auto<span ng-show="intervalAuto">: {{interval}}</span></button>
@@ -23,7 +23,7 @@
           <button type="button" class="btn btn-{{intervalMax==200?'primary':'default'}}" ng-click="intervalSet(200)">200</button>
         </div>
       </div>
-      <label for="liveMax" class="control-label col-sm-3 col-md-2">Graph points</label>
+      <label for="liveMax" class="control-label col-sm-3 col-md-2">Graph Points</label>
       <div class="col-sm-3 col-md-4">
         <input type="number" id="liveMax" ng-model="settings.liveMax" placeholder="Default: 50" class="form-control" required>
       </div>
@@ -39,7 +39,7 @@
       <div class="col-sm-3 col-md-4">
         <div ng-model="settings.userTimezone" ng-include="'partials/timezone.html'">x</div>
       </div>
-      <label for="userTimezone" class="control-label col-sm-3 col-md-2">System time</label>
+      <label for="userTimezone" class="control-label col-sm-3 col-md-2">System Time</label>
       <div class="col-sm-3 col-md-4">
         <button type="button" class="btn btn-default pull-right" ng-click="sync('timezone',settings.userTimezone,1)">Update</button>
         <p class="form-control-static">{{settings.date}}</p>
@@ -51,7 +51,7 @@
 <form name="formPass" class="form-horizontal">
   <fieldset>
     <div class="form-group">
-      <label for="userPassword" class="control-label col-sm-3 col-md-2">Web password</label>
+      <label for="userPassword" class="control-label col-sm-3 col-md-2">Web Password</label>
       <div class="col-sm-3 col-md-4">
         <input type="password" placeholder="Web password" id="userPassword" name="userPassword" ng-model="userPassword" class="form-control">
       </div>
@@ -83,10 +83,13 @@
         <!--  <input type="checkbox" id="remoteEnable" ng-model="settings.remoteEnable"> Enable Remote control -->
         <!-- </label> -->
         <label class="checkbox-inline">
-          <input type="checkbox" id="recoverEnable" ng-model="settings.recoverEnable"> Automatic recovery
+          <input type="checkbox" id="recoverEnable" ng-model="settings.recoverEnable"> Automatic Reboot
         </label>
         <label class="checkbox-inline">
-          <input type="checkbox" id="alertEnable" ng-model="settings.alertEnable"> E-mail alerts
+          <input type="checkbox" id="alertEnable" ng-model="settings.alertEnable"> E-mail Alerts
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="rebootEnable" ng-model="settings.rebootEnable"> Reboot Now !!
         </label>
 		
         <!-- <label class="checkbox-inline">
@@ -102,14 +105,14 @@
       </div>
     </div> 
     <div class="form-group" ng-show="settings.recoverEnable">
-      <label for="miningExpHash" class="control-label col-sm-3 col-md-2">Lower limit (hashrate)</label>
+      <label for="miningExpHash" class="control-label col-sm-3 col-md-2">Min Device Hashrate</label>
       <div class="col-sm-3 col-md-4">
         <div class="input-group">
           <input type="number" id="miningExpHash" ng-model="settings.miningExpHash" class="form-control" required>
           <span class="input-group-addon">MH/s</span>
         </div>
       </div>
-      <label for="miningExpDev" class="control-label col-sm-3 col-md-2">Expected device count</label>
+      <label for="miningExpDev" class="control-label col-sm-3 col-md-2">Expected Device Count</label>
       <div class="col-sm-3 col-md-4">
         <input type="number" id="miningExpDev" ng-model="settings.miningExpDev" class="form-control" required>
       </div>
@@ -140,7 +143,7 @@
       </div>
     </div>
   </fieldset>
-  
+ <!-- 
     <h3>Donate</h3> 
     <fieldset>
 		<div class="form-group">
@@ -163,9 +166,9 @@
 		  </div> 
 		</div> 
 	</fieldset> 
-  
+ --> 
   <fieldset ng-show="settings.alertEnable">
-    <h3>E-mail alerts</h3>
+    <h3>E-mail Alerts</h3>
     <div class="form-group">
       <label for="alertDevice" class="control-label col-sm-3 col-md-2">Device Name</label>
       <div class="col-sm-9 col-md-10">
@@ -173,20 +176,20 @@
       </div>
     </div> 
     <div class="form-group">
-      <label for="alertEmail" class="control-label col-sm-3 col-md-2">E-mail</label>
+      <label for="alertEmail" class="control-label col-sm-3 col-md-2">E-mail Address</label>
       <div class="col-sm-9 col-md-10">
-        <input type="email" id="alertEmail" ng-model="settings.alertEmail" ng-required="settings.alertEnable" class="form-control">
+        <input type="email" id="alertEmailTo" ng-model="settings.alertEmailTo" ng-required="settings.alertEnable" class="form-control">
       </div>
     </div>
     <div class="form-group">
-      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server address</label>
+      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server Address</label>
       <div class="col-sm-9 col-md-10">
         <input type="text" id="alertSmtp" ng-model="settings.alertSmtp" ng-required="settings.alertEnable" class="form-control">
         <p class="help-block" ng-show="settings.userHelp">Please choose your own SMTP server ip address.</p>
       </div> 
     </div>
 	<div class="form-group">
-      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server port</label>
+      <label for="alertSmtp" class="control-label col-sm-3 col-md-2">SMTP Server Port</label>
       <div class="col-sm-9 col-md-10">
         <input type="text" id="alertSmtpPort" ng-model="settings.alertSmtpPort" ng-required="settings.alertEnable" class="form-control" placeholder="25" value="25">
         <p class="help-block" ng-show="settings.userHelp">Please choose your own SMTP server port.</p>
