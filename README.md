@@ -2,6 +2,8 @@ Updated Image: https://www.dropbox.com/s/v2qdzkj5qx0pkl0/ScriptaV042414.img.zip
 
 Added donation links
 
+Watchdog fix
+
 Graph fix coded into rc.local startup routine. This should be a permanent fix to graph issues
 
 Scripta- LTC address set as default mining pool
