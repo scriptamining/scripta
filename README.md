@@ -1,3 +1,14 @@
+Updated Image: https://www.dropbox.com/s/v2qdzkj5qx0pkl0/ScriptaV042414.img.zip
+
+Added donation links
+
+Graph fix coded into rc.local startup routine. This should be a permanent fix to graph issues
+
+Scripta- LTC address set as default mining pool
+
+Note: The Gridseed clock option is set by default at 875. This does produce slightly higher hardware errors, but in the long term the increased hashrate outperforms the subsequent HW errors, especially when mining lower dificulty coins.
+
+------------------------------------------------------------------------
 4-22-14
 New Image Link: https://www.dropbox.com/s/28u6vtbo3m95fnx/ScriptaGridBeta042114.img.zip
 
