@@ -6,7 +6,7 @@ r.data
 r.error
 */
 
-function minerHardCtl($cmd){
+function bfgminerHardCtl($cmd){
 openlog("myScriptLog", LOG_PID | LOG_PERROR, LOG_LOCAL0);
                 syslog(LOG_WARNING, "Attempting to exec");
                 closelog();
@@ -18,14 +18,14 @@ openlog("myScriptLog", LOG_PID | LOG_PERROR, LOG_LOCAL0);
 		closelog();
 	break;
 	case '1':
-		exec("nohup /opt/scripta/startup/miner-start.sh > /dev/null 2>&1 &");
+		exec("/opt/scripta/startup/miner-start.sh");
 	break;
 	}	
 return true;
 }
 
 
-function miner($command='summary',$parameter=false){
+function bfgminer($command='summary',$parameter=false){
   $c['command'] = $command;
   $c['parameter']=$parameter;
 

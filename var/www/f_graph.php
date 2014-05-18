@@ -5,7 +5,7 @@ if ( !isset($_SESSION['_logged_']) || $_SESSION['_logged_'] === false ) {
         die();
 }
 
-require('inc/miner.inc.php');
+require('inc/bfgminer.inc.php');
 include('inc/settings.inc.php');
 
 $ret =  create_graph('mhsav-hour.png', '-1h', 'Last Hour')
